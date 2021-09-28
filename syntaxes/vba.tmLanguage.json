@@ -1,0 +1,18 @@
+{
+	"scopeName": "source.vba",
+	"fileTypes": [
+		".bas",
+		".cls",
+		".frm"
+	],
+	"patterns": [
+		{ "include": "#comments" }
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line",
+			"begin": "'",
+			"end": "$"
+		}
+	}
+}
