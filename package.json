@@ -16,7 +16,7 @@
 		"Programming Languages"
 	],
 	"activationEvents": [
-        "onLanguage:vba"
+		"onLanguage:vba"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
