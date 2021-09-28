@@ -1,5 +1,7 @@
+.github/
 .vscode/
 src/
+**/*.map
 .gitignore
 tsconfig.json
 .eslintrc.json
