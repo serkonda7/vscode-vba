@@ -1,0 +1,59 @@
+{
+	"name": "vscode-vba",
+	"displayName": "VBA",
+	"description": "Visual Basic language support for VS Code.",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"publisher": "serkonda7",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+        "onLanguage:vba"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "vba",
+				"aliases": [
+					"VBA"
+				],
+				"extensions": [
+					".bas",
+					".cls",
+					".frm"
+				],
+				"configuration": "./vba.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "vba",
+				"scopeName": "source.vba",
+				"path": "./syntaxes/vba.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint ."
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.56.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"eslint": "^7.32.0",
+		"typescript": "^4.4.3"
+	}
+}
