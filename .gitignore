@@ -1,5 +1,8 @@
 out/
 dist/
 node_modules/
-.vscode/
 *.vsix
+
+# Editor files
+*.code-workspace
+.vscode/
