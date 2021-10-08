@@ -6,13 +6,18 @@
 		".frm"
 	],
 	"patterns": [
-		{ "include": "#comments" }
+		{ "include": "#comments" },
+		{ "include": "#storage" }
 	],
 	"repository": {
 		"comments": {
 			"name": "comment.line",
 			"begin": "'",
 			"end": "$"
+		},
+		"storage": {
+			"name": "storage.visibility",
+			"match": "\\b(Public|Private)\\b"
 		}
 	}
 }
