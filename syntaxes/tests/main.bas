@@ -1,11 +1,11 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
 
   Public Const FOO As Int = 1
-' ^^^^^^ storage.visibility
+' ^^^^^^ storage.modifier.visibility
 
   ' some comment
 ' ^^^^^^^^^^^^^^ comment.line
 
   Private Sub doStuff()
-' ^^^^^^^ storage.visibility
+' ^^^^^^^ storage.modifier.visibility
 End Sub

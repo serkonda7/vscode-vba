@@ -7,7 +7,8 @@
 	],
 	"patterns": [
 		{ "include": "#comments" },
-		{ "include": "#storage" }
+		{ "include": "#visibility" },
+		{ "include": "#option" }
 	],
 	"repository": {
 		"comments": {
@@ -15,9 +16,13 @@
 			"begin": "'",
 			"end": "$"
 		},
-		"storage": {
-			"name": "storage.visibility",
+		"visibility": {
+			"name": "storage.modifier.visibility",
 			"match": "\\b(Public|Private)\\b"
+		},
+		"option": {
+			"name": "storage.modifier.option",
+			"match": "Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?"
 		}
 	}
 }
