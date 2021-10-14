@@ -11,4 +11,13 @@
 
   Private Sub doStuff()
 ' ^^^^^^^ storage.modifier.visibility
-End Sub
+'         ^^^ keyword.procedure
+  End Sub
+' ^^^ keyword.other
+'     ^^^ keyword.procedure
+
+  Function foobar()
+' ^^^^^^^^ keyword.procedure
+  End Function
+' ^^^ keyword.other
+'     ^^^^^^^^ keyword.procedure

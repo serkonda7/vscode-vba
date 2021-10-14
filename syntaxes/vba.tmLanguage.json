@@ -21,13 +21,21 @@
 			"patterns": [
 				{
 					"name": "keyword.attribute",
-					"match": "\\bAttribute\\b"
+					"match": "\\b(Attribute)\\b"
+				},
+				{
+					"name": "keyword.procedure",
+					"match": "\\b(Function|Sub)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(End)\\b"
 				}
 			]
 		},
 		"option": {
 			"name": "storage.modifier.option",
-			"match": "\\bOption (Explicit|Private Module|Base|(Compare (Binary|Text)+))?\\b"
+			"match": "\\b(Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?)\\b"
 		},
 		"visibility": {
 			"name": "storage.modifier.visibility",
