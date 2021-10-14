@@ -7,35 +7,32 @@
 	],
 	"patterns": [
 		{ "include": "#comments" },
-		{ "include": "#visibility" },
+		{ "include": "#keywords" },
 		{ "include": "#option" },
-		{ "include": "#keywords" }
+		{ "include": "#types" },
+		{ "include": "#visibility" }
 	],
 	"repository": {
 		"comments": {
-			"name": "comment.line",
+			"name": "comment.line.quote",
 			"begin": "'",
 			"end": "$"
 		},
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.attribute",
-					"match": "\\b(Attribute)\\b"
-				},
-				{
-					"name": "keyword.procedure",
-					"match": "\\b(Function|Sub)\\b"
-				},
-				{
-					"name": "keyword.other",
-					"match": "\\b(End)\\b"
+					"name": "keyword.$1.vba",
+					"match": "\\b(As|Attribute|Function|Sub|End)\\b"
 				}
 			]
 		},
 		"option": {
 			"name": "storage.modifier.option",
 			"match": "\\b(Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?)\\b"
+		},
+		"types": {
+			"name": "support.type.$1",
+			"match": "\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b"
 		},
 		"visibility": {
 			"name": "storage.modifier.visibility",
