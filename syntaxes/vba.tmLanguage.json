@@ -8,7 +8,8 @@
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#visibility" },
-		{ "include": "#option" }
+		{ "include": "#option" },
+		{ "include": "#keywords" }
 	],
 	"repository": {
 		"comments": {
@@ -16,13 +17,21 @@
 			"begin": "'",
 			"end": "$"
 		},
-		"visibility": {
-			"name": "storage.modifier.visibility",
-			"match": "\\b(Public|Private)\\b"
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.attribute",
+					"match": "\\bAttribute\\b"
+				}
+			]
 		},
 		"option": {
 			"name": "storage.modifier.option",
-			"match": "Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?"
+			"match": "\\bOption (Explicit|Private Module|Base|(Compare (Binary|Text)+))?\\b"
+		},
+		"visibility": {
+			"name": "storage.modifier.visibility",
+			"match": "\\b(Public|Private)\\b"
 		}
 	}
 }
