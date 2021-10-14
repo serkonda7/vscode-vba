@@ -1,4 +1,12 @@
 # Changelog
+## 0.1.2
+_14 October 2021_
+
+**Fixes**
+- Syntax highlighting for `Sub`, `Function`, `End` and `As` keywords
+- Highlight builtin types
+- Highlight number literals
+
 ## 0.1.1
 _14 October 2021_
 
