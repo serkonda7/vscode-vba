@@ -8,6 +8,7 @@
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#keywords" },
+		{ "include": "#numbers" },
 		{ "include": "#option" },
 		{ "include": "#types" },
 		{ "include": "#visibility" }
@@ -23,6 +24,18 @@
 				{
 					"name": "keyword.$1.vba",
 					"match": "\\b(As|Attribute|Function|Sub|End)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.decimal",
+					"match": "([0-9]+)(\\.)([0-9]+)(D|R|F)?"
+				},
+				{
+					"name": "constant.numeric.integer",
+					"match": "(([0-9]+)([_]?))+"
 				}
 			]
 		},
