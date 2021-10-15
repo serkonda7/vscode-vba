@@ -19,6 +19,4 @@ Function withParam(Optional p1 As MyType)
 '                  ^^^^^^^^ storage.modifier.visibility
 End Function
 
-doStuff("Hello")
-
 Call Mod.mSub()

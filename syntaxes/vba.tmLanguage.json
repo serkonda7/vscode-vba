@@ -10,6 +10,7 @@
 		{ "include": "#keywords" },
 		{ "include": "#numbers" },
 		{ "include": "#option" },
+		{ "include": "#strings" },
 		{ "include": "#types" },
 		{ "include": "#visibility" }
 	],
@@ -42,6 +43,11 @@
 		"option": {
 			"name": "storage.modifier.option",
 			"match": "\\b(Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?)\\b"
+		},
+		"strings": {
+			"name": "string.quoted",
+			"begin": "\"",
+			"end": "\""
 		},
 		"types": {
 			"name": "support.type.$1",
