@@ -10,18 +10,3 @@
 
   ' some comment
 ' ^^^^^^^^^^^^^^ comment.line.quote
-
-  Private Sub doStuff()
-' ^^^^^^^ storage.modifier.visibility
-'         ^^^ keyword.Sub.vba
-  End Sub
-' ^^^ keyword.End.vba
-'     ^^^ keyword.Sub.vba
-
-  Function foobar() As Boolean
-' ^^^^^^^^ keyword.Function.vba
-'                   ^^ keyword.As.vba
-'                      ^^^^^^^ support.type.Boolean
-  End Function
-' ^^^ keyword.End.vba
-'     ^^^^^^^^ keyword.Function.vba

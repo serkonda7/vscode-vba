@@ -49,7 +49,7 @@
 		},
 		"visibility": {
 			"name": "storage.modifier.visibility",
-			"match": "\\b(Public|Private)\\b"
+			"match": "\\b(Public|Private|Optional)\\b"
 		}
 	}
 }
