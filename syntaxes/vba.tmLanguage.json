@@ -24,7 +24,7 @@
 			"patterns": [
 				{
 					"name": "keyword.$1.vba",
-					"match": "\\b(As|Attribute|Function|Sub|End)\\b"
+					"match": "\\b(As|Attribute|Const|Dim|Function|New|Nothing|Set|Sub|End)\\b"
 				}
 			]
 		},
