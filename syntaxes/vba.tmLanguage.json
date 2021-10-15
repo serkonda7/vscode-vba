@@ -10,6 +10,7 @@
 		{ "include": "#keywords" },
 		{ "include": "#numbers" },
 		{ "include": "#option" },
+		{ "include": "#strings" },
 		{ "include": "#types" },
 		{ "include": "#visibility" }
 	],
@@ -23,7 +24,7 @@
 			"patterns": [
 				{
 					"name": "keyword.$1.vba",
-					"match": "\\b(As|Attribute|Function|Sub|End)\\b"
+					"match": "\\b(As|Attribute|Const|Dim|Function|New|Nothing|Set|Sub|End)\\b"
 				}
 			]
 		},
@@ -43,13 +44,18 @@
 			"name": "storage.modifier.option",
 			"match": "\\b(Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?)\\b"
 		},
+		"strings": {
+			"name": "string.quoted",
+			"begin": "\"",
+			"end": "\""
+		},
 		"types": {
 			"name": "support.type.$1",
 			"match": "\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b"
 		},
 		"visibility": {
 			"name": "storage.modifier.visibility",
-			"match": "\\b(Public|Private)\\b"
+			"match": "\\b(Public|Private|Optional)\\b"
 		}
 	}
 }
