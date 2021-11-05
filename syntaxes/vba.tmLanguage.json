@@ -48,7 +48,7 @@
 				},
 				{
 					"name": "constant.numeric.integer",
-					"match": "(([0-9]+)([_]?))+"
+					"match": "(([0-9]+)([_]?))+(ui|UI|ul|UL|us|US)?"
 				}
 			]
 		},
