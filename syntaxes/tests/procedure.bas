@@ -3,17 +3,15 @@
   Private Sub doStuff(x As String)
 ' ^^^^^^^ storage.modifier.visibility
 '         ^^^ keyword.Sub.vba
-  End Sub
-' ^^^ keyword.End.vba
-'     ^^^ keyword.Sub.vba
+End Sub
+' <------- keyword.End.vba
 
   Function foo() As Boolean
 ' ^^^^^^^^ keyword.Function.vba
 '                ^^ keyword.As.vba
 '                   ^^^^^^^ support.type.Boolean
-  End Function
-' ^^^ keyword.End.vba
-'     ^^^^^^^^ keyword.Function.vba
+End Function
+' <------------ keyword.End.vba
 
 Function withParam(Optional p1 As MyType)
 '                  ^^^^^^^^ storage.modifier.visibility
