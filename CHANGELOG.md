@@ -1,4 +1,16 @@
 # Changelog
+## 0.1.3
+_6 November 2021_
+
+**Fixes**
+- Syntax highlighting for `Optional`, `Dim`, `Const`, `New`, `Nothin` and `Set` keywords
+- Highlighting of string literals
+- Highlighting for `With`, `For`, `Each`, `In` and `Next` keywords
+- Highlight unsigned number postfixes
+
+**Engineering**
+- ci: run on weekly schedule
+
 ## 0.1.2
 _14 October 2021_
 
