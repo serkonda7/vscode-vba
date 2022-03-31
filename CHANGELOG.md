@@ -1,4 +1,16 @@
 # Changelog
+## 0.1.4
+_unreleased_
+
+**Additions**
+- add extension icon (thanks @bopoh13)
+
+**Fixes**
+- Syntax highlighting for `Call`
+
+**Engineering**
+- ci: remove scheduled run again
+
 ## 0.1.3
 _6 November 2021_
 
