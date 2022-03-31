@@ -2,7 +2,7 @@
 	"name": "vscode-vba",
 	"displayName": "VBA",
 	"description": "Visual Basic language support for VS Code.",
-	"icon": "icons/icon_256x256.png",
+	"icon": "images/icon_256x256.png",
 	"version": "0.1.4-dev",
 	"license": "MIT",
 	"repository": {
