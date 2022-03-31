@@ -1,7 +1,12 @@
+# raw images
+*.xcf
+
+# other
 .github/
 .vscode/
+*.code-workspace
 src/
-**/tests/**
+**/tests/
 **/*.map
 .gitignore
 tsconfig.json

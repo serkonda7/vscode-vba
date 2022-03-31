@@ -1,8 +1,11 @@
+# build files
 out/
 dist/
-node_modules/
 *.vsix
 
-# Editor files
+# editor files
 *.code-workspace
 .vscode/
+
+# other
+node_modules/
