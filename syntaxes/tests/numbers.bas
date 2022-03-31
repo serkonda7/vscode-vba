@@ -24,21 +24,21 @@ i = 123
 i = 1_000_000
 '   ^^^^^^^^^ constant.numeric.integer
 
-Dim ui as UInteger
+Dim ui As UInteger
 '         ^^^^^^^^ support.type.UInteger
 ui = 123ui
 '    ^^^^^ constant.numeric.integer
 ui = 45_67UI
 '    ^^^^^^^ constant.numeric.integer
 
-Dim ul as ULong
+Dim ul As ULong
 '         ^^^^^ support.type.ULong
 ul = 123456ul
 '    ^^^^^^^^ constant.numeric.integer
 ul = 123_456_789UL
 '    ^^^^^^^^^^^^^ constant.numeric.integer
 
-Dim us as UShort
+Dim us As UShort
 '         ^^^^^^ support.type.UShort
 us = 1us
 '    ^^^ constant.numeric.integer

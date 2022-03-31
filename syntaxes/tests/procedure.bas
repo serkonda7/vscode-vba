@@ -18,3 +18,4 @@ Function withParam(Optional p1 As MyType)
 End Function
 
 Call Mod.mSub()
+' <---- keyword.Call.vba
