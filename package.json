@@ -1,7 +1,7 @@
 {
 	"name": "vscode-vba",
 	"displayName": "VBA",
-	"description": "Visual Basic language support for VS Code.",
+	"description": "Visual Basic for Applications support for VS Code.",
 	"icon": "images/icon_256x256.png",
 	"version": "0.1.4-dev",
 	"license": "MIT",
@@ -44,8 +44,8 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
+		"vscode:prepublish": "npm run build",
+		"build": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -s source.vba -g syntaxes/vba.tmLanguage.json -t \"syntaxes/tests/*.bas\"",
