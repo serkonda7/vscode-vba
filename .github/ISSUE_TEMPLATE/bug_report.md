@@ -9,8 +9,6 @@ labels: bug
 
 **What did you do?**
 
-
 **Actual behaviour**
-
 
 **Expected behavior**
