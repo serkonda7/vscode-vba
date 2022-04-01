@@ -44,8 +44,8 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run build",
-		"build": "tsc -p ./",
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -s source.vba -g syntaxes/vba.tmLanguage.json -t \"syntaxes/tests/*.bas\"",
