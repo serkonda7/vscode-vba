@@ -10,7 +10,7 @@ The only feature until now is syntax highlighting.
 Launch the command palette (`ctrl+P`) and run `ext install serkonda7.vscode-vba`.
 
 ## Contributing
-Any contributions like bug reports, code, tests or documentation are appreciated!
+Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
