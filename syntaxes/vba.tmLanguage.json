@@ -43,12 +43,20 @@
 		"numbers": {
 			"patterns": [
 				{
+					"name": "constant.numeric.hexadecimal",
+					"match": "(?i)&H[0-9A-F]+"
+				},
+				{
+					"name": "constant.numeric.octal",
+					"match": "(?i)&O[0-7]+"
+				},
+				{
 					"name": "constant.numeric.decimal",
-					"match": "([0-9]+)(\\.)([0-9]+)(D|R|F)?"
+					"match": "[0-9]+\\.[0-9]+(D|R|F)?"
 				},
 				{
 					"name": "constant.numeric.integer",
-					"match": "(([0-9]+)([_]?))+(ui|UI|ul|UL|us|US)?"
+					"match": "(?i)([0-9]+[_]?)+(UI|UL|US)?"
 				}
 			]
 		},
