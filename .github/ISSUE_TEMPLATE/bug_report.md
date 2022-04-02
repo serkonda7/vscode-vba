@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Bug report
-labels: bug
+labels: bug needs-triage
 ---
 
 - VS Code Version:
