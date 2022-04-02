@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea
-labels: enhancement needs-triage
+labels: enhancement, needs-triage
 ---
 
 **What problem does the feature solve?**
