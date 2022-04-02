@@ -11,9 +11,20 @@ Dim hex As Long
 hex = &H98FA2
 '     ^^^^^^^ constant.numeric.hexadecimal
 
+hex = &h98_FA2
+'     ^^^^^^^^ constant.numeric.hexadecimal
+
 Dim oct As Long
 oct = &O75
 '     ^^^^ constant.numeric.octal
+oct = &o23_22
+'     ^^^^^^ constant.numeric.octal
+
+Dim bin As Long
+bin = &B0011
+'     ^^^^^^ constant.numeric.binary
+bin = &b1000_0101
+'     ^^^^^^^^^^^ constant.numeric.binary
 
 Dim dub As Double
 '          ^^^^^^ support.type.Double

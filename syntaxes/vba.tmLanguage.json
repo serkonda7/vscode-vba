@@ -44,11 +44,15 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.hexadecimal",
-					"match": "(?i)&H[0-9A-F]+"
+					"match": "(?i)&H([0-9A-F]+[_]?)+"
 				},
 				{
 					"name": "constant.numeric.octal",
-					"match": "(?i)&O[0-7]+"
+					"match": "(?i)&O([0-7]+[_]?)+"
+				},
+				{
+					"name": "constant.numeric.binary",
+					"match": "(?i)&B([0-1]+[_]?)+"
 				},
 				{
 					"name": "constant.numeric.decimal",
