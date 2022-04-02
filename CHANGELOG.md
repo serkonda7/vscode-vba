@@ -1,15 +1,20 @@
 # Changelog
-## 0.1.4
-_unreleased_
+## 0.2.0
+_2 April 2022_
 
 **Additions**
-- add extension icon (thanks @bopoh13)
+- add extension icon
 
 **Fixes**
-- Syntax highlighting for `Call`
+- syntax highlighting for `Call`
+- highlight octal and hexadecimal numbers (thanks @bopoh13 #33)
+- highlight binary numbers
 
-**Engineering**
+**Engineering and Docs**
+- docs: add CONTRIBUTING.md
+- docs: add issue templates
 - ci: remove scheduled run again
+- dependency updates
 
 ## 0.1.3
 _6 November 2021_
