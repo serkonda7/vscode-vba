@@ -7,6 +7,14 @@ dec = 2.375D
 dec = 4.000
 '     ^^^^^ constant.numeric.decimal
 
+Dim hex As Long
+hex = &H98FA2
+'     ^^^^^^^ constant.numeric.hexadecimal
+
+Dim oct As Long
+oct = &O75
+'     ^^^^ constant.numeric.octal
+
 Dim dub As Double
 '          ^^^^^^ support.type.Double
 dub = 4.0R
