@@ -11,8 +11,7 @@
 		{ "include": "#numbers" },
 		{ "include": "#option" },
 		{ "include": "#strings" },
-		{ "include": "#types" },
-		{ "include": "#visibility" }
+		{ "include": "#types" }
 	],
 	"repository": {
 		"comments": {
@@ -23,25 +22,25 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.$1.vba",
-					"match": "\\b(As|Attribute|Call|Const|Dim|Function|New|Nothing|Set|Sub)\\b"
+					"name": "keyword.conditional.vba",
+					"match": "(?i:\\b(Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
 				},
 				{
-					"name": "keyword.End.vba",
-					"match": "\\bEnd (Sub|Function)\\b"
+					"name": "keyword.conditional.end.vba",
+					"match": "(?i:\\bEnd (If|With)|Next\\b)"
 				},
 				{
-					"name": "keyword.control.$1.vba",
-					"match": "\\b(Each|For|In|Next|With)\\b"
-				},
-				{
-					"name": "keyword.control.End.vba",
-					"match": "\\bEnd (With)\\b"
+					"name": "keyword.control.vba",
+					"match": "(?i:\\b(As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Xor)\\b)"
 				}
 			]
 		},
 		"numbers": {
 			"patterns": [
+				{
+					"name": "constant.language.vba",
+					"match": "(?i:\\b(Empty|False|Nothing|Null|True)\\b)"
+				},
 				{
 					"name": "constant.numeric.hexadecimal",
 					"match": "(?i)&H([0-9A-F]+[_]?)+"
@@ -65,8 +64,20 @@
 			]
 		},
 		"option": {
-			"name": "storage.modifier.option",
-			"match": "\\b(Option (Explicit|Private Module|Base|(Compare (Binary|Text)+))?)\\b"
+			"patterns": [
+				{
+					"name": "storage.type.vba",
+					"match": "(?i:\\b(Attribute|End( (Function|Property|Sub))?|((Private|Public|Static) )?(Const|Function|Property|Sub))\\b)"
+				},
+				{
+					"name": "storage.declaration.vba",
+					"match": "(?i:\\b(C(all|lass|onst)|Dim|(G|L|S)et|ReDim( Preserve)?)\\b)"
+				},
+				{
+					"name": "storage.modifier.vba",
+					"match": "(?i:\\bOption (Base [01]|Compare (Binary|Text)?|Explicit|Private Module)\\b)"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted",
@@ -76,10 +87,6 @@
 		"types": {
 			"name": "support.type.$1",
 			"match": "\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b"
-		},
-		"visibility": {
-			"name": "storage.modifier.visibility",
-			"match": "\\b(Public|Private|Optional)\\b"
 		}
 	}
 }

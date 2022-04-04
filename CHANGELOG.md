@@ -1,4 +1,11 @@
 # Changelog
+## 0.2.1-dev
+_4 April 2022_
+
+**Additions**
+- Syntax highlighting for `And`, `If`, `Else`, `ElseIf`, `End If`, `Empty`, `False`, `Let`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
+- Highlighting for `Class`, `Get`, `Static`, `Property`, `Is`, `Like`, `Mod`, `Not`, `Null`, `Xor` (without autotest)
+
 ## 0.2.0
 _2 April 2022_
 
@@ -20,7 +27,7 @@ _2 April 2022_
 _6 November 2021_
 
 **Fixes**
-- Syntax highlighting for `Optional`, `Dim`, `Const`, `New`, `Nothin` and `Set` keywords
+- Syntax highlighting for `Optional`, `Dim`, `Const`, `New`, `Nothing` and `Set` keywords
 - Highlighting of string literals
 - Highlighting for `With`, `For`, `Each`, `In` and `Next` keywords
 - Highlight unsigned number postfixes
