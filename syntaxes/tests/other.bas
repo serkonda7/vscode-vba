@@ -1,12 +1,12 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
 Attribute VB_Name = "SyntaxTest"
-' <--------- storage.type.vba
+' <--------- keyword.Attribute.vba
 
   ' Some comment
 ' ^^^^^^^^^^^^^^ comment.line.quote
 
 Public Const FOO As Integer = 1
-' <------ storage.type.vba
+' <------ keyword.Public Const.vba
 '                ^^ keyword.control.vba
 '                    ^^^^^^ support.type.Integer
 '                             ^ constant.numeric.integer

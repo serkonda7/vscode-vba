@@ -1,17 +1,17 @@
 ' SYNTAX TEST "source.vba" "Option statement"
 
   Option Base 0
-' ^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^ storage.option.vba
   Option Base 1
-' ^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^ storage.option.vba
 
   Option Compare Binary
-' ^^^^^^^^^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^^^^^^^^^ storage.option.vba
   Option Compare Text
-' ^^^^^^^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^^^^^^^ storage.option.vba
 
   Option Explicit
-' ^^^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^^^ storage.option.vba
 
   Option Private Module
-' ^^^^^^^^^^^^^^^^^^^^^ storage.modifier.vba
+' ^^^^^^^^^^^^^^^^^^^^^ storage.option.vba
