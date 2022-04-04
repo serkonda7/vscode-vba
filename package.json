@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "Visual Basic for Applications support for VS Code.",
 	"icon": "images/icon_256x256.png",
-	"version": "0.2.0",
+	"version": "0.2.1-dev",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

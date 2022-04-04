@@ -12,7 +12,11 @@
 		{ "include": "#option" },
 		{ "include": "#strings" },
 		{ "include": "#types" },
-		{ "include": "#visibility" }
+		{ "include": "#visibility" },
+		{
+			"name": "entity.name.function.vba",
+			"match": "(?i:\\b[a-zA-Z][a-zA-Z0-9_]*\\b)(?=\\(\\)?)"
+		}
 	],
 	"repository": {
 		"comments": {
