@@ -12,6 +12,7 @@ Public Const FOO As Integer = 1
 
 Dim obj As Variant
 ' <--- storage.declaration.vba
+'          ^^^^^^^ support.type.Variant
 
 Let obj = Empty
 ' <--- storage.declaration.vba
@@ -20,6 +21,7 @@ Let obj = Empty
 Set obj = Nothing
 ' <--- storage.declaration.vba
 '         ^^^^^^^ constant.language.vba
+
 Set obj = New Object
 ' <--- storage.declaration.vba
 '         ^^^ keyword.conditional.vba
@@ -52,6 +54,7 @@ End With
 '                    ^^^ keyword.control.vba
   Else
 ' ^^^^ keyword.conditional.vba
+
   End If
 ' ^^^^^^ keyword.conditional.end.vba
 

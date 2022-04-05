@@ -30,6 +30,6 @@ int = 123
 '     ^^^ constant.numeric.vba
 
 Dim cur As Currency
-'          ^^^^^^^ support.type.Currency
+'          ^^^^^^^^ support.type.Currency
 cur = 765.4321
-      ^^^^^^^^ constant.numeric.decimal
+      ^^^^^^^^ constant.numeric.vba
