@@ -27,6 +27,7 @@ Function withParam(Optional ByVal p1 As MyType) As Byte
 ' <---- keyword.Function.vba
 '        ^^^^^^^^^ entity.name.function.vba
 '                  ^^^^^^^^ keyword.control.vba
+'                           ^^^^^ keyword.control.vba
 '                                                  ^^^^ support.type.Byte
 
 Function withParam(Optional p1 As MyType)

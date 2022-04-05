@@ -14,7 +14,7 @@ Dim obj As Variant
 ' <--- storage.declaration.vba
 '          ^^^^^^^ support.type.Variant
 
-Let obj = Empty
+Let obj = Null
 ' <--- storage.declaration.vba
 '         ^^^^^ constant.language.vba
 

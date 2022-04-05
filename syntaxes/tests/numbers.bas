@@ -1,5 +1,13 @@
 ' SYNTAX TEST "source.vba" "numbers"
 
+
+Dim dt As Date
+'         ^^^^ support.type.Date
+dt = #2/22/2022#
+'    ^^^^^^^^^^^ constant.numeric.date
+dt = #Feb/22#
+'    ^^^^^^^^ constant.numeric.date
+
 Dim dec As Variant
 '          ^^^^^^^ support.type.Variant
 dec = CDec(2.375)

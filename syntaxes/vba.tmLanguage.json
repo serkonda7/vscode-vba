@@ -50,6 +50,10 @@
 					"match": "(?i:\\b(Empty|False|Nothing|Null|True)\\b)"
 				},
 				{
+					"name": "constant.numeric.date",
+					"match": "#(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]{1,2})/[0-9]{1,2}(/[0-9]{1,4})?#"
+				},
+				{
 					"name": "constant.numeric.hexadecimal",
 					"match": "-?(?i:&H[0-9A-F]+)"
 				},
