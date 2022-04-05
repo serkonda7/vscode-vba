@@ -3,8 +3,8 @@
 _unreleased_
 
 **Additions**
-- Syntax highlighting for `And`, `Currency`, `Date`, `If`, `Else`, `ElseIf`, `End If`, `End With`, `False`, `Let`, `Null`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
-- Highlighting for `Array`, `Class`, `Empty`, `Exit`, `IIF`, `Get`, `Static`, `Property`, `Is`, `Like`, `Mod`, `Not`, `Xor` (without autotests)
+- Syntax highlighting for `And`, `Case`, `Case Else`, `Currency`, `Date`, `If`, `Is`, `Else`, `ElseIf`, `Empty`, `End If`, `End Select`, `End With`, `False`, `Let`, `Mod`, `Not`, `Null`, `Select Case`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
+- Highlighting for `Array`, `Class`, `Exit`, `IIF`, `Get`, `Static`, `Property`, `Like`, `Xor` (without autotests)
 
 **Fixes**
 - Syntax numbers (remove binary numbers)

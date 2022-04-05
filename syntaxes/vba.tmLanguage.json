@@ -27,15 +27,15 @@
 			"patterns": [
 				{
 					"name": "keyword.conditional.vba",
-					"match": "(?i:\\b((?= )E(nd|xit)|Array|Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
+					"match": "(?i:\\b(Array|Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\\b)"
 				},
 				{
 					"name": "keyword.conditional.end.vba",
-					"match": "(?i:\\bEnd( )?If|End With|Next\\b)"
+					"match": "(?i:\\bEnd( )?If|End (Select|With)|Next\\b)"
 				},
 				{
 					"name": "keyword.control.vba",
-					"match": "(?i:\\b(As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Xor)\\b)"
+					"match": "(?i:\\b((?= )E(nd|xit)|As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Stop|Xor)\\b)"
 				},
 				{
 					"name": "keyword.$1.vba",
