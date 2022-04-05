@@ -27,11 +27,11 @@
 			"patterns": [
 				{
 					"name": "keyword.conditional.vba",
-					"match": "(?i:\\b(Array|Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
+					"match": "(?i:\\b((?= )E(nd|xit)|Array|Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
 				},
 				{
 					"name": "keyword.conditional.end.vba",
-					"match": "(?i:\\bEnd (If|With)|Next\\b)"
+					"match": "(?i:\\bEnd( )?If|End With|Next\\b)"
 				},
 				{
 					"name": "keyword.control.vba",
@@ -39,7 +39,7 @@
 				},
 				{
 					"name": "keyword.$1.vba",
-					"match": "(?i:\\b(Attribute|End( (Function|Property|Sub))?|((Private|Public|Static) )?(Const|Function|Property|Sub))\\b)"
+					"match": "(?i:\\b(Attribute|End (Function|Property|Sub)|((Private|Public|Static) )?(Const|Function|Property|Sub))\\b)"
 				}
 			]
 		},
@@ -51,19 +51,19 @@
 				},
 				{
 					"name": "constant.numeric.date",
-					"match": "#(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]{1,2})/[0-9]{1,2}(/[0-9]{1,4})?#"
+					"match": "(?<=#)(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]{1,2})[-/][0-9]{1,2}([-/][0-9]{1,4})?(?=#)"
 				},
 				{
 					"name": "constant.numeric.hexadecimal",
-					"match": "-?(?i:&H[0-9A-F]+)"
+					"match": "(?<=[\\(*+-/:=^ \\\\])-?(?i:&H[0-9A-F]+)(?=[\\n\\):^ ])"
 				},
 				{
 					"name": "constant.numeric.octal",
-					"match": "-?(?i:&O[0-7]+)"
+					"match": "(?<=[\\(*+-/:=^ \\\\])-?(?i:&O[0-7]+)(?=[\\n\\):^ ])"
 				},
 				{
 					"name": "constant.numeric.decimal",
-					"match": "-?\\d+(\\.\\d+|#)?"
+					"match": "(?<=[\\(*+-/:=^ \\\\])-?\\d+(\\.\\d+)?#?(?=[\\n\\): ])"
 				}
 			]
 		},
@@ -75,7 +75,7 @@
 				},
 				{
 					"name": "storage.option.vba",
-					"match": "(?i:\\bOption (Base [01]|Compare (Binary|Text)?|Explicit|Private Module)\\b)"
+					"match": "(?i:\\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\\b)"
 				}
 			]
 		},
@@ -86,7 +86,7 @@
 		},
 		"types": {
 			"name": "support.type.$1",
-			"match": "\\b(B(yte|oolean)|C(urrency|ollection)|D(ate|ouble)|Integer|Long(Long|Ptr)?|Object|S(ingle|tring)|Variant)\\b"
+			"match": "(?i:\\b(B(yte|oolean)|C(urrency|ollection)|D(ate|ouble)|Integer|Long(Long|Ptr)?|Object|S(ingle|tring)|Variant)\\b)"
 		}
 	}
 }
