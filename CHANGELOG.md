@@ -1,6 +1,6 @@
 # Changelog
-## 0.2.1-dev
-_4 April 2022_
+## 0.2.1
+_unreleased_
 
 **Additions**
 - Syntax highlighting for `And`, `Currency`, `If`, `Else`, `ElseIf`, `End If`, `Empty`, `False`, `Let`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
