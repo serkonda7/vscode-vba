@@ -50,8 +50,16 @@
 					"match": "(?i:\\b(Empty|False|Nothing|Null|True)\\b)"
 				},
 				{
-					"name": "constant.numeric.vba",
-					"match": "-?(&(?i:H[\\dA-F]+|O[0-7])|\\d+(\\.\\d+|#)?)"
+					"name": "constant.numeric.hexadecimal",
+					"match": "-?(?i:&H[0-9A-F]+)"
+				},
+				{
+					"name": "constant.numeric.octal",
+					"match": "-?(?i:&O[0-7]+)"
+				},
+				{
+					"name": "constant.numeric.decimal",
+					"match": "-?\\d+(\\.\\d+|#)?"
 				}
 			]
 		},
