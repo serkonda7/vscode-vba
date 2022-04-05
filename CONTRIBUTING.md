@@ -3,6 +3,10 @@ Thank you for taking the time to contribute :tada:
 
 Before making changes, please discuss them in an issue.
 
+## Repository Setup
+Create and clone a fork of https://github.com/serkonda7/vscode-vba.
+Inside the cloned directory run `npm install`.
+
 ## Testing
 Every PR should contain a test case that covers the added feature or bug fix.
 This prevents regressions and makes reviewing the changes easier by proofing correct functionality.
@@ -13,9 +17,12 @@ They can be run with the following command:
 npm run test
 ```
 
-## Repository Setup
-Create and clone a fork of https://github.com/serkonda7/vscode-vba.
-Inside the cloned directory run `npm install`.
+## Installing a dev version
+If you'd like to install a development version of the extension, you can run the following:
+```sh
+npm run install-dev-ext
+```
+> **Note:** you have to reload the VS Code window if open (run `>reload window` from command palette).
 
 ## Compilation and Linting
 Currently there are no features that rely on typescript.
