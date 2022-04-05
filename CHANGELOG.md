@@ -3,8 +3,11 @@
 _4 April 2022_
 
 **Additions**
-- Syntax highlighting for `And`, `If`, `Else`, `ElseIf`, `End If`, `Empty`, `False`, `Let`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
-- Highlighting for `Class`, `Get`, `Static`, `Property`, `Is`, `Like`, `Mod`, `Not`, `Null`, `Xor` (without autotest)
+- Syntax highlighting for `And`, `Currency`, `If`, `Else`, `ElseIf`, `End If`, `Empty`, `False`, `Let`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
+- Highlighting for `Array`, `Class`, `IIF`, `Get`, `Static`, `Property`, `Is`, `Like`, `Mod`, `Not`, `Null`, `Xor` (without autotests)
+
+**Fixes**
+- Syntax numbers (remove binary numbers)
 
 ## 0.2.0
 _2 April 2022_

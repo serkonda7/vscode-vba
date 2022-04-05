@@ -1,65 +1,35 @@
 ' SYNTAX TEST "source.vba" "numbers"
 
-Dim dec As Decimal
-'          ^^^^^^^ support.type.Decimal
-dec = 2.375D
-'     ^^^^^^ constant.numeric.decimal
-dec = 4.000
-'     ^^^^^ constant.numeric.decimal
+Dim dec As Variant
+'          ^^^^^^^ support.type.Variant
+dec = CDec(2.375)
+'          ^^^^^ constant.numeric.vba
 
 Dim hex As Long
 hex = &H98FA2
-'     ^^^^^^^ constant.numeric.hexadecimal
-
-hex = &h98_FA2
-'     ^^^^^^^^ constant.numeric.hexadecimal
+'     ^^^^^^^ constant.numeric.vba
 
 Dim oct As Long
-oct = &O75
-'     ^^^^ constant.numeric.octal
-oct = &o23_22
-'     ^^^^^^ constant.numeric.octal
-
-Dim bin As Long
-bin = &B0011
-'     ^^^^^^ constant.numeric.binary
-bin = &b1000_0101
-'     ^^^^^^^^^^^ constant.numeric.binary
+'          ^^^^ support.type.Long
+oct = -&O75
+'     ^^^^^ constant.numeric.vba
 
 Dim dub As Double
 '          ^^^^^^ support.type.Double
-dub = 4.0R
-'     ^^^^ constant.numeric.decimal
+dub = 4#
+'     ^^ constant.numeric.vba
 
 Dim sng As Single
 '          ^^^^^^ support.type.Single
-sng = 4.2F
-'     ^^^^ constant.numeric.decimal
+sng = -4.2
+'     ^^^^ constant.numeric.vba
 
-Dim i As Integer
-'        ^^^^^^^ support.type.Integer
-i = 123
-'   ^^^ constant.numeric.integer
-i = 1_000_000
-'   ^^^^^^^^^ constant.numeric.integer
+Dim int As Integer
+'          ^^^^^^^ support.type.Integer
+int = 123
+'     ^^^ constant.numeric.vba
 
-Dim ui As UInteger
-'         ^^^^^^^^ support.type.UInteger
-ui = 123ui
-'    ^^^^^ constant.numeric.integer
-ui = 45_67UI
-'    ^^^^^^^ constant.numeric.integer
-
-Dim ul As ULong
-'         ^^^^^ support.type.ULong
-ul = 123456ul
-'    ^^^^^^^^ constant.numeric.integer
-ul = 123_456_789UL
-'    ^^^^^^^^^^^^^ constant.numeric.integer
-
-Dim us As UShort
-'         ^^^^^^ support.type.UShort
-us = 1us
-'    ^^^ constant.numeric.integer
-us = 1_2US
-'    ^^^^^ constant.numeric.integer
+Dim cur As Currency
+'          ^^^^^^^ support.type.Currency
+cur = 765.4321
+      ^^^^^^^^ constant.numeric.decimal

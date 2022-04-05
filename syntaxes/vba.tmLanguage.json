@@ -9,7 +9,7 @@
 		{ "include": "#comments" },
 		{ "include": "#keywords" },
 		{ "include": "#numbers" },
-		{ "include": "#option" },
+		{ "include": "#options" },
 		{ "include": "#strings" },
 		{ "include": "#types" },
 		{
@@ -27,7 +27,7 @@
 			"patterns": [
 				{
 					"name": "keyword.conditional.vba",
-					"match": "(?i:\\b(Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
+					"match": "(?i:\\b(Array|Else(If)?|For( Each)?|(I)?If|In|New|Then|To|Step|With)\\b)"
 				},
 				{
 					"name": "keyword.conditional.end.vba",
@@ -50,28 +50,12 @@
 					"match": "(?i:\\b(Empty|False|Nothing|Null|True)\\b)"
 				},
 				{
-					"name": "constant.numeric.hexadecimal",
-					"match": "(?i)&H([0-9A-F]+[_]?)+"
-				},
-				{
-					"name": "constant.numeric.octal",
-					"match": "(?i)&O([0-7]+[_]?)+"
-				},
-				{
-					"name": "constant.numeric.binary",
-					"match": "(?i)&B([0-1]+[_]?)+"
-				},
-				{
-					"name": "constant.numeric.decimal",
-					"match": "[0-9]+\\.[0-9]+(D|R|F)?"
-				},
-				{
-					"name": "constant.numeric.integer",
-					"match": "(?i)([0-9]+[_]?)+(UI|UL|US)?"
+					"name": "constant.numeric.vba",
+					"match": "-?(&(?i:H[\\dA-F]+|O[0-7])|\\d+(\\.\\d+|#)?)"
 				}
 			]
 		},
-		"option": {
+		"options": {
 			"patterns": [
 				{
 					"name": "storage.declaration.vba",
@@ -90,7 +74,7 @@
 		},
 		"types": {
 			"name": "support.type.$1",
-			"match": "\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b"
+			"match": "\\b(B(yte|oolean)|C(urrency|ollection)|D(ate|ouble)|Integer|Long(Long|Ptr)?|Object|S(ingle|tring)|Variant)\\b"
 		}
 	}
 }

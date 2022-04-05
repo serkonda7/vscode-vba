@@ -9,7 +9,6 @@ Public Const FOO As Integer = 1
 ' <------ keyword.Public Const.vba
 '                ^^ keyword.control.vba
 '                    ^^^^^^ support.type.Integer
-'                             ^ constant.numeric.integer
 
 Dim obj As Variant
 ' <--- storage.declaration.vba
@@ -35,7 +34,6 @@ Set obj = New Object
 
       For counter = 0 To 64 Step 16
 '     ^^^ keyword.conditional.vba
-'                   ^ constant.numeric.integer
 '                     ^^ keyword.conditional.vba
 '                           ^^^^ keyword.conditional.vba
       Next
