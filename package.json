@@ -50,7 +50,8 @@
 		"watch": "tsc -watch -p ./",
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -s source.vba -g syntaxes/vba.tmLanguage.json -t \"syntaxes/tests/*.bas\"",
-		"package": "vsce package"
+		"package": "vsce package",
+		"publish": "vsce publish"
 	},
 	"devDependencies": {
 		"@types/node": "^14.18.12",
