@@ -9,6 +9,8 @@ The only feature until now is syntax highlighting.
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install serkonda7.vscode-vba`.
 
+The extension is also available on Open VSX: https://open-vsx.org/extension/serkonda7/vscode-vba
+
 ## Contributing
 Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
