@@ -45,13 +45,14 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -s source.vba -g syntaxes/vba.tmLanguage.json -t \"syntaxes/tests/*.bas\"",
 		"package": "vsce package",
-		"publish": "vsce publish"
+		"install-dev-ext": "npm install && npm run test && vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
+		"vscode:prepublish": "npm run compile",
+		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'"
 	},
 	"devDependencies": {
 		"@types/node": "^14.18.12",
