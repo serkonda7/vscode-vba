@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+  release:
+    types:
+      - created
 
 jobs:
   test:
@@ -30,7 +33,7 @@ jobs:
         run: npm install
       - name: Compile
         run: npm run compile
-      - name: VSCE package
+      - name: Package
         run: npm run package
 
   code-style:
@@ -44,3 +47,22 @@ jobs:
         run: npm install
       - name: Run eslint
         run: npm run lint
+
+  publish:
+    needs:
+      - test
+      - code-style
+      - compile-and-package
+    if: github.event_name == 'release'
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Install dependencies
+        run: npm install
+      - name: Publish to VS Code Marketplace
+        run: npm run publish
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
