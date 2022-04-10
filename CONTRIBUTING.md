@@ -4,7 +4,7 @@ Thank you for taking the time to contribute :tada:
 ## Creating Pull Requests
 > Before making bigger changes, please discuss them in an issue.
 
-In general PRs should be kept as small as possible (e.g. one feature/fix per PR). It allows merging them faster and will make reviews more successful.
+In general PRs should be kept as small as possible (e.g. one feature/fix per PR). It allows merging them faster with less conflicts and will reduce review time.
 
 ### Repository Setup
 - Create and clone a fork of https://github.com/serkonda7/vscode-vba
