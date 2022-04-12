@@ -5,7 +5,7 @@ import * as path from 'path'
 const out_dir = path.resolve(__dirname, '..', 'out')
 const yml_paths = [
 	'./language-configuration.yml',
-	// './syntaxes/vba.tmGrammar.yml',
+	'./syntaxes/vba.tmGrammar.yml',
 ]
 
 const get_out_path = (inpath: string): string => {

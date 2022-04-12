@@ -33,7 +33,7 @@
 					".cls",
 					".frm"
 				],
-				"configuration": "./out/vba.configuration.json"
+				"configuration": "./out/language-configuration.json"
 			}
 		],
 		"grammars": [

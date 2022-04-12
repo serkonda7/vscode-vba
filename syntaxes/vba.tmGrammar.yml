@@ -1,0 +1,63 @@
+scopeName: source.vba
+fileTypes:
+  - .bas
+  - .cls
+  - .frm
+
+patterns:
+  - include: "#comments"
+  - include: "#keywords"
+  - include: "#numbers"
+  - include: "#options"
+  - include: "#strings"
+  - include: "#types"
+  - name: entity.name.function.vba
+    match: (?i:\b[a-zA-Z][a-zA-Z0-9_]*\b)(?=\(\)?)
+  - name: constant.other.vba
+    match:  _(?=\s*\n)
+
+repository:
+  comments:
+    name: comment.line.quote
+    begin: "'"
+    end: $
+
+  keywords:
+    patterns:
+      - name: keyword.conditional.vba
+        match: (?i:\b(Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\b)
+      - name: keyword.conditional.end.vba
+        match: (?i:\bEnd( )?If|End (Select|With)|Next\b)
+      - name: keyword.control.vba
+        match: (?i:\b((?<= )E(nd|xit)|As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Stop|Xor)\b)
+      - name: keyword.$1.vba
+        match: (?i:\b(Attribute|End (Function|Property|Sub)|((Private|Public|Static) )?(Const|Function|Property|Sub))\b)
+
+  numbers:
+    patterns:
+      - name: constant.language.vba
+        match: (?i:\b(Empty|False|Nothing|Null|True)\b)
+      - name: constant.numeric.date
+        match: "#(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]12)[-/][0-9]12([-/][0-9]14)?#"
+      - name: constant.numeric.hexadecimal
+        match: (?<=[\(*+-/:=^ \\])-?(?i:&H[0-9A-F]+)(?=[\n\):^ ])
+      - name: constant.numeric.octal
+        match: (?<=[\(*+-/:=^ \\])-?(?i:&O[0-7]+)(?=[\n\):^ ])
+      - name: constant.numeric.decimal
+        match: "(?<=[(*+\-/:=^ \\])-?\d+(\.\d+)?#?(?=[\n\): ])"
+
+  options:
+    patterns:
+      - name: storage.declaration.vba
+        match: (?i:\b(C(all|lass|onst)|Dim|(G|L|S)et|ReDim( Preserve)?)\b)
+      - name: storage.option.vba
+        match: "(?i:\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b)"
+
+  strings:
+    name: string.quoted
+    begin: '"'
+    end: '"'
+
+  types:
+    name: support.type.$1
+    match: (?i:\b(B(yte|oolean)|C(urrency|ollection)|D(ate|ouble)|Integer|Long(Long|Ptr)?|Object|S(ingle|tring)|Variant)\b)
