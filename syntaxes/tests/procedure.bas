@@ -22,12 +22,12 @@ End Sub
 End Function
 ' <------------ keyword.End Function.vba
 
-Function withParam(Optional ByVal p1 As MyType, _ 	 
-' <---- keyword.Function.vba                     
-'        ^^^^^^^^^ entity.name.function.vba       
-'                  ^^^^^^^^ keyword.control.vba   
+Function withParam(Optional ByVal p1 As MyType, _
+' <---- keyword.Function.vba
+'        ^^^^^^^^^ entity.name.function.vba
+'                  ^^^^^^^^ keyword.control.vba
 '                           ^^^^^ keyword.control.vba
-'                                              ^^ constant.other.vba
+'                                               ^ constant.other.vba
 
   p2 As MyType) As Byte
 '                  ^^^^ support.type.Byte
