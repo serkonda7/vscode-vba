@@ -8,7 +8,7 @@ patterns:
   - include: "#comments"
   - include: "#keywords"
   - include: "#numbers"
-  - include: "#options"
+  - include: "#storage"
   - include: "#strings"
   - include: "#types"
   - name: entity.name.function.vba
@@ -24,14 +24,18 @@ repository:
 
   keywords:
     patterns:
+      - name: keyword.other.option.vba
+        match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b
       - name: keyword.conditional.vba
         match: (?i:\b(Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\b)
       - name: keyword.conditional.end.vba
         match: (?i:\bEnd( )?If|End (Select|With)|Next\b)
       - name: keyword.control.vba
         match: (?i:\b((?<= )E(nd|xit)|As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Stop|Xor)\b)
-      - name: keyword.$1.vba
-        match: (?i:\b(Attribute|End (Function|Property|Sub)|((Private|Public|Static) )?(Const|Function|Property|Sub))\b)
+      - name: keyword.other.vba
+        match: (?i:\b(Attribute|Call|End (Function|Property|Sub)|((Private|Public|Static) )?(Const|Function|Property|Sub))\b)
+      - name: constant.language.vba
+        match: (?i)\b(Empty|False|Nothing|Null|True)\b
 
   numbers:
     patterns:
@@ -43,21 +47,17 @@ repository:
         match: (?i)-?&O[0-7]+
       - name: constant.numeric.hexadecimal
         match: (?i)-?&H[0-9A-F]+
-      - name: constant.language.vba
-        match: (?i:\b(Empty|False|Nothing|Null|True)\b)
 
-  options:
+  storage:
     patterns:
-      - name: storage.declaration.vba
-        match: (?i:\b(C(all|lass|onst)|Dim|(G|L|S)et|ReDim( Preserve)?)\b)
-      - name: storage.option.vba
-        match: (?i:\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b)
+      - name: storage.modifier.vba
+        match: (?i:\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?)\b)
 
   strings:
-    name: string.quoted
+    name: string.quoted.double
     begin: '"'
     end: '"'
 
   types:
-    name: support.type.$1
-    match: (?i:\b(B(yte|oolean)|C(urrency|ollection)|D(ate|ouble)|Integer|Long(Long|Ptr)?|Object|S(ingle|tring)|Variant)\b)
+    name: support.type
+    match: (?i)\b(Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
