@@ -1,13 +1,30 @@
 # Changelog
-## 0.2.1
-_unreleased_
+## 0.3.0
+_12 April 2022_
 
 **Additions**
-- Syntax highlighting for `And`, `Case`, `Case Else`, `Currency`, `Date`, `If`, `Is`, `Else`, `ElseIf`, `Empty`, `End If`, `End Select`, `End With`, `False`, `Let`, `Mod`, `Not`, `Null`, `Select Case`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`
-- Highlighting for `Class`, `Exit`, `IIF`, `Get`, `Static`, `Property`, `Like`, `Xor` (without autotests)
+- Highlighting keywords: `And`, `Case`, `Case Else`, `Currency`, `Date`, `If`, `Is`, `Else`,
+  `ElseIf`, `Empty`, `End If`, `End Select`, `End With`, `False`, `Let`, `Mod`, `Not`, `Null`,
+  `Select Case`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`,
+  `Class`, `Exit`, `IIF`, `Get`, `Static`, `Property`, `Like`, `Xor`, `On Error`, `GoTo`
+  > Note: not all are covered by syntax tests
+- Highlight names of function declarations
+- Highlight date literals
+
+**Changes**
+- Publish minified JSON files
+- Exclude more unnecessary files from published package
 
 **Fixes**
-- Syntax numbers (remove binary numbers)
+- Remove invalid binary number highlighting
+- Do not highlight numbers in variable names
+
+**Engineering**
+- Extension is available on Open VSX registry
+- Convert language grammar and configuration to YAML
+- Use CI to create and publish releases
+- Update contribution docs
+- Add npm script `install-dev-ext`
 
 ## 0.2.0
 _2 April 2022_
@@ -17,7 +34,7 @@ _2 April 2022_
 
 **Fixes**
 - syntax highlighting for `Call`
-- highlight octal and hexadecimal numbers (thanks @bopoh13 #33)
+- highlight octal and hexadecimal numbers (#33)
 - highlight binary numbers
 
 **Engineering and Docs**
