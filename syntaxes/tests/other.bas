@@ -1,4 +1,5 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
+
 Attribute VB_Name = "SyntaxTest"
 ' <--------- keyword.Attribute.vba
 

@@ -4,9 +4,9 @@
 Dim dt As Date
 '         ^^^^ support.type.Date
 dt = #02-22-2022#
-'     ^^^^^^^^^^ constant.numeric.date
+'    ^^^^^^^^^^^^ constant.numeric.date
 dt = #Feb/22#
-'     ^^^^^^ constant.numeric.date
+'    ^^^^^^^^ constant.numeric.date
 
 Dim dec As Variant
 '          ^^^^^^^ support.type.Variant

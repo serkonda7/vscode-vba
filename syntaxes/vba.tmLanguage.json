@@ -15,6 +15,10 @@
 		{
 			"name": "entity.name.function.vba",
 			"match": "(?i:\\b[a-zA-Z][a-zA-Z0-9_]*\\b)(?=\\(\\)?)"
+		},
+		{
+			"name": "constant.other.vba",
+			"match": " _(?=\\s*\\n)"
 		}
 	],
 	"repository": {
@@ -27,7 +31,7 @@
 			"patterns": [
 				{
 					"name": "keyword.conditional.vba",
-					"match": "(?i:\\b(Array|Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\\b)"
+					"match": "(?i:\\b(Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\\b)"
 				},
 				{
 					"name": "keyword.conditional.end.vba",
@@ -35,7 +39,7 @@
 				},
 				{
 					"name": "keyword.control.vba",
-					"match": "(?i:\\b((?= )E(nd|xit)|As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Stop|Xor)\\b)"
+					"match": "(?i:\\b((?<= )E(nd|xit)|As|And|By(Ref|Val)|Is|Like|Mod|Not|Optional|Or|Stop|Xor)\\b)"
 				},
 				{
 					"name": "keyword.$1.vba",
@@ -51,7 +55,7 @@
 				},
 				{
 					"name": "constant.numeric.date",
-					"match": "(?<=#)(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]{1,2})[-/][0-9]{1,2}([-/][0-9]{1,4})?(?=#)"
+					"match": "#(?i:(A(pr|ug)|Dec|Feb|J(an|u[ln])|Ma(r|y)|Nov|Oct|Sep)|[0-9]{1,2})[-/][0-9]{1,2}([-/][0-9]{1,4})?#"
 				},
 				{
 					"name": "constant.numeric.hexadecimal",
