@@ -20,7 +20,7 @@
 	"activationEvents": [
 		"onLanguage:vba"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/src/extension.js",
 	"contributes": {
 		"languages": [
 			{
@@ -33,26 +33,27 @@
 					".cls",
 					".frm"
 				],
-				"configuration": "./vba.configuration.json"
+				"configuration": "./out/vba.configuration.json"
 			}
 		],
 		"grammars": [
 			{
 				"language": "vba",
 				"scopeName": "source.vba",
-				"path": "./syntaxes/vba.tmLanguage.json"
+				"path": "./out/vba.tmGrammar.json"
 			}
 		]
 	},
 	"scripts": {
 		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
 		"lint": "eslint .",
-		"test": "vscode-tmgrammar-test -s source.vba -g syntaxes/vba.tmLanguage.json -t \"syntaxes/tests/*.bas\"",
+		"test": "vscode-tmgrammar-test -s source.vba -g ./out/bait.tmGrammar.json -t \"syntaxes/tests/*.bas\"",
+		"install-dev-ext": "npm run test && vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
-		"install-dev-ext": "npm install && npm run test && vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
-		"vscode:prepublish": "npm run compile",
-		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'"
+		"convert-yaml": "ts-node ./scripts/yaml2json.ts",
+		"pretest": "npm run convert-yaml",
+		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'",
+		"vscode:prepublish": "npm run compile && npm run convert-yaml"
 	},
 	"devDependencies": {
 		"@types/js-yaml": "^4.0.5",

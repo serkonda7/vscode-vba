@@ -7,8 +7,8 @@
 			"ES2020"
 		],
 		"sourceMap": true,
-		"rootDir": "src",
-		"strict": true 
+		"rootDir": ".",
+		"strict": true
 	},
 	"exclude": [
 		"node_modules"
