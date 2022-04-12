@@ -55,11 +55,14 @@
 		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'"
 	},
 	"devDependencies": {
+		"@types/js-yaml": "^4.0.5",
 		"@types/node": "^14.18.12",
 		"@types/vscode": "~1.56.0",
-		"@typescript-eslint/eslint-plugin": "^5.17.0",
-		"@typescript-eslint/parser": "^5.17.0",
-		"eslint": "^8.12.0",
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
+		"eslint": "^8.13.0",
+		"js-yaml": "^4.1.0",
+		"ts-node": "^10.7.0",
 		"typescript": "~4.6.3",
 		"vsce": "^2.7.0",
 		"vscode-tmgrammar-test": "~0.0.11"
