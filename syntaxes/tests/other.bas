@@ -1,30 +1,28 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
 
 Attribute VB_Name = "SyntaxTest"
-' <--------- keyword.Attribute.vba
+' <--------- keyword.other.vba
 
   ' Some comment
 ' ^^^^^^^^^^^^^^ comment.line.quote
 
 Public Const FOO As Integer = 1
-' <------ keyword.Public Const.vba
+' <------ keyword.other.vba
 '                ^^ keyword.control.vba
-'                    ^^^^^^ support.type.Integer
 
 Dim obj As Variant
-' <--- storage.declaration.vba
-'          ^^^^^^^ support.type.Variant
+' <--- storage.modifier.vba
 
 Let obj = Null
-' <--- storage.declaration.vba
+' <--- storage.modifier.vba
 '         ^^^^^ constant.language.vba
 
 Set obj = Nothing
-' <--- storage.declaration.vba
+' <--- storage.modifier.vba
 '         ^^^^^^^ constant.language.vba
 
 Set obj = New Object
-' <--- storage.declaration.vba
+' <--- storage.modifier.vba
 '         ^^^ keyword.conditional.vba
 
   With presentation
@@ -76,6 +74,9 @@ End With
 ' ^^^^^^^^^^ keyword.conditional.end.vba
 
 ReDim Preserve xArray(1 To 5) As Double
-' <--- storage.declaration.vba
-'     ^^^^^^^^ storage.declaration.vba
-'                                ^^^^^^ support.type.Double
+' <--- storage.modifier.vba
+'     ^^^^^^^^ storage.modifier.vba
+
+Dim str As String
+str = "Hello"
+'     ^^^^^^^ string.quoted.double

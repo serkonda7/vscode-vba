@@ -1,14 +1,20 @@
-# raw images
-*.xcf
+# version control
+.gitignore
+.github/
+
+# config files
+.eslintignore
+tsconfig.json
+
+# source files
+src/
+**/scripts/
+**/tests/
+**/*.yml
+**/*.xcf
 
 # other
-.github/
 .vscode/
 *.code-workspace
-src/
-**/tests/
 **/*.map
-.gitignore
-tsconfig.json
-.eslintrc.json
-.eslintignore
+CONTRIBUTING.md

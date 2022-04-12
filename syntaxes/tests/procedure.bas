@@ -1,43 +1,40 @@
 ' SYNTAX TEST "source.vba" "Sub, Function and anything related"
 
   Private Sub doStuff(ByRef x As String)
-' ^^^^^^^^^^^ keyword.Private Sub.vba
+' ^^^^^^^^^^^ keyword.other.vba
 '             ^^^^^^^ entity.name.function.vba
 '                     ^^^^^ keyword.control.vba
-'                                ^^^^^^ support.type.String
 
 End Sub
-' <------- keyword.End Sub.vba
+' <------- keyword.other.vba
 
   Public Function foo() As Boolean
-' ^^^^^^^^^^^^^^^ keyword.Public Function.vba
+' ^^^^^^^^^^^^^^^ keyword.other.vba
 '                 ^^^ entity.name.function.vba
 '                       ^^ keyword.control.vba
-'                          ^^^^^^^ support.type.Boolean
 
   Function foo() As MyType
-' ^^^^^^^^ keyword.Function.vba
+' ^^^^^^^^ keyword.other.vba
 '          ^^^ entity.name.function.vba
 '                ^^ keyword.control.vba
 End Function
-' <------------ keyword.End Function.vba
+' <------------ keyword.other.vba
 
-Function withParam(Optional ByVal p1 As MyType, _ 	 
-' <---- keyword.Function.vba                     
-'        ^^^^^^^^^ entity.name.function.vba       
-'                  ^^^^^^^^ keyword.control.vba   
+Function withParam(Optional ByVal p1 As MyType, _
+' <---- keyword.other.vba
+'        ^^^^^^^^^ entity.name.function.vba
+'                  ^^^^^^^^ keyword.control.vba
 '                           ^^^^^ keyword.control.vba
-'                                              ^^ constant.other.vba
+'                                               ^ constant.other.vba
 
   p2 As MyType) As Byte
-'                  ^^^^ support.type.Byte
 
 Function withParam(Optional p1 As MyType)
 '        ^^^^^^^^^ entity.name.function.vba
 '                  ^^^^^^^^ keyword.control.vba
 End Function
-' <------------ keyword.End Function.vba
+' <------------ keyword.other.vba
 
 Call Mod.mSub()
-' <---- storage.declaration.vba
+' <---- keyword.other.vba
 '        ^^^^ entity.name.function.vba
