@@ -1,4 +1,5 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
+
 Attribute VB_Name = "SyntaxTest"
 ' <--------- keyword.Attribute.vba
 
@@ -14,7 +15,7 @@ Dim obj As Variant
 ' <--- storage.declaration.vba
 '          ^^^^^^^ support.type.Variant
 
-Let obj = Empty
+Let obj = Null
 ' <--- storage.declaration.vba
 '         ^^^^^ constant.language.vba
 
@@ -48,15 +49,31 @@ End With
 '          ^^^^ constant.language.vba
 '               ^^ keyword.control.vba
 '                          ^^^^ keyword.conditional.vba
-  ElseIf FOO = False And FOO < 0 then
+  ElseIf FOO = False And Not FOO > 0 then
 ' ^^^^^^ keyword.conditional.vba
 '              ^^^^ constant.language.vba
 '                    ^^^ keyword.control.vba
+'                        ^^^ keyword.control.vba
   Else
 ' ^^^^ keyword.conditional.vba
 
   End If
 ' ^^^^^^ keyword.conditional.end.vba
+
+  Select Case num Mod 10
+' ^^^^^^^^^^^ keyword.conditional.vba
+'                 ^^^ keyword.control.vba
+    Case Is <= 1 Or Empty
+'   ^^^^ keyword.conditional.vba
+'                   ^^^^^ constant.language.vba
+    Case 2 To 4
+'   ^^^^ keyword.conditional.vba
+      Stop
+'     ^^^^ keyword.control.vba
+    Case Else
+'   ^^^^^^^^^ keyword.conditional.vba
+  End Select
+' ^^^^^^^^^^ keyword.conditional.end.vba
 
 ReDim Preserve xArray(1 To 5) As Double
 ' <--- storage.declaration.vba
