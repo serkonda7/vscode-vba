@@ -1,5 +1,5 @@
 # Visual Basic for Applications support for VS Code
-![GitHub Workflow Status][workflow-status]
+[![CI][ci-badge]][ci-status]
 [![Version][version-badge]][marketplace-url]
 [![Installs][installs-badge]][marketplace-url]
 
@@ -20,7 +20,8 @@ Core extension parts are covered by the [MIT license](LICENSE.md).<br>
 The icon, originally created by [Roberto Huertas][icon-source-url] with the text added by Lukas Neubert, is licensed under [CC BY 4.0][cc-by-4].
 
 <!-- links -->
-[workflow-status]: https://img.shields.io/github/workflow/status/serkonda7/vscode-vba/CI
+[ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
+[ci-status]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml
 [version-badge]: https://vsmarketplacebadge.apphb.com/version/serkonda7.vscode-vba.svg
 [installs-badge]: https://vsmarketplacebadge.apphb.com/installs/serkonda7.vscode-vba.svg
 [marketplace-url]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba

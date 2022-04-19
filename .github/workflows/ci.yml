@@ -63,12 +63,14 @@ jobs:
           node-version: "14"
       - name: Install dependencies
         run: npm install
-      - name: Publish to Open VSX Registry
-        uses: HaaLeo/publish-vscode-extension@v1
-        with:
-          pat: ${{ secrets.OPEN_VSX_PAT }}
       - name: Publish to VS Code Marketplace
+        if: always()
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
+      - name: Publish to Open VSX Registry
+        if: always()
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.OPEN_VSX_PAT }}
