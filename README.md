@@ -16,8 +16,8 @@ Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
-Core extension parts are covered by the [MIT license](LICENSE.md).<br>
-The icon, originally created by [Roberto Huertas][icon-source-url] with the text added by Lukas Neubert, is licensed under [CC BY 4.0][cc-by-4].
+Contents of this repo are licensed under the [MIT license](LICENSE.md).<br>
+To the icon the terms of [CC BY 4.0][cc-by-4] apply.
 
 <!-- links -->
 [ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
