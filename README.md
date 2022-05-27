@@ -16,8 +16,8 @@ Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
-Contents of this repo are licensed under the [MIT license](LICENSE.md).<br>
-To the icon the terms of [CC BY 4.0][cc-by-4] apply.
+Contents of this repo are licensed under the [MIT license](LICENSE-MIT.md)).<br>
+To the icon the terms of [CC BY 4.0](LICENSE-CC-BY-4.md) apply.
 
 <!-- links -->
 [ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
@@ -26,4 +26,3 @@ To the icon the terms of [CC BY 4.0][cc-by-4] apply.
 [installs-badge]: https://vsmarketplacebadge.apphb.com/installs/serkonda7.vscode-vba.svg
 [marketplace-url]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba
 [icon-source-url]: https://icon-icons.com/icon/file-type-vba/130097
-[cc-by-4]: https://creativecommons.org/licenses/by/4.0/
