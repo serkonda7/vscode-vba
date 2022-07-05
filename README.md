@@ -16,8 +16,8 @@ Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
-Contents of this repo are licensed under the [MIT license](LICENSE-MIT.md)).<br>
-To the icon the terms of [CC BY 4.0](LICENSE-CC-BY-4.md) apply.
+Contents of this repo are licensed under the [MIT license](LICENSE-MIT.md))<br>
+The icon is licensed under [CC BY 4.0](LICENSE-CC-BY-4.md).
 
 <!-- links -->
 [ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
