@@ -1,4 +1,11 @@
 # Changelog
+## 0.4.0
+_01 August 2022_
+
+**Fixes**
+- Highlight `Public` and `Private` in module scope declarations
+- Remove invalid highlight of array declarations and indexing
+
 ## 0.3.0
 _12 April 2022_
 
