@@ -11,8 +11,7 @@ patterns:
   - include: "#storage"
   - include: "#strings"
   - include: "#types"
-  - name: entity.name.function.vba
-    match: (?i:\b[a-zA-Z][a-zA-Z0-9_]*\b)(?=\(\)?)
+  - include: "#functions"
   - name: constant.other.vba
     match:  _(?=\s*\n)
 
@@ -38,6 +37,10 @@ repository:
         match: (?i:\b(Private|Public)\b)
       - name: constant.language.vba
         match: (?i)\b(Empty|False|Nothing|Null|True)\b
+
+  functions:
+    name: entity.name.function.vba
+    match: (?i:\b(?<=(Function|Sub)\s)[a-zA-Z][a-zA-Z0-9_]*\b)(?=\(\)?)
 
   numbers:
     patterns:

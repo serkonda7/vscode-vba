@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vba" "module level variable declaration"
+' SYNTAX TEST "source.vba" "module scope visibility modifiers"
 
 Public strName As String
 ' <------ keyword.other.visibility.vba
