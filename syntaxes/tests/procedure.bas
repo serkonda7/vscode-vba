@@ -36,3 +36,7 @@ Function withParam(Optional p1 As MyType)
 '                  ^^^^^^^^ keyword.control.vba
 End Function
 ' <------------ keyword.other.vba
+
+Call mSub()
+' <---- keyword.other.vba
+'    ^^^^ entity.name.function.vba

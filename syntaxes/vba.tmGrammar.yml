@@ -40,7 +40,7 @@ repository:
 
   functions:
     name: entity.name.function.vba
-    match: (?i:\b(?<=(Function|Sub)\s)[a-zA-Z][a-zA-Z0-9_]*\b)(?=\(\)?)
+    match: (?i:\b(?<=(Call|Function|Sub)\s)[a-zA-Z][a-zA-Z0-9_]*\b)(?=\(\)?)
 
   numbers:
     patterns:
