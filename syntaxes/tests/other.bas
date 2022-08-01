@@ -7,7 +7,7 @@ Attribute VB_Name = "SyntaxTest"
 ' ^^^^^^^^^^^^^^ comment.line.quote
 
 Public Const FOO As Integer = 1
-' <------ keyword.other.vba
+'      ^^^^^ keyword.other.vba
 '                ^^ keyword.control.vba
 
 Dim obj As Variant

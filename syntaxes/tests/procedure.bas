@@ -1,17 +1,19 @@
 ' SYNTAX TEST "source.vba" "Sub, Function and anything related"
 
-  Private Sub doStuff(ByRef x As String)
-' ^^^^^^^^^^^ keyword.other.vba
-'             ^^^^^^^ entity.name.function.vba
-'                     ^^^^^ keyword.control.vba
+Private Sub doStuff(ByRef x As String)
+' <------- keyword.other.visibility.vba
+'       ^^^ keyword.other.vba
+'           ^^^^^^^ entity.name.function.vba
+'                   ^^^^^ keyword.control.vba
 
 End Sub
 ' <------- keyword.other.vba
 
-  Public Function foo() As Boolean
-' ^^^^^^^^^^^^^^^ keyword.other.vba
-'                 ^^^ entity.name.function.vba
-'                       ^^ keyword.control.vba
+Public Function foo() As Boolean
+' <------ keyword.other.visibility.vba
+'      ^^^^^^^^ keyword.other.vba
+'               ^^^ entity.name.function.vba
+'                     ^^ keyword.control.vba
 
   Function foo() As MyType
 ' ^^^^^^^^ keyword.other.vba
