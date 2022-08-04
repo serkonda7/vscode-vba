@@ -1,4 +1,13 @@
 # Changelog
+## 0.5.0
+_04 August 2022_
+
+**Additions**
+- Highlight custom types after `As`
+
+**Fixes**
+- Fix readme typo and license links
+
 ## 0.4.0
 _01 August 2022_
 
