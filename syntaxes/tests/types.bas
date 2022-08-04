@@ -1,30 +1,38 @@
 ' SYNTAX TEST "source.vba" "types"
 
 Dim bool As Boolean
-'           ^^^^^^^ support.type
+'           ^^^^^^^ support.type.builtin
 Dim b As Byte
-'        ^^^^ support.type
+'        ^^^^ support.type.builtin
 Dim cur As Currency
-'          ^^^^^^^^ support.type
+'          ^^^^^^^^ support.type.builtin
 Dim col As Collection
-'          ^^^^^^^^^^ support.type
+'          ^^^^^^^^^^ support.type.builtin
 Dim dt As Date
-'         ^^^^ support.type
+'         ^^^^ support.type.builtin
 Dim db As Double
-'         ^^^^^^ support.type
+'         ^^^^^^ support.type.builtin
 Dim i As Integer
-'        ^^^^^^^ support.type
+'        ^^^^^^^ support.type.builtin
 Dim l As Long
-'        ^^^^ support.type
+'        ^^^^ support.type.builtin
 Dim ll As LongLong
-'         ^^^^^^^^ support.type
+'         ^^^^^^^^ support.type.builtin
 Dim lptr As LongPtr
-'           ^^^^^^^ support.type
+'           ^^^^^^^ support.type.builtin
 Dim obj As Object
-'          ^^^^^^ support.type
+'          ^^^^^^ support.type.builtin
 Dim sing As Single
-'           ^^^^^^ support.type
+'           ^^^^^^ support.type.builtin
 Dim s As String
-'        ^^^^^^ support.type
+'        ^^^^^^ support.type.builtin
 Dim v as Variant
-'        ^^^^^^^ support.type
+'        ^^^^^^^ support.type.builtin
+
+Dim spam as MyVarType
+'           ^^^^^^^^^ support.type
+
+Sub eggs(p As ParamType) as RetType
+'             ^^^^^^^^^ support.type
+'                           ^^^^^^^^ support.type
+End Sub

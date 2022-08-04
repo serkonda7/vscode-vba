@@ -56,7 +56,7 @@ repository:
   storage:
     patterns:
       - name: storage.modifier.vba
-        match: (?i:\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?)\b)
+        match: (?i)\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?)\b
 
   strings:
     name: string.quoted.double
@@ -64,5 +64,10 @@ repository:
     end: '"'
 
   types:
-    name: support.type
-    match: (?i)\b(Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
+    patterns:
+      - name: support.type.builtin
+        match: (?i)\b(Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
+      - match: (?i)(?<=As\s+)([a-zA-Z]+)
+        captures:
+          1:
+            name: support.type
