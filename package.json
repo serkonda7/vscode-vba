@@ -21,6 +21,11 @@
 		"onLanguage:vba"
 	],
 	"main": "./out/extension.js",
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
 	"contributes": {
 		"languages": [
 			{
