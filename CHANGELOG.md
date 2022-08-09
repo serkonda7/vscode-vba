@@ -1,4 +1,10 @@
 # Changelog
+## 0.6.0
+_09 August 2022_
+
+**Additions**
+- Enable the extension in untrusted workspaces by default
+
 ## 0.5.0
 _04 August 2022_
 
