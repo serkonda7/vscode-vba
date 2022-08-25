@@ -53,7 +53,7 @@
 		"compile": "tsc -p ./",
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -g ./out/vba.tmGrammar.json \"syntaxes/tests/*.bas\"",
-		"install-dev-ext": "npm run test && vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
+		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml syntaxes/vba.tmGrammar.yml",
 		"pretest": "npm run convert-yaml",
