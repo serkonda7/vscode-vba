@@ -5,7 +5,6 @@ dist/
 
 # editor files
 *.code-workspace
-.vscode/
 
 # other
 node_modules/
