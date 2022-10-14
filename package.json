@@ -62,14 +62,14 @@
 		"vscode:prepublish": "npm run compile && npm run convert-yaml"
 	},
 	"devDependencies": {
-		"@serkonda7/yaml2json": "^0.4.0",
-		"@types/node": "^14.18.26",
+		"@serkonda7/yaml2json": "^0.5.1",
+		"@types/node": "^14.18.32",
 		"@types/vscode": "~1.56.0",
-		"@typescript-eslint/eslint-plugin": "~5.34.0",
-		"@typescript-eslint/parser": "~5.34.0",
-		"eslint": "~8.22.0",
-		"typescript": "~4.7.4",
-		"vsce": "^2.10.2",
+		"@typescript-eslint/eslint-plugin": "~5.40.0",
+		"@typescript-eslint/parser": "~5.40.0",
+		"eslint": "~8.25.0",
+		"typescript": "~4.8.4",
+		"vsce": "~2.11.0",
 		"vscode-tmgrammar-test": "~0.1.1"
 	}
 }
