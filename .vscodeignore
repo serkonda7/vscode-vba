@@ -8,8 +8,8 @@
 !out/*.js
 !out/*.json
 
-!images/*.png
+!images/icon_256x256.png
 
 !README.md
-!LICENSE.md
+!LICENSE
 !CHANGELOG.md
