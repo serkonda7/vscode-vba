@@ -1,9 +1,22 @@
 # Changelog
+## 0.7.0
+_18 October 2022_
+
+**Additions**
+- Highlight `Friend` keyword
+- Highlight Do-While loop variants
+
+**Changes**
+- logo: change text from black to white
+- readme: fix download count badges
+
+
 ## 0.6.0
 _09 August 2022_
 
 **Additions**
 - Enable the extension in untrusted workspaces by default
+
 
 ## 0.5.0
 _04 August 2022_
@@ -14,12 +27,14 @@ _04 August 2022_
 **Fixes**
 - Fix readme typo and license links
 
+
 ## 0.4.0
 _01 August 2022_
 
 **Fixes**
 - Highlight `Public` and `Private` in module scope declarations
 - Remove invalid highlight of array declarations and indexing
+
 
 ## 0.3.0
 _12 April 2022_
@@ -48,6 +63,7 @@ _12 April 2022_
 - Update contribution docs
 - Add npm script `install-dev-ext`
 
+
 ## 0.2.0
 _2 April 2022_
 
@@ -65,6 +81,7 @@ _2 April 2022_
 - ci: remove scheduled run again
 - dependency updates
 
+
 ## 0.1.3
 _6 November 2021_
 
@@ -77,6 +94,7 @@ _6 November 2021_
 **Engineering**
 - ci: run on weekly schedule
 
+
 ## 0.1.2
 _14 October 2021_
 
@@ -84,6 +102,7 @@ _14 October 2021_
 - Syntax highlighting for `Sub`, `Function`, `End` and `As` keywords
 - Highlight builtin types
 - Highlight number literals
+
 
 ## 0.1.1
 _14 October 2021_
