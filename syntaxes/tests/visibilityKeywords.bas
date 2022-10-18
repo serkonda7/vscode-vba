@@ -5,3 +5,6 @@ Public strName As String
 
 Private strMsg As String
 ' <------- keyword.other.visibility.vba
+
+Friend Sub DoStuff()
+' <------ keyword.other.visibility.vba

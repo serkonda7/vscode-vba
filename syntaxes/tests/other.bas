@@ -39,6 +39,27 @@ Set obj = New Object
 '                           ^^^^ keyword.conditional.vba
       Next
 '     ^^^^ keyword.conditional.end.vba
+
+      Do While False
+'     ^^^^^^^^ keyword.conditional.vba
+      Loop
+'     ^^^^ keyword.conditional.end.vba
+
+      Do
+'     ^^ keyword.conditional.vba
+      Loop While False
+'     ^^^^^^^^^^ keyword.conditional.end.vba
+
+      Do
+'     ^^ keyword.conditional.vba
+      Loop Until True
+'     ^^^^^^^^^^ keyword.conditional.end.vba
+
+      While False
+'     ^^^^^ keyword.conditional.vba
+      Wend
+'     ^^^^ keyword.conditional.end.vba
+
 End With
 ' <-------- keyword.conditional.end.vba
 
