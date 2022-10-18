@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "Visual Basic for Applications support for VS Code.",
 	"icon": "images/icon_256x256.png",
-	"version": "0.7.0",
+	"version": "0.8.0-dev",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -62,7 +62,7 @@
 		"vscode:prepublish": "npm run compile && npm run convert-yaml"
 	},
 	"devDependencies": {
-		"@serkonda7/yaml2json": "^0.5.1",
+		"@serkonda7/yaml2json": "^0.7.0",
 		"@types/node": "^14.18.32",
 		"@types/vscode": "~1.56.0",
 		"@typescript-eslint/eslint-plugin": "~5.40.0",
