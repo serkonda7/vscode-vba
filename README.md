@@ -1,7 +1,7 @@
 # Visual Basic for Applications support for VS Code
 [![CI][ci-badge]][ci-status]
-[![Version][version-badge]][marketplace-url]
-[![Installs][installs-badge]][marketplace-url]
+[![Marketplace Installs][badge-installs-market]][vs-marketplace]
+[![Open VSX Installs][badge-installs-vsx]][open-vsx]
 
 Adds VBA language support to Visiual Studio Code.
 The only feature until now is syntax highlighting.
@@ -22,7 +22,7 @@ The icon is licensed under [Creative Commons ShareAlike](images/LICENSE).
 <!-- links -->
 [ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
 [ci-status]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml
-[version-badge]: https://vsmarketplacebadge.apphb.com/version/serkonda7.vscode-vba.svg
-[installs-badge]: https://vsmarketplacebadge.apphb.com/installs/serkonda7.vscode-vba.svg
-[marketplace-url]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba
-[icon-source-url]: https://icon-icons.com/icon/file-type-vba/130097
+[badge-installs-market]: https://img.shields.io/visual-studio-marketplace/i/serkonda7.vscode-vba?label=Installs
+[badge-installs-vsx]: https://img.shields.io/open-vsx/dt/serkonda7/vscode-vba?label=VSX%20downloads
+[vs-marketplace]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba
+[open-vsx]: https://open-vsx.org/extension/serkonda7/vscode-vba
