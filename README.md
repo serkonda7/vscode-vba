@@ -7,7 +7,8 @@ Adds VBA language support to Visiual Studio Code.
 The only feature until now is syntax highlighting.
 
 ## Installation
-Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install serkonda7.vscode-vba`.
+Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run
+`ext install serkonda7.vscode-vba`.
 
 The extension is also available on [Open VSX][open-vsx].
 
