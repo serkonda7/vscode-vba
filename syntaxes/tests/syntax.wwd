@@ -1,0 +1,27 @@
+' SYNTAX TEST "source.wwb" "WinWrap Basic syntax"
+
+If FOO = True Or FOO > 0 Then
+ElseIf FOO = False AndAlso FOO > 0 OrElse MyVar IsNot Val then
+'                  ^^^^^^^ keyword.control.vba
+'                                  ^^^^^^ keyword.control.vba
+'                                               ^^^^^ keyword.control.vba
+    Return 0
+'   ^^^^^^ keyword.control.vba
+
+End If
+
+
+Dim v1 As Decimal
+'         ^^^^^^^ support.type.builtin
+Dim v2 As Huge_
+'         ^^^^^ support.type.builtin
+Dim v3 As PortInt
+'         ^^^^^^^ support.type.builtin
+Dim v4 As SByte
+'         ^^^^^ support.type.builtin
+Dim v5 As UHuge_
+'         ^^^^^^ support.type.builtin
+Dim v6 As UInteger
+'         ^^^^^^^^ support.type.builtin
+Dim v7 As ULong
+'         ^^^^^ support.type.builtin
