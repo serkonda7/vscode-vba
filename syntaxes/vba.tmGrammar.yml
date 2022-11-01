@@ -2,6 +2,7 @@
 # Copyright (c) 2021-2022 Lukas Neubert
 # Use of this source file is governed by the MIT license.
 
+name: Visual Basic for Applications
 scopeName: source.vba
 fileTypes:
   - .bas
@@ -34,9 +35,9 @@ repository:
       - name: keyword.conditional.end.vba
         match: (?i:\b(End( )?If|End (Select|With)|Next|Wend|Loop(( While)|( Until))?|Exit (For|Do|While))\b)
       - name: keyword.control.vba
-        match: (?i:\b((?<= )E(nd|xit)|As|And|By(Ref|Val)|Goto|Is|Like|Mod|Not|On Error|Optional|Or|Resume Next|Stop|Xor)\b)
+        match: (?i:(\b(Exit (Function|Property|Sub)|As|And|By(Ref|Val)|Goto|Is|Like|Mod|Not|On Error|Optional|Or|Resume Next|Stop|Xor|Eqv|Imp|TypeOf|AddressOf)\b)|(\b(End)\b(?=\n)))
       - name: keyword.other.vba
-        match: (?i:\b(Attribute|Call|End (Function|Property|Sub)|(Static )?(Const|Function|Property|Sub))\b)
+        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type)|(Static )?(Const|Function|Property|Sub|Type)|Declare|PtrSafe|WithEvents|Event|RaiseEvent)\b)
       - name: keyword.other.visibility.vba
         match: (?i:\b(Private|Public|Friend)\b)
       - name: constant.language.vba
@@ -60,7 +61,7 @@ repository:
   storage:
     patterns:
       - name: storage.modifier.vba
-        match: (?i)\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?)\b
+        match: (?i)\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?|Erase)\b
 
   strings:
     name: string.quoted.double
@@ -70,7 +71,7 @@ repository:
   types:
     patterns:
       - name: support.type.builtin
-        match: (?i)\b(Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
+        match: (?i)\b(Any|Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
       - match: (?i)(?<=As\s+)([a-zA-Z]+)
         captures:
           1:

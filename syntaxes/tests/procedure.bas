@@ -1,5 +1,10 @@
 ' SYNTAX TEST "source.vba" "Sub, Function and anything related"
 
+Type CustomType
+' <---- keyword.other.vba
+End Type
+' <-------- keyword.other.vba
+
 Private Sub doStuff(ByRef x As String)
 ' <------- keyword.other.visibility.vba
 '       ^^^ keyword.other.vba
