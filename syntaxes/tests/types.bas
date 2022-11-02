@@ -36,3 +36,9 @@ Sub eggs(p As ParamType) as RetType
 '             ^^^^^^^^^ support.type
 '                           ^^^^^^^^ support.type
 End Sub
+
+Dim myConverter As DateConverter
+'                  ^^^^ - support.type.builtin.vba
+
+ConvertAs myVar, myConverter
+'         ^^^^^ - support.type
