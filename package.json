@@ -39,6 +39,15 @@
 					".frm"
 				],
 				"configuration": "./out/language-configuration.json"
+			},
+			{
+				"id": "wwb",
+				"aliases": [
+					"WinWrap Basic"
+				],
+				"extensions": [
+					".wwd"
+				]
 			}
 		],
 		"grammars": [
@@ -46,6 +55,11 @@
 				"language": "vba",
 				"scopeName": "source.vba",
 				"path": "./out/vba.tmGrammar.json"
+			},
+			{
+				"language": "wwb",
+				"scopeName": "source.wwb",
+				"path": "./out/wwb.tmGrammar.json"
 			}
 		]
 	},
@@ -53,10 +67,12 @@
 		"compile": "tsc -p ./",
 		"watch": "tsc --watch -p ./",
 		"lint": "eslint .",
-		"test": "vscode-tmgrammar-test -g ./out/vba.tmGrammar.json \"syntaxes/tests/*.bas\"",
+		"test": "npm run test-vba && npm run test-wwb",
+		"test-vba": "vscode-tmgrammar-test -g ./out/vba.tmGrammar.json \"syntaxes/tests/*.bas\"",
+		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.tmGrammar.json \"syntaxes/tests/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
-		"convert-yaml": "yaml2json language-configuration.yml syntaxes/vba.tmGrammar.yml",
+		"convert-yaml": "yaml2json language-configuration.yml syntaxes/*.yml",
 		"pretest": "npm run convert-yaml",
 		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'",
 		"vscode:prepublish": "npm run compile && npm run convert-yaml"

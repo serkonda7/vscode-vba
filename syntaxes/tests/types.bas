@@ -1,33 +1,33 @@
 ' SYNTAX TEST "source.vba" "types"
 
 Dim bool As Boolean
-'           ^^^^^^^ support.type.builtin
+'           ^^^^^^^ support.type.builtin.vba
 Dim b As Byte
-'        ^^^^ support.type.builtin
+'        ^^^^ support.type.builtin.vba
 Dim cur As Currency
-'          ^^^^^^^^ support.type.builtin
+'          ^^^^^^^^ support.type.builtin.vba
 Dim col As Collection
-'          ^^^^^^^^^^ support.type.builtin
+'          ^^^^^^^^^^ support.type.builtin.vba
 Dim dt As Date
-'         ^^^^ support.type.builtin
+'         ^^^^ support.type.builtin.vba
 Dim db As Double
-'         ^^^^^^ support.type.builtin
+'         ^^^^^^ support.type.builtin.vba
 Dim i As Integer
-'        ^^^^^^^ support.type.builtin
+'        ^^^^^^^ support.type.builtin.vba
 Dim l As Long
-'        ^^^^ support.type.builtin
+'        ^^^^ support.type.builtin.vba
 Dim ll As LongLong
-'         ^^^^^^^^ support.type.builtin
+'         ^^^^^^^^ support.type.builtin.vba
 Dim lptr As LongPtr
-'           ^^^^^^^ support.type.builtin
+'           ^^^^^^^ support.type.builtin.vba
 Dim obj As Object
-'          ^^^^^^ support.type.builtin
+'          ^^^^^^ support.type.builtin.vba
 Dim sing As Single
-'           ^^^^^^ support.type.builtin
+'           ^^^^^^ support.type.builtin.vba
 Dim s As String
-'        ^^^^^^ support.type.builtin
+'        ^^^^^^ support.type.builtin.vba
 Dim v as Variant
-'        ^^^^^^^ support.type.builtin
+'        ^^^^^^^ support.type.builtin.vba
 
 Dim spam as MyVarType
 '           ^^^^^^^^^ support.type
