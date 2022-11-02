@@ -95,9 +95,52 @@ End With
 ' ^^^^^^^^^^ keyword.conditional.end.vba
 
 ReDim Preserve xArray(1 To 5) As Double
-' <--- storage.modifier.vba
+' <----- storage.modifier.vba
 '     ^^^^^^^^ storage.modifier.vba
+Erase xArray
+' <----- storage.modifier.vba
 
 Dim str As String
 str = "Hello"
 '     ^^^^^^^ string.quoted.double
+
+c = 1 Xor 1
+'     ^^^ keyword.control.vba
+c = 1 Eqv 1
+'     ^^^ keyword.control.vba
+c = 1 Imp 1
+'     ^^^ keyword.control.vba
+c = "A" Like "A*"
+'       ^^^^ keyword.control.vba
+
+If TypeOf w Is Object  Then
+'  ^^^^^^ keyword.control.vba
+Call Method1(AddressOf Method2)
+'            ^^^^^^^^^ keyword.control.vba
+
+Exit Function
+' <------------- keyword.control.vba
+Exit Property
+' <------------- keyword.control.vba
+Exit Sub
+' <-------- keyword.control.vba
+End
+' <--- keyword.control.vba
+   End
+'  ^^^ keyword.control.vba
+
+Declare PtrSafe Sub First Lib "MyLib" (ByRef a As Any)
+'<------- keyword.other.vba
+'       ^^^^^^^ keyword.other.vba
+'                                                 ^^^ support.type.builtin.vba
+
+Private WithEvents app As Outlook.Application
+'       ^^^^^^^^^^ keyword.other.vba
+
+Event LogonCompleted(UserName as String)
+' <----- keyword.other.vba
+
+Sub Logon
+    RaiseEvent LogonCompleted ("AntoineJan")
+'   ^^^^^^^^^^ keyword.other.vba
+End Sub
