@@ -1,0 +1,23 @@
+# This file is part of vscode-vba.
+# Copyright (c) 2021-2022 Lukas Neubert
+# Use of this source file is governed by the MIT license.
+
+scopeName: source.wwb
+fileTypes:
+  - .wwd
+
+patterns:
+  - include: "#keywords"
+  - include: "#types"
+  - include: source.vba
+
+repository:
+  keywords:
+    patterns:
+      - name: keyword.control.wwb
+        match: AndAlso|OrElse|IsNot|Return
+
+  types:
+    patterns:
+      - name: support.type.builtin.wwb
+        match: ((?i)\b(Decimal|Huge_|PortInt|SByte|UHuge_|UInteger|ULong)\b)
