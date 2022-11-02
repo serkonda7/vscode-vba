@@ -132,15 +132,15 @@ End
 Declare PtrSafe Sub First Lib "MyLib" (ByRef a As Any)
 '<------- keyword.other.vba
 '       ^^^^^^^ keyword.other.vba
-'                                                 ^^^ support.type.builtin
+'                                                 ^^^ support.type.builtin.vba
 
 Private WithEvents app As Outlook.Application
 '       ^^^^^^^^^^ keyword.other.vba
 
-Event LogonCompleted(UserName as String) 
+Event LogonCompleted(UserName as String)
 ' <----- keyword.other.vba
- 
-Sub Logon 
-    RaiseEvent LogonCompleted ("AntoineJan") 
+
+Sub Logon
+    RaiseEvent LogonCompleted ("AntoineJan")
 '   ^^^^^^^^^^ keyword.other.vba
 End Sub
