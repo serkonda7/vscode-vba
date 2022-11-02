@@ -14,10 +14,10 @@ patterns:
 repository:
   keywords:
     patterns:
-      - name: keyword.control.vba
+      - name: keyword.control.wwb
         match: AndAlso|OrElse|IsNot|Return
 
   types:
     patterns:
-      - name: support.type.builtin
+      - name: support.type.builtin.wwb
         match: ((?i)\b(Decimal|Huge_|PortInt|SByte|UHuge_|UInteger|ULong)\b)

@@ -1,27 +1,28 @@
 ' SYNTAX TEST "source.wwb" "WinWrap Basic syntax"
 
 If FOO = True Or FOO > 0 Then
+' <-- keyword.conditional.vba
 ElseIf FOO = False AndAlso FOO > 0 OrElse MyVar IsNot Val then
-'                  ^^^^^^^ keyword.control.vba
-'                                  ^^^^^^ keyword.control.vba
-'                                               ^^^^^ keyword.control.vba
+'                  ^^^^^^^ keyword.control.wwb
+'                                  ^^^^^^ keyword.control.wwb
+'                                               ^^^^^ keyword.control.wwb
     Return 0
-'   ^^^^^^ keyword.control.vba
-
+'   ^^^^^^ keyword.control.wwb
 End If
 
 
 Dim v1 As Decimal
-'         ^^^^^^^ support.type.builtin
+' <--- storage.modifier.vba
+'         ^^^^^^^ support.type.builtin.wwb
 Dim v2 As Huge_
-'         ^^^^^ support.type.builtin
+'         ^^^^^ support.type.builtin.wwb
 Dim v3 As PortInt
-'         ^^^^^^^ support.type.builtin
+'         ^^^^^^^ support.type.builtin.wwb
 Dim v4 As SByte
-'         ^^^^^ support.type.builtin
+'         ^^^^^ support.type.builtin.wwb
 Dim v5 As UHuge_
-'         ^^^^^^ support.type.builtin
+'         ^^^^^^ support.type.builtin.wwb
 Dim v6 As UInteger
-'         ^^^^^^^^ support.type.builtin
+'         ^^^^^^^^ support.type.builtin.wwb
 Dim v7 As ULong
-'         ^^^^^ support.type.builtin
+'         ^^^^^ support.type.builtin.wwb

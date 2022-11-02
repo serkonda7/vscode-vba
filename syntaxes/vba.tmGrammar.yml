@@ -69,7 +69,7 @@ repository:
 
   types:
     patterns:
-      - name: support.type.builtin
+      - name: support.type.builtin.vba
         match: (?i)\b(Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String)|Variant\b
       - match: (?i)(?<=As\s+)([a-zA-Z]+)
         captures:
