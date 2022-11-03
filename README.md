@@ -1,10 +1,11 @@
-# Visual Basic for Applications support for VS Code
+# VBA and WWB support for VS Code
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
 
-Adds VBA language support to Visiual Studio Code.
-The only feature until now is syntax highlighting.
+Adds syntax highlighting to Visual Studio Code for the following languages:
+- Visual Basic for Applications (VBA)
+- WinWrap Basic (WWB)
 
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run

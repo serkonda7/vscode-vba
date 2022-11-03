@@ -1,7 +1,7 @@
 {
 	"name": "vscode-vba",
 	"displayName": "VBA",
-	"description": "Visual Basic for Applications support for VS Code.",
+	"description": "Visual Basic for Applications and WinWrap Basic support for VS Code.",
 	"icon": "images/icon_256x256.png",
 	"version": "0.8.0-dev",
 	"license": "MIT",
@@ -15,10 +15,16 @@
 		"vscode": "^1.56.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Language Packs"
+	],
+	"keywords": [
+		"VBA",
+		"WWB"
 	],
 	"activationEvents": [
-		"onLanguage:vba"
+		"onLanguage:vba",
+		"onLanguage:wwb"
 	],
 	"main": "./out/extension.js",
 	"capabilities": {
