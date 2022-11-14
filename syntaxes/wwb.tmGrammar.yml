@@ -15,7 +15,7 @@ repository:
   keywords:
     patterns:
       - name: keyword.control.wwb
-        match: AndAlso|OrElse|IsNot|Return
+        match: ((?i)\b(AndAlso|OrElse|IsNot|Return)\b)
 
   types:
     patterns:
