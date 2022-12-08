@@ -22,6 +22,7 @@
 		"VBA",
 		"WWB"
 	],
+	"activationEvents": [],
 	"main": "./out/extension.js",
 	"capabilities": {
 		"untrustedWorkspaces": {
