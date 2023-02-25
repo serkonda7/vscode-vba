@@ -5,6 +5,11 @@ Type CustomType
 End Type
 ' <-------- keyword.other.vba
 
+Enum CustomEnum
+' <---- keyword.other.vba
+End Enum
+' <-------- keyword.other.vba
+
 Private Sub doStuff(ByRef x As String)
 ' <------- keyword.other.visibility.vba
 '       ^^^ keyword.other.vba
