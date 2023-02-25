@@ -37,7 +37,7 @@ repository:
       - name: keyword.control.vba
         match: (?i:(\b(Exit (Function|Property|Sub)|As|And|By(Ref|Val)|Goto|Is|Like|Mod|Not|On Error|Optional|Or|Resume Next|Stop|Xor|Eqv|Imp|TypeOf|AddressOf)\b)|(\b(End)\b(?=\n)))
       - name: keyword.other.vba
-        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type)|(Static )?(Const|Function|Property|Sub|Type)|Declare|PtrSafe|WithEvents|Event|RaiseEvent)\b)
+        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Static )?(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent)\b)
       - name: keyword.other.visibility.vba
         match: (?i:\b(Private|Public|Friend)\b)
       - name: constant.language.vba
