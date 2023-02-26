@@ -1,4 +1,12 @@
 # Changelog
+## 0.8.1
+_26 February 2023_
+
+- VBA: highlight `Enum` keyword
+- WWB: keywords match case insensitive
+- Require VS Code >= `1.74.0`
+
+
 ## 0.8.0
 _02 November 2022_
 
