@@ -1,0 +1,29 @@
+name: 🚀 Feature Request
+description: Suggest an improvement or idea
+title: (feature summary)
+labels: [enhancement]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: A clear and concise description what problem the feature should solve or why it is an improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Suggest how to feature might work. If possible include a prototype or reference implementation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Information
+      description: Any alternative solutions you have considered or additional information.
+    validations:
+      required: false

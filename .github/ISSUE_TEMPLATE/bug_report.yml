@@ -1,0 +1,52 @@
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+
+name: 🐛 Bug Report
+description: Report a bug
+title: (bug summary)
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description and Reproduction Steps
+      description: |
+        What is the problem?
+        Please provide a short description and steps, code snippets, etc. to reproduce the issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+      description: |
+        What actually happenes?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Information
+      description: Suggest a fix for the bug or include anything else that might be helpful for troubleshooting.
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment details
+      value: |
+        OS:
+        VS Code Version:
+        Extension Version:
+    validations:
+      required: true
