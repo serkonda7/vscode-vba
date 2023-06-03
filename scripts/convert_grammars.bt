@@ -27,7 +27,8 @@ fun main() {
 		os.rmdir_all(target_repo_dir)
 	}
 
-	errors += git_command('clone --depth 1 https://github.com/serkonda7/vscode-vba-json ${target_repo_dir}')
+	access_token := os.getenv('BOT_TOKEN')
+	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/tiabeast/vscode-vba-json.git ${target_repo_dir}')
 
 	errors += os.system('npm run convert-yaml')
 	os.cp('./out', '${target_repo_dir}/syntaxes')

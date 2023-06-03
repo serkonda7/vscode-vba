@@ -20,3 +20,5 @@ jobs:
       - run: npm install
       - name: Run grammar converter and push changes
         run: bait run scripts/convert_grammars.bt
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
