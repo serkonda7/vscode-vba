@@ -2,8 +2,10 @@
 // Copyright (c) 2021-present Lukas Neubert
 // This Source Code is subject to the terms of the Mozilla Public License 2.0.
 
-import * as vscode from 'vscode';
+import 'vscode' as #JS.vscode
 
-export function activate(context: vscode.ExtensionContext) {
-	console.log('vscode-vba activated.')
+// TODO vscode.ExtensionContext
+@export: 'activate'
+fun activate(context #JS.Any) {
+	println('vscode-vba activated')
 }

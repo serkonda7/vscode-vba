@@ -67,9 +67,7 @@
 		]
 	},
 	"scripts": {
-		"compile": "tsc -p ./",
-		"watch": "tsc --watch -p ./",
-		"lint": "eslint .",
+		"compile": "bait --library -o out/extension.js src",
 		"test": "npm run test-vba && npm run test-wwb",
 		"test-vba": "vscode-tmgrammar-test -g ./out/vba.tmGrammar.json \"syntaxes/tests/vba/*.bas\"",
 		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.tmGrammar.json \"syntaxes/tests/other/*.wwd\"",
