@@ -1,5 +1,5 @@
 // This file is part of vscode-vba.
-// Copyright (c) 2021-2022 Lukas Neubert
+// Copyright (c) 2021-present Lukas Neubert
 // Use of this source code is governed by the MIT license.
 
 import * as vscode from 'vscode';
