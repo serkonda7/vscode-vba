@@ -15,6 +15,7 @@ In general PRs should be kept as small as possible (e.g. one feature/fix per PR)
 It allows merging them faster with less conflicts and will reduce review time.
 
 ### Repository Setup
+- Install the Bait programming language: https://github.com/tiabeast/bait#building-from-source
 - Create and clone a fork of https://github.com/serkonda7/vscode-vba
 - Run `npm install` inside the cloned directory
 - Create a new working branch for your changes
