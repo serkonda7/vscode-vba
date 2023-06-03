@@ -1,0 +1,70 @@
+// This file is part of vscode-vba.
+// Copyright (c) 2023-present Lukas Neubert
+// This Source Code is subject to the terms of the Mozilla Public License 2.0.
+
+package main
+
+import os
+import bait.util
+
+const GIT_USER := 'tiabeast-bot'
+const GIT_MAIL := '131296262+tiabeast-bot@users.noreply.github.com'
+
+const IS_CI := os.getenv('CI') == 'true'
+
+fun main() {
+	// Count the number of errors by adding the os.system return values
+	mut errors := 0
+
+	if IS_CI {
+		println('Configuring git user...')
+		errors += git_command('config --global user.name "${GIT_USER}"')
+		errors += git_command('config --global user.email "${GIT_MAIL}"')
+	}
+
+	target_repo_dir := '/tmp/vscode-vba-json'
+	if os.exists(target_repo_dir) {
+		os.rmdir_all(target_repo_dir)
+	}
+
+	errors += git_command('clone --depth 1 https://github.com/serkonda7/vscode-vba-json ${target_repo_dir}')
+
+	errors += os.system('npm run convert-yaml')
+	os.cp('./out', '${target_repo_dir}/syntaxes')
+
+	// Sanity check for a reasonable file size
+	text := os.read_file(target_repo_dir + '/syntaxes/vba.tmGrammar.json')
+	if text.length < 1000 {
+		eprintln('grammar is too small. Something went wrong.')
+		exit(1)
+	}
+
+	// Stage changes
+	errors += git_command('-C ${target_repo_dir} add .')
+
+	// Exit if there is nothing to commit
+	has_changes := git_command('-C ${target_repo_dir} diff-index --quiet HEAD')
+	if has_changes == 0 {
+		println('No changes to commit.')
+		exit(0)
+	}
+
+	// Create commit
+	println('Creating commit...')
+	os.chdir(target_repo_dir)
+	commit_msg := 'update grammars'
+	errors += git_command('commit -m "${commit_msg}"')
+
+	// Safety rebase and push changes
+	println('Pushing changes...')
+	errors += git_command('pull --rebase')
+	errors += git_command('push')
+
+	// Exit with the number of errors
+	exit(errors)
+}
+
+fun git_command(cmd string) i32 {
+	esc_cmd := util.shell_escape(cmd)
+	return os.system('git ${esc_cmd}')
+}
