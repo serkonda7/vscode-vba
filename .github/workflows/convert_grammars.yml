@@ -1,0 +1,22 @@
+name: Convert grammars to JSON for linguist
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'syntaxes/*.yml'
+
+jobs:
+  convert-grammars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: tiabeast/setup-bait@v0.1
+      - run: npm install
+      - name: Run grammar converter and push changes
+        run: bait run scripts/convert_grammars.bt
