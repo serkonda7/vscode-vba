@@ -18,7 +18,7 @@ Any contributions are highly appreciated!
 For details see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
-The source code is licensed under the [MIT license](LICENSE).<br>
+Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).<br>
 The icon is licensed under [Creative Commons ShareAlike](images/LICENSE).
 
 <!-- links -->

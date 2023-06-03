@@ -1,6 +1,6 @@
 # This file is part of vscode-vba.
 # Copyright (c) 2021-present Lukas Neubert
-# Use of this source file is governed by the MIT license.
+# This Grammar is subject to the terms of the Mozilla Public License 2.0.
 
 scopeName: source.wwb
 fileTypes:
