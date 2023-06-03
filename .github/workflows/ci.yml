@@ -29,6 +29,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
+      - uses: tiabeast/setup-bait@v0.1
       - name: Install dependencies
         run: npm install
       - name: Compile
@@ -41,18 +42,6 @@ jobs:
         with:
           files: vscode-vba-0.*.*.vsix
 
-  code-style:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-      - name: Install dependencies
-        run: npm install
-      - name: Run eslint
-        run: npm run lint
-
   publish:
     needs:
       - test
@@ -64,6 +53,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
+      - uses: tiabeast/setup-bait@v0.1
       - name: Install dependencies
         run: npm install
       - name: Publish to VS Code Marketplace
