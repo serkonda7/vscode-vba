@@ -23,12 +23,14 @@ fun main() {
 	}
 
 	target_repo_dir := '/tmp/vscode-vba-json'
-	os.rmdir_all(target_repo_dir)
+	if os.exists(target_repo_dir) {
+		os.rmdir_all(target_repo_dir)
+	}
 
 	errors += git_command('clone --depth 1 https://github.com/serkonda7/vscode-vba-json ${target_repo_dir}')
 
 	errors += os.system('npm run convert-yaml')
-	os.cp('out', '${target_repo_dir}/syntaxes')
+	os.cp('./out', '${target_repo_dir}/syntaxes')
 
 	// Sanity check for a reasonable file size
 	text := os.read_file(target_repo_dir + '/syntaxes/vba.tmGrammar.json')

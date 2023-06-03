@@ -2,6 +2,7 @@
 out/
 dist/
 *.vsix
+*.js
 
 # editor files
 *.code-workspace
