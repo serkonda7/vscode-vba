@@ -27,14 +27,20 @@ fun main() {
 		os.rmdir_all(target_repo_dir)
 	}
 
+	// Clone repo as bot user
 	access_token := os.getenv('BOT_TOKEN')
 	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/tiabeast/vscode-vba-json.git ${target_repo_dir}')
 
+	// Run conversion
 	errors += os.system('npm run convert-yaml')
-	os.cp('./out', '${target_repo_dir}/syntaxes')
+
+	// Copy syntax files
+	syntax_dir := '${target_repo_dir}/syntaxes'
+	os.cp('./out/vba.tmGrammar.json', '${syntax_dir}/vba.tmGrammar.json')
+	os.cp('./out/wwb.tmGrammar.json', '${syntax_dir}/wwb.tmGrammar.json')
 
 	// Sanity check for a reasonable file size
-	text := os.read_file(target_repo_dir + '/syntaxes/vba.tmGrammar.json')
+	text := os.read_file(syntax_dir + '/vba.tmGrammar.json')
 	if text.length < 1000 {
 		eprintln('grammar is too small. Something went wrong.')
 		exit(1)
