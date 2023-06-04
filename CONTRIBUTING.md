@@ -20,6 +20,12 @@ It allows merging them faster with less conflicts and will reduce review time.
 - Run `npm install` inside the cloned directory
 - Create a new working branch for your changes
 
+## Regexes
+TextMate uses Oniguruma regexes it's mostly compatible with PCRE but not always.
+A quite decent overview and comparison can be found here: https://rbuckton.github.io/regexp-features/engines/oniguruma.html
+
+As far as I know, the best tool to test regexes is https://regexr.com/ in PCRE mode.
+
 ### Unit Tests
 Every PR should contain a test case that covers the added feature or bug fix.
 This prevents regressions and makes reviewing the changes easier by proofing correct functionality.
@@ -40,10 +46,6 @@ If you'd like to install a development version of the extension, follow these st
    - Run `>reload window`
 
 > Note: It is not required to uninstall any previous versions.
-
-### Compilation and Linting
-Currently there are no features that rely on Typescript.
-Thus there is no need to compile or lint the code during development.
 
 <!-- links -->
 [issues]: https://github.com/serkonda7/vscode-vba/issues

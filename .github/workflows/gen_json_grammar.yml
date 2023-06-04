@@ -9,7 +9,8 @@ on:
       - 'syntaxes/*.yml'
 
 jobs:
-  convert-grammars:
+  gen-json-grammars:
+    if: github.repository == 'tiabeast/vscode-vba'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -19,6 +20,6 @@ jobs:
       - uses: tiabeast/setup-bait@v0.1
       - run: npm install
       - name: Run grammar converter and push changes
-        run: bait run scripts/convert_grammars.bt
+        run: bait run scripts/gen_json_grammar.bt
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
