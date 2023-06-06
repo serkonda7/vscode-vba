@@ -35,6 +35,14 @@ Dim x as Long Rem Some comment at the end of a line
 Dim x As Long: Rem Test comment with colon
 '              ^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
 
+' multi line _
+  comment
+' ^^^^^^^ comment.line.continuation
+
+Rem multi line _
+  comment
+' ^^^^^^^ comment.line.continuation
+
 Public Const FOO As Integer = 1
 '      ^^^^^ keyword.other.vba
 '                ^^ keyword.control.vba
