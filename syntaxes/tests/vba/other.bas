@@ -10,8 +10,8 @@ Attribute VB_Name = "SyntaxTest"
 '^ constant.numeric.decimal
 '  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
 
-Label1 ' Some comment with label
-'      ^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
+Label1: ' Some comment with label
+'       ^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
 
 Dim x as Long 'Some comment at the end of a line
 '             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
@@ -26,8 +26,8 @@ Dim x As Long: 'Test comment with colon
 '^ constant.numeric.decimal
 '  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
 
-Label1 Rem Some comment with label
-'      ^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
+Label1: Rem Some comment with label
+'       ^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
 
 Dim x as Long Rem Some comment at the end of a line
 '             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - comment.line.rem
