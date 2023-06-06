@@ -7,7 +7,7 @@ Attribute VB_Name = "SyntaxTest"
 ' ^^^^^^^^^^^^^^ comment.line.quote
 
  10 ' Some comment with line number
-'<--- constant.numeric.decimal
+'^^ constant.numeric.decimal
 '   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
 
  Label1 ' Some comment with label
@@ -20,10 +20,10 @@ Dim x As Long: 'Test comment with colon
 '              ^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.quote
 
   Rem Some comment
-' ^^^^^^^^^^^^^^^^ comment.line.quote
+' ^^^^^^^^^^^^^^^^ comment.line.rem
 
  10 Rem Some comment with line number
-'<--- constant.numeric.decimal
+'^^ constant.numeric.decimal
 '   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
 
  Label1 Rem Some comment with label
