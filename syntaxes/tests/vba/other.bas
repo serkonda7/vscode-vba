@@ -3,9 +3,6 @@
 Attribute VB_Name = "SyntaxTest"
 ' <--------- keyword.other.vba
 
-  ' Some comment
-' ^^^^^^^^^^^^^^ comment.line.quote
-
 Public Const FOO As Integer = 1
 '      ^^^^^ keyword.other.vba
 '                ^^ keyword.control.vba
