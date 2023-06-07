@@ -1,4 +1,20 @@
 # Changelog
+## 0.9.0
+_07 June 2023_
+
+**Additions**
+- Proper highlighting for `REM` comments
+- Multiline comments with `_` work now
+
+**Fixes**
+- Limit lookbehinds to a fixed length
+
+**Engineering**
+- Switch License to MPL-2.0
+- CI: Convert the grammars to JSON for use by GitHub Linguist
+- Replace TypeScript with Bait
+
+
 ## 0.8.1
 _26 February 2023_
 
