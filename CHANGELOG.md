@@ -1,4 +1,11 @@
 # Changelog
+## 0.10.0
+_unreleased_
+
+**Fixes**
+- Highlight `Static` in variable declarations
+
+
 ## 0.9.0
 _07 June 2023_
 
