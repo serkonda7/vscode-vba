@@ -8,6 +8,7 @@ fileTypes:
   - .bas
   - .cls
   - .frm
+  - .vba
 
 patterns:
   - include: "#comments"
