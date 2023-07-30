@@ -82,7 +82,7 @@ repository:
     patterns:
       - name: support.type.builtin.vba
         match: (?i)\b(Any|Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String|Variant)\b
-      - match: (?i)(?<= As )([a-zA-Z]+)
+      - match: (?i)(?<= As )([a-zA-Z0-9_])
         captures:
           1:
             name: support.type
