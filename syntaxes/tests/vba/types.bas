@@ -32,13 +32,23 @@ Dim v as Variant
 Dim spam as MyVarType
 '           ^^^^^^^^^ support.type
 
-Sub eggs(p As ParamType) as RetType
-'             ^^^^^^^^^ support.type
-'                           ^^^^^^^^ support.type
+Dim rm As REMOTE_MEMORY2
+'         ^^^^^^^^^^^^^^ support.type
+
+Function eggs(p As ParamType) as RetType
+'                  ^^^^^^^^^ support.type
+'                                ^^^^^^^ support.type
+End Sub
+
+Sub InitRemoteMemory(ByRef rm As REMOTE_MEMORY2)
+'                                ^^^^^^^^^^^^^^ support.type
 End Sub
 
 Dim myConverter As DateConverter
 '                  ^^^^ - support.type.builtin.vba
+
+Dim se As String_Extension2
+'         ^^^^^^ - support.type.builtin.vba
 
 ConvertAs myVar, myConverter
 '         ^^^^^ - support.type
