@@ -5,6 +5,7 @@ dist/
 *.js
 
 # editor files
+.vscode/
 *.code-workspace
 
 # other
