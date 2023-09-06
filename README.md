@@ -11,6 +11,7 @@
   - Visual Basic for Applications (VBA)
   - WinWrap Basic (WWB)
 - :construction: Export and Import of Macros for Office Documents
+- :construction: Comprehensive snippets
 
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run
