@@ -7,7 +7,7 @@
 ---
 
 ## Key Features
-- Syntax highlighting for the following languages
+- Syntax highlighting for the following languages (also used by [GitHub Linguist][gh-linguist])
   - Visual Basic for Applications (VBA)
   - WinWrap Basic (WWB)
 - :construction: Export and Import of Macros for Office Documents
@@ -35,3 +35,4 @@ The icon is licensed under the [Creative Commons ShareAlike](images/LICENSE) Lic
 [badge-installs-vsx]: https://img.shields.io/open-vsx/dt/serkonda7/vscode-vba?label=VSX%20downloads
 [vs-marketplace]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba
 [open-vsx]: https://open-vsx.org/extension/serkonda7/vscode-vba
+[gh-linguist]: https://github.com/DecimalTurn/linguist/blob/master/vendor/licenses/git_submodule/vscode-vba-json.dep.yml
