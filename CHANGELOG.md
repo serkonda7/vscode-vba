@@ -2,6 +2,7 @@
 ## 0.10.0
 _unreleased_
 
+- Highlight custom types with underscores or numbers
 
 ## 0.9.1
 _30 July 2023_
