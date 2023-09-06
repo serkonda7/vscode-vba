@@ -1,5 +1,5 @@
 // This file is part of vscode-vba.
-// Copyright (c) 2023-present Lukas Neubert
+// Copyright (c) 2023-present Lukas Neubert.
 // This Source Code is subject to the terms of the Mozilla Public License 2.0.
 
 package main
@@ -9,7 +9,9 @@ import bait.util
 
 const GIT_USER := 'tiabeast-bot'
 const GIT_MAIL := '131296262+tiabeast-bot@users.noreply.github.com'
+const REPO_DIR := '/tmp/vscode-vba-json'
 
+const DRY_RUN := os.user_args().contains('--dry')
 const IS_CI := os.getenv('CI') == 'true'
 
 fun main() {
@@ -22,35 +24,27 @@ fun main() {
 		errors += git_command('config --global user.email "${GIT_MAIL}"')
 	}
 
-	target_repo_dir := '/tmp/vscode-vba-json'
-	if os.exists(target_repo_dir) {
-		os.rmdir_all(target_repo_dir)
+	if os.exists(REPO_DIR) {
+		os.rmdir_all(REPO_DIR)
 	}
 
 	// Clone repo as bot user
 	access_token := os.getenv('BOT_TOKEN')
-	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/tiabeast/vscode-vba-json.git ${target_repo_dir}')
+	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/tiabeast/vscode-vba-json.git ${REPO_DIR}')
 
 	// Run conversion
 	errors += os.system('npm run convert-yaml')
 
-	// Copy syntax files
-	syntax_dir := '${target_repo_dir}/syntaxes'
-	os.cp('./out/vba.tmGrammar.json', '${syntax_dir}/vba.tmGrammar.json')
-	os.cp('./out/wwb.tmGrammar.json', '${syntax_dir}/wwb.tmGrammar.json')
-
-	// Sanity check for a reasonable file size
-	text := os.read_file(syntax_dir + '/vba.tmGrammar.json')
-	if text.length < 1000 {
-		eprintln('grammar is too small. Something went wrong.')
-		exit(1)
-	}
+	// Copy grammar files
+	println('Copying grammar files...')
+	copy_grammar('vba', 1500)
+	copy_grammar('wwb', 100)
 
 	// Stage changes
-	errors += git_command('-C ${target_repo_dir} add .')
+	errors += git_command('-C ${REPO_DIR} add .')
 
 	// Exit if there is nothing to commit
-	has_changes := git_command('-C ${target_repo_dir} diff-index --quiet HEAD')
+	has_changes := git_command('-C ${REPO_DIR} diff-index --quiet HEAD')
 	if has_changes == 0 {
 		println('No changes to commit.')
 		exit(0)
@@ -58,17 +52,33 @@ fun main() {
 
 	// Create commit
 	println('Creating commit...')
-	os.chdir(target_repo_dir)
+	os.chdir(REPO_DIR)
 	commit_msg := 'update grammars'
 	errors += git_command('commit -m "${commit_msg}"')
 
 	// Safety rebase and push changes
-	println('Pushing changes...')
-	errors += git_command('pull --rebase')
-	errors += git_command('push')
+	if not DRY_RUN {
+		println('Pushing changes...')
+		errors += git_command('pull --rebase')
+		errors += git_command('push')
+	}
 
 	// Exit with the number of errors
 	exit(errors)
+}
+
+fun copy_grammar(lang string, min_size i32) {
+	src := './out/${lang}.tmGrammar.json'
+
+	// Sanity check for a reasonable file size
+	text := os.read_file(src)
+	if text.length < min_size {
+		eprintln('error: Grammar for ${lang} is too small.')
+		exit(1)
+	}
+
+	// Copy
+	os.cp(src, '${REPO_DIR}/syntaxes/${lang}.tmGrammar.json')
 }
 
 fun git_command(cmd string) i32 {
