@@ -19,8 +19,9 @@ Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run
 The extension is also available on [Open VSX][open-vsx].
 
 ## Contributing
-Any contributions are highly appreciated!
-For details see [CONTRIBUTING.md](CONTRIBUTING.md).
+Thank you in advance, any contributions are highly appreciated!
+
+For details, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).<br>

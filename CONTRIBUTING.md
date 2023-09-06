@@ -2,11 +2,11 @@
 Thanks for your interest in improving vscode-vba!
 
 ## Creating Issues
-Before you create a new issue, please first search in [open issues][issues] to check it is not already reported.
+Report bugs or suggest new features.
 
-In case your issue already exists, add a reaction and possibly create relevant comments.
+Before opening a issue, please first search in [open issues][issues] to check it is not already reported.
 
-Otherwise proceed with opening a new one.
+In case your issue already exists, add a reaction and if possible, comment with further information.
 
 ## Creating Pull Requests
 > Before making bigger changes, please discuss them in an issue.
@@ -21,14 +21,14 @@ It allows merging them faster with less conflicts and will reduce review time.
 - Create a new working branch for your changes
 
 ## Regexes
-TextMate uses Oniguruma regexes it's mostly compatible with PCRE but not always.
+TextMate uses Oniguruma regexes which are mostly compatible with PCRE.
 A quite decent overview and comparison can be found here: https://rbuckton.github.io/regexp-features/engines/oniguruma.html
 
-As far as I know, the best tool to test regexes is https://regexr.com/ in PCRE mode.
+A good tool to test these regexes is https://regexr.com/ in PCRE mode.
 
 ### Unit Tests
 Every PR should contain a test case that covers the added feature or bug fix.
-This prevents regressions and makes reviewing the changes easier by proofing correct functionality.
+This prevents regressions and makes reviewing the changes easier by providing a proof of correct functionality.
 
 Tests for the language grammar (syntax highlighting) are in [`syntaxes/tests`](syntaxes/tests/).
 They can be run with the following command:
