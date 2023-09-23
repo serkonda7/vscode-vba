@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: tiabeast/setup-bait@v0.1
+      - uses: tiabeast/setup-bait@main
       - run: npm install
       - name: Run grammar converter and push changes
         run: bait run scripts/gen_json_grammar.bt
