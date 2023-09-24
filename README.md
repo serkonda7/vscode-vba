@@ -11,8 +11,8 @@
 - Syntax highlighting for the following languages (also used by [GitHub Linguist][gh-linguist])
   - Visual Basic for Applications (VBA)
   - WinWrap Basic (WWB)
-- :construction: Export and Import of Macros for Office Documents
-- :construction: Comprehensive snippets
+- 🚧 Export and Import of Macros for Office Documents
+- 🚧 Comprehensive snippets
 
 
 ## Installation

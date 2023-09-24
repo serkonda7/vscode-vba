@@ -1,4 +1,11 @@
 # Changelog
+## 0.9.3
+_24 September 2023_
+
+- Highlight begin of metadata section
+- Minor readme fix
+
+
 ## 0.9.2
 _23 September 2023_
 
