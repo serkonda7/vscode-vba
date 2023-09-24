@@ -13,6 +13,7 @@ END
 '^^^ keyword.control.vba
 
 Sub Begin(ByVal MyString As String)
+   '^^^^^ - keyword.metadata.vba
 
     MsgBox "test"
     End
