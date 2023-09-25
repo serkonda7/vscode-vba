@@ -12,10 +12,21 @@ END
  End
 '^^^ keyword.control.vba
 
-Sub test()
+Sub Begin(ByVal MyString As String)
+   '^^^^^ - keyword.metadata.vba
 
     MsgBox "test"
     End
    '^^^ keyword.control.vba
+
+End Sub
+
+Sub OtherSub()
+
+    Begin MyString:="test"
+   '^^^^^ - keyword.metadata.vba
+
+    End
+   '^^^ - keyword.metadata.vba
 
 End Sub
