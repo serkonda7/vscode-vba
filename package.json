@@ -69,7 +69,41 @@
 				"scopeName": "source.wwb",
 				"path": "./out/wwb.tmGrammar.json"
 			}
-		]
+		],
+		"commands": [
+			{
+				"command": "vba.extract_to_source",
+				"title": "VBA: Extract code from office document."
+			},
+			{
+				"command": "vba.write_to_doc",
+				"title": "VBA: Write code to office document."
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "vba.extract_to_source",
+					"when": "false"
+				},
+				{
+					"command": "vba.write_to_doc",
+					"when": "false"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "vba.extract_to_source",
+					"when": "resourceExtname in vba.ctx.docExts",
+					"group": "2_workspace"
+				},
+				{
+					"command": "vba.write_to_doc",
+					"when": "resourceExtname in vba.ctx.docExts",
+					"group": "2_workspace"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"compile": "bait --library -o out/extension.js src",

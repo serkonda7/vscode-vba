@@ -8,5 +8,10 @@ import 'vscode' as #JS.vscode
 // TODO vscode.ExtensionContext
 @export: 'activate'
 fun activate(context #JS.Any) {
+	// TODO vscode.commands.executeCommand
+	#JS.'JS.vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm"])'
+
+	// TODO implement and register commands
+
 	println('vscode-vba activated')
 }
