@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "VBA tooling, syntax highlighting and snippets for VS Code.",
 	"icon": "images/icon_256x256.png",
-	"version": "0.9.3",
+	"version": "0.10.0-dev",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -22,7 +22,11 @@
 		"VBA",
 		"WWB"
 	],
-	"activationEvents": [],
+	"activationEvents": [
+		"onLanguage:vba",
+		"onLanguage:wwb",
+		"workspaceContains:**/*.{docm,xlsm,pptm}"
+	],
 	"main": "./out/extension.js",
 	"capabilities": {
 		"untrustedWorkspaces": {
