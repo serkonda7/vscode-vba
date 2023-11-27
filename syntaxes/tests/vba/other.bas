@@ -3,6 +3,9 @@
 Attribute VB_Name = "SyntaxTest"
 ' <--------- keyword.other.vba
 
+Implements IRandomizer
+' <---------- keyword.other.vba
+
 Public Const FOO As Integer = 1
 '      ^^^^^ keyword.other.vba
 '                ^^ keyword.control.vba
