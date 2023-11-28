@@ -1,4 +1,10 @@
 # Changelog
+## 0.9.4
+_unreleased_
+
+- Highlight `Implements` keyword
+
+
 ## 0.9.3
 _24 September 2023_
 
