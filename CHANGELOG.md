@@ -3,6 +3,7 @@
 _unreleased_
 
 - Highlight `Implements` keyword
+- Highlight all I/O-related keywords
 
 
 ## 0.9.3
