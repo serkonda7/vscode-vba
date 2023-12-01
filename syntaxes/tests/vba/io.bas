@@ -2,9 +2,10 @@
 
 Open "file" For Input As #f
 ' <--- keyword.io.vba
-'               ^^^^^ keyword.io.vba
+'               ^^^^^ - keyword.io.vba
     Input #f myVar
 '   ^^^^^ keyword.io.vba
+'        ^^^ - keyword.io.vba
 
     Line Input #f myLineVar
 '   ^^^^^^^^^^ keyword.io.vba

@@ -46,7 +46,9 @@ repository:
       - name: keyword.control.vba
         match: (?i:(\b(Exit (Function|Property|Sub)|As|And|By(Ref|Val)|Goto|Is|Like|Mod|Not|On Error|Optional|Or|Resume Next|Stop|Xor|Eqv|Imp|TypeOf|AddressOf)\b)|(\b(End)\b(?=\n)))
       - name: keyword.io.vba
-        match: (?i:\b(Open|Close|(Line )?Input|Lock|Unlock|Print|Seek|Width|Get|Put|Write)\b)
+        match: (?i:\b(Open|Close|Line Input|Lock|Unlock|Print|Seek|Width|Get|Put|Write)\b)
+      - name: keyword.io.vba
+        match: "(?i:\\b(Input)(?= #))"
       - name: keyword.other.vba
         match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent|Implements)\b)
       - name: keyword.other.option.vba
