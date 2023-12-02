@@ -1,4 +1,11 @@
 # Changelog
+## 0.9.5
+_2 December 2023_
+
+- Remove invalid highlighting of `Width`
+- Preparations for the macro import/export feature
+
+
 ## 0.9.4
 _1 December 2023_
 
