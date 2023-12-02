@@ -5,13 +5,26 @@ package extension
 
 import 'vscode' as #JS.vscode
 
-// TODO vscode.ExtensionContext
+// TODO lot's of JS interop improvements
+
 @export: 'activate'
 fun activate(context #JS.Any) {
-	// TODO vscode.commands.executeCommand
 	#JS.'JS.vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm"])'
 
-	// TODO implement and register commands
+	#JS.'context.subscriptions.push(JS.vscode.commands.registerCommand("vba.extract_from_doc", extension__extract_from_doc))'
+	#JS.'context.subscriptions.push(JS.vscode.commands.registerCommand("vba.write_to_doc", extension__write_to_doc))'
 
 	println('vscode-vba activated')
+}
+
+fun extract_from_doc() {
+	show_notif_funding()
+}
+
+fun write_to_doc() {
+	show_notif_funding()
+}
+
+fun show_notif_funding(){
+	#JS.'JS.vscode.window.showInformationMessage("This feature is not yet complete.\nPlease consider a donation to support it\'s development.")'
 }

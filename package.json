@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "VBA tooling, syntax highlighting and snippets for VS Code.",
 	"icon": "images/icon_256x256.png",
-	"version": "0.10.0-dev",
+	"version": "0.9.5-dev",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -72,7 +72,7 @@
 		],
 		"commands": [
 			{
-				"command": "vba.extract_to_source",
+				"command": "vba.extract_from_doc",
 				"title": "VBA: Extract code from office document."
 			},
 			{
@@ -83,7 +83,7 @@
 		"menus": {
 			"commandPalette": [
 				{
-					"command": "vba.extract_to_source",
+					"command": "vba.extract_from_doc",
 					"when": "false"
 				},
 				{
@@ -93,7 +93,7 @@
 			],
 			"explorer/context": [
 				{
-					"command": "vba.extract_to_source",
+					"command": "vba.extract_from_doc",
 					"when": "resourceExtname in vba.ctx.docExts",
 					"group": "2_workspace"
 				},
