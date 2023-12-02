@@ -39,16 +39,20 @@ repository:
 
   keywords:
     patterns:
-      - name: keyword.other.option.vba
-        match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b
       - name: keyword.conditional.vba
         match: (?i:\b(Do(( While)|( Until))?|While|Case( Else)?|Else(If)?|For( Each)?|(I)?If|In|New|(Select )?Case|Then|To|Step|With)\b)
       - name: keyword.conditional.end.vba
         match: (?i:\b(End( )?If|End (Select|With)|Next|Wend|Loop(( While)|( Until))?|Exit (For|Do|While))\b)
       - name: keyword.control.vba
         match: (?i:(\b(Exit (Function|Property|Sub)|As|And|By(Ref|Val)|Goto|Is|Like|Mod|Not|On Error|Optional|Or|Resume Next|Stop|Xor|Eqv|Imp|TypeOf|AddressOf)\b)|(\b(End)\b(?=\n)))
+      - name: keyword.io.vba
+        match: (?i:\b(Open|Close|Line Input|Lock|Unlock|Print|Seek|Get|Put|Write)\b)
+      - name: keyword.io.vba
+        match: "(?i:\\b(Input)(?= #))"
       - name: keyword.other.vba
-        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent)\b)
+        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent|Implements)\b)
+      - name: keyword.other.option.vba
+        match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b
       - name: keyword.other.visibility.vba
         match: (?i:\b(Private|Public|Friend)\b)
       - name: constant.language.vba
@@ -63,13 +67,13 @@ repository:
     begin: "(?i)^\\s*(BEGIN)\\b"
     beginCaptures:
       '1':
-        name: "keyword.metadata.vba"     
+        name: "keyword.metadata.vba"
     end: "(?i)^\\s*(END)\\b"
     endCaptures:
       '0':
         name: "keyword.metadata.vba"
-    patterns: 
-      - include: "source.vba" 
+    patterns:
+      - include: "source.vba"
 
   numbers:
     patterns:

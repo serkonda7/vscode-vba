@@ -1,4 +1,11 @@
 # Changelog
+## 0.9.4
+_1 December 2023_
+
+- Highlight `Implements` keyword
+- Highlight lot's of I/O-related keywords
+
+
 ## 0.9.3
 _24 September 2023_
 
