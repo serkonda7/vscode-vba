@@ -6,6 +6,7 @@ scopeName: source.vba
 fileTypes:
   - .bas
   - .cls
+  - .doccls
   - .frm
   - .vba
 

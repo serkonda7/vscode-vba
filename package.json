@@ -43,6 +43,7 @@
 				"extensions": [
 					".bas",
 					".cls",
+					".doccls",
 					".frm",
 					".vba"
 				],
