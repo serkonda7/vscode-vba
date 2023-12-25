@@ -9,8 +9,8 @@
 
 ## Key Features
 - Syntax highlighting for the following languages (also used by [GitHub Linguist][gh-linguist])
-  - Visual Basic for Applications (VBA)
-  - WinWrap Basic (WWB)
+   - Visual Basic for Applications (VBA)
+   - WinWrap Basic (WWB)
 - 🚧 Export and Import of Macros for Office Documents
 - 🚧 Comprehensive snippets
 
@@ -25,17 +25,16 @@ The extension is also available on [Open VSX][open-vsx].
 ## Contributing
 Thank you in advance, any contributions are highly appreciated!
 
-General questions can be asked in [Discussions][discussions].
-
-For creating issues or pull requests, please see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Or make a donation to support development of new features:
-[![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
+- Questions can be asked in [Discussions][discussions]
+- For creating issues or pull requests, please see [CONTRIBUTING.md](CONTRIBUTING.md)
+- Or make a donation to support the development of new features:
+   [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 
 ## License
-Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).<br>
-The icon is licensed under the [Creative Commons ShareAlike](images/LICENSE) License.
+Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+
+The icon is licensed under the [Creative Commons ShareAlike](images/LICENSE) license.
 
 
 <!-- links -->
