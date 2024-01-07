@@ -1,4 +1,10 @@
 # Changelog
+## 0.9.6
+_unreleased_
+
+- Associate `.doccls` file extension
+- Engineering: Switch from npm to pnpm
+
 ## 0.9.5
 _2 December 2023_
 

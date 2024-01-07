@@ -13,12 +13,17 @@ jobs:
     if: github.repository == 'serkonda7/vscode-vba'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
-      - uses: tiabeast/setup-bait@main
-      - run: npm install
+          node-version: 16.x
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      -  uses: tiabeast/setup-bait@main
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Run grammar converter and push changes
         run: bait run scripts/gen_json_grammar.bt
         env:
