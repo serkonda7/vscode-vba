@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^0.8.0
     version: 0.8.0
   '@vscode/vsce':
-    specifier: ~2.21.0
-    version: 2.21.1
+    specifier: ~2.22.0
+    version: 2.22.0
   vscode-tmgrammar-test:
     specifier: ~0.1.2
     version: 0.1.2
@@ -26,8 +26,8 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@vscode/vsce@2.21.1:
-    resolution: {integrity: sha512-f45/aT+HTubfCU2oC7IaWnH9NjOWp668ML002QiFObFRVUCoLtcwepp9mmql/ArFUy+HCHp54Xrq4koTcOD6TA==}
+  /@vscode/vsce@2.22.0:
+    resolution: {integrity: sha512-8df4uJiM3C6GZ2Sx/KilSKVxsetrTBBIUb3c0W4B1EWHcddioVs5mkyDKtMNP0khP/xBILVSzlXxhV+nm2rC9A==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:

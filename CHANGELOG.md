@@ -2,6 +2,7 @@
 ## 0.9.6
 _unreleased_
 
+- Associate `.doccls` file extension
 - Engineering: Switch from npm to pnpm
 
 ## 0.9.5
