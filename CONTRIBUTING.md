@@ -20,7 +20,7 @@ It allows merging them faster with less conflicts and will reduce review time.
 ### Repository Setup
 - Install the Bait programming language: https://github.com/tiabeast/bait#building-from-source
 - Create and clone a fork of https://github.com/serkonda7/vscode-vba
-- Run `npm install` inside the cloned directory
+- Run `pnpm install` inside the cloned directory
 - Create a new working branch for your changes
 
 
@@ -38,14 +38,14 @@ This prevents regressions and makes reviewing the changes easier by providing a 
 Tests for the language grammar (syntax highlighting) are in [`syntaxes/tests`](syntaxes/tests/).
 They can be run with the following command:
 ```
-npm run test
+pnpm run test
 ```
 
 
 ### Install a dev version
 If you'd like to install a development version of the extension, follow these steps:
 1. ```sh
-   npm run install-dev-ext
+   pnpm run install-dev-ext
    ```
 2. Reload the VS Code window:
    - Open command palette (<kbd>F1</kbd>)
