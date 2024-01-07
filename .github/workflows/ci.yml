@@ -16,11 +16,16 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: 16.x
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
+
       - name: Test
-        run: npm run test
+        run: pnpm run test
+
 
   compile-and-package:
     runs-on: ubuntu-latest
@@ -28,19 +33,26 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: 16.x
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - uses: tiabeast/setup-bait@main
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
+
       - name: Compile
-        run: npm run compile
+        run: pnpm run compile
+
       - name: Package
-        run: npm run package
+        run: pnpm run package
+
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
           files: vscode-vba-0.*.*.vsix
+
 
   publish:
     needs:
@@ -52,16 +64,21 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: 16.x
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - uses: tiabeast/setup-bait@main
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
+
       - name: Publish to VS Code Marketplace
         if: always()
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
+
       - name: Publish to Open VSX Registry
         if: always()
         uses: HaaLeo/publish-vscode-extension@v1
