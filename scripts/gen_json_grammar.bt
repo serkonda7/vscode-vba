@@ -29,7 +29,7 @@ fun main() {
 
 	// Clone repo as bot user
 	access_token := os.getenv('BOT_TOKEN')
-	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/tiabeast/vscode-vba-json.git ${REPO_DIR}')
+	errors += git_command('clone --depth 1 https://${GIT_USER}:${access_token}@github.com/bait-lang/vscode-vba-json.git ${REPO_DIR}')
 
 	// Run conversion
 	errors += os.system('pnpm run convert-yaml')

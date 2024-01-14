@@ -20,7 +20,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      -  uses: tiabeast/setup-bait@main
+      -  uses: bait-lang/setup-bait@main
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
