@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'syntaxes/*.yml'
+      - 'syntaxes/*.yaml-tmlanguage'
 
 jobs:
   gen-json-grammars:

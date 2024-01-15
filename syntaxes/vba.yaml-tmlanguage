@@ -78,7 +78,7 @@ repository:
   numbers:
     patterns:
       - name: constant.numeric.date
-        match: "(?i)#((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|[0-9]{1,2})(-|\/)[0-9]{1,2}((-|\/)[0-9]{1,4})?#"
+        match: '(?i)#((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|[0-9]{1,2})(-|\/)[0-9]{1,2}((-|\/)[0-9]{1,4})?#'
       - name: constant.numeric.decimal
         match: (?<!\w)-?\d+(\.\d+)?
       - name: constant.numeric.octal

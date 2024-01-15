@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@serkonda7/yaml2json':
-    specifier: ^0.8.0
-    version: 0.8.0
+    specifier: ^0.9.0
+    version: 0.9.0
   '@vscode/vsce':
     specifier: ~2.22.0
     version: 2.22.0
@@ -17,9 +17,9 @@ devDependencies:
 
 packages:
 
-  /@serkonda7/yaml2json@0.8.0:
-    resolution: {integrity: sha512-2ULRgsi05uRl4XlpMT8J2qMmxabz5LLGiv2GTjohFOOeeslmiRXD+qkq0HiKu/VtpALD7/FpKorrCLoVDFIGhA==}
-    engines: {node: 14 || >=16}
+  /@serkonda7/yaml2json@0.9.0:
+    resolution: {integrity: sha512-AJpKDpmeKvTL2BbodJXJuUW8XHi0OqBnEXHV1FcU3imIxgDVFo0161rk6bjd8G+antakDjsBd1S0f17Jujro3g==}
+    engines: {node: 16 || >=18, pnpm: '>=8'}
     hasBin: true
     dependencies:
       glob: 8.0.3

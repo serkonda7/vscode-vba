@@ -114,11 +114,11 @@
 		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.tmGrammar.json \"syntaxes/tests/other/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
-		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yml\"",
+		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\"",
 		"vscode:prepublish": "pnpm run compile && pnpm run convert-yaml"
 	},
 	"devDependencies": {
-		"@serkonda7/yaml2json": "^0.8.0",
+		"@serkonda7/yaml2json": "^0.9.0",
 		"@vscode/vsce": "~2.22.0",
 		"vscode-tmgrammar-test": "~0.1.2"
 	}
