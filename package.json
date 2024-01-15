@@ -64,12 +64,12 @@
 			{
 				"language": "vba",
 				"scopeName": "source.vba",
-				"path": "./out/vba.tmGrammar.json"
+				"path": "./out/vba.json"
 			},
 			{
 				"language": "wwb",
 				"scopeName": "source.wwb",
-				"path": "./out/wwb.tmGrammar.json"
+				"path": "./out/wwb.json"
 			}
 		],
 		"commands": [
@@ -110,8 +110,8 @@
 	"scripts": {
 		"compile": "bait --library -o out/extension.js src",
 		"test": "pnpm run convert-yaml && pnpm run test-vba && pnpm run test-wwb",
-		"test-vba": "vscode-tmgrammar-test -g ./out/vba.tmGrammar.json \"syntaxes/tests/vba/*.bas\"",
-		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.tmGrammar.json \"syntaxes/tests/other/*.wwd\"",
+		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
+		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/other/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\"",

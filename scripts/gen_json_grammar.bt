@@ -67,7 +67,7 @@ fun main() {
 }
 
 fun copy_grammar(lang string, min_size i32) {
-	src := './out/${lang}.tmGrammar.json'
+	src := './out/${lang}.json'
 
 	// Sanity check for a reasonable file size
 	text := os.read_file(src)
@@ -77,7 +77,7 @@ fun copy_grammar(lang string, min_size i32) {
 	}
 
 	// Copy
-	os.cp(src, '${REPO_DIR}/syntaxes/${lang}.tmGrammar.json')
+	os.cp(src, '${REPO_DIR}/syntaxes/${lang}.json')
 }
 
 fun git_command(cmd string) i32 {
