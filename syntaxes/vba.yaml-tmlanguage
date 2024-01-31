@@ -12,13 +12,13 @@ fileTypes:
 
 patterns:
   - include: '#comments'
+  - include: '#functions'
   - include: '#keywords'
   - include: '#metadata'
   - include: '#numbers'
   - include: '#storage'
   - include: '#strings'
   - include: '#types'
-  - include: '#functions'
   - name: constant.other.vba
     match:  _(?=\s*\n)
     comment: Break and Combine Statements in Code
@@ -37,6 +37,10 @@ repository:
       match: Rem .*
     - name: comment.line.continuation
       match: ^.*
+
+  functions:
+    name: entity.name.function.vba
+    match: (?i:\b(?:(?<=(Call|Function|Sub) ))([a-zA-Z][a-zA-Z0-9_]*)\b)(?=\(\)?)
 
   keywords:
     patterns:
@@ -59,9 +63,6 @@ repository:
       - name: constant.language.vba
         match: (?i)\b(Empty|False|Nothing|Null|True)\b
 
-  functions:
-    name: entity.name.function.vba
-    match: (?i:\b(?:(?<=(Call|Function|Sub) ))([a-zA-Z][a-zA-Z0-9_]*)\b)(?=\(\)?)
   metadata:
     name: metadata.vba
     begin: (?i)^\s*(BEGIN)\b
@@ -92,9 +93,9 @@ repository:
         match: (?i)\b(Class|Const|Dim|(G|L|S)et|ReDim( Preserve)?|Erase|Static)\b
 
   strings:
-    name: string.quoted.double
-    begin: '"'
-    end: '"'
+    patterns:
+    - name: string.quoted.double
+      match: (?i)"[^\n\r\"]*"
 
   types:
     patterns:
