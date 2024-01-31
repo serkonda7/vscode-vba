@@ -11,31 +11,32 @@ fileTypes:
   - .vba
 
 patterns:
-  - include: "#comments"
-  - include: "#keywords"
-  - include: "#metadata"
-  - include: "#numbers"
-  - include: "#storage"
-  - include: "#strings"
-  - include: "#types"
-  - include: "#functions"
+  - include: '#comments'
+  - include: '#keywords'
+  - include: '#metadata'
+  - include: '#numbers'
+  - include: '#storage'
+  - include: '#strings'
+  - include: '#types'
+  - include: '#functions'
   - name: constant.other.vba
     match:  _(?=\s*\n)
+    comment: Break and Combine Statements in Code
 
 repository:
   comments:
-    begin: "(?=')|(?:^(?:|(\\d*)\\s*|[a-zA-Z][a-zA-Z0-9]{0,254}:\\s*)|:\\s*)(?=(?i:Rem ))"
+    begin: (?=')|(?:^(?:|(\d*)\s*|[a-zA-Z][a-zA-Z0-9]{0,254}:\s*)|:\s*)(?=(?i:Rem ))
     beginCaptures:
       '1':
         name: constant.numeric.decimal
-    end: "(?<!\\s_)$\n"
+    end: (?<!\s_)$\n
     patterns:
     - name: comment.line.quote
-      match: "'.*"
+      match: \'.*
     - name: comment.line.rem
       match: Rem .*
     - name: comment.line.continuation
-      match: "^.*"
+      match: ^.*
 
   keywords:
     patterns:
@@ -48,7 +49,7 @@ repository:
       - name: keyword.io.vba
         match: (?i:\b(Open|Close|Line Input|Lock|Unlock|Print|Seek|Get|Put|Write)\b)
       - name: keyword.io.vba
-        match: "(?i:\\b(Input)(?= #))"
+        match: (?i:\b(Input)(?= \#))
       - name: keyword.other.vba
         match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent|Implements)\b)
       - name: keyword.other.option.vba
@@ -64,21 +65,21 @@ repository:
 
   metadata:
     name: metadata.vba
-    begin: "(?i)^\\s*(BEGIN)\\b"
+    begin: (?i)^\s*(BEGIN)\b
     beginCaptures:
       '1':
-        name: "keyword.metadata.vba"
-    end: "(?i)^\\s*(END)\\b"
+        name: keyword.metadata.vba
+    end: (?i)^\s*(END)\b
     endCaptures:
       '0':
-        name: "keyword.metadata.vba"
+        name: keyword.metadata.vba
     patterns:
-      - include: "source.vba"
+      - include: 'source.vba'
 
   numbers:
     patterns:
       - name: constant.numeric.date
-        match: '(?i)#((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|[0-9]{1,2})(-|\/)[0-9]{1,2}((-|\/)[0-9]{1,4})?#'
+        match: (?i)\#((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|[0-9]{1,2})(-|\/)[0-9]{1,2}((-|\/)[0-9]{1,4})?\#
       - name: constant.numeric.decimal
         match: (?<!\w)-?\d+(\.\d+)?
       - name: constant.numeric.octal
