@@ -95,7 +95,7 @@ repository:
   strings:
     patterns:
     - name: string.quoted.double
-      match: (?i)"[^\n\r\"]*"
+      match: \"[^\n\r\"]*"
 
   types:
     patterns:

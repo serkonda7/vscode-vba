@@ -2,9 +2,9 @@
 ## 0.9.6
 _unreleased_
 
+- Limit string highlighting to a single line
 - Associate `.doccls` file extension
 - Engineering: Switch from npm to pnpm
-- Limit double quotes `"` with one line
 
 ## 0.9.5
 _2 December 2023_
