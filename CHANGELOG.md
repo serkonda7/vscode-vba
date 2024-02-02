@@ -2,6 +2,7 @@
 ## 0.9.6
 _unreleased_
 
+- Limit string highlighting to a single line
 - Associate `.doccls` file extension
 - Engineering: Switch from npm to pnpm
 
