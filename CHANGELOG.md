@@ -1,48 +1,49 @@
 # Changelog
 ## 0.9.6
-_unreleased_
+_2024-02-02_
 
 - Limit string highlighting to a single line
 - Associate `.doccls` file extension
 - Engineering: Switch from npm to pnpm
 
+
 ## 0.9.5
-_2 December 2023_
+_2023-12-02_
 
 - Remove invalid highlighting of `Width`
 - Preparations for the macro import/export feature
 
 
 ## 0.9.4
-_1 December 2023_
+_2023-12-01_
 
 - Highlight `Implements` keyword
 - Highlight lot's of I/O-related keywords
 
 
 ## 0.9.3
-_24 September 2023_
+_2023-09-24_
 
 - Highlight begin of metadata section
 - Minor readme fix
 
 
 ## 0.9.2
-_23 September 2023_
+_2023-09-23_
 
 - Highlight custom types with underscores or numbers
 - Documentation updates
 
 
 ## 0.9.1
-_30 July 2023_
+_2023-07-30_
 
 - Associate the `.vba` file extension with VBA
 - Highlight `Static` in variable declarations
 
 
 ## 0.9.0
-_07 June 2023_
+_2023-06-07_
 
 **Additions**
 - Proper highlighting for `REM` comments
@@ -58,7 +59,7 @@ _07 June 2023_
 
 
 ## 0.8.1
-_26 February 2023_
+_2023-02-26_
 
 - VBA: highlight `Enum` keyword
 - WWB: keywords match case insensitive
@@ -66,7 +67,7 @@ _26 February 2023_
 
 
 ## 0.8.0
-_02 November 2022_
+_2022-11-02_
 
 **Additions**
 - Syntax highlighting for the WinWrap Basic language
@@ -83,7 +84,7 @@ _02 November 2022_
 
 
 ## 0.7.0
-_18 October 2022_
+_2022-10-18_
 
 **Additions**
 - Highlight `Friend` keyword
@@ -95,14 +96,14 @@ _18 October 2022_
 
 
 ## 0.6.0
-_09 August 2022_
+_2022-08-09_
 
 **Additions**
 - Enable the extension in untrusted workspaces by default
 
 
 ## 0.5.0
-_04 August 2022_
+_2022-08-04_
 
 **Additions**
 - Highlight custom types after `As`
@@ -112,7 +113,7 @@ _04 August 2022_
 
 
 ## 0.4.0
-_01 August 2022_
+_2022-08-01_
 
 **Fixes**
 - Highlight `Public` and `Private` in module scope declarations
@@ -120,7 +121,7 @@ _01 August 2022_
 
 
 ## 0.3.0
-_12 April 2022_
+_2022-04-12_
 
 **Additions**
 - Highlighting keywords: `And`, `Case`, `Case Else`, `Currency`, `Date`, `If`, `Is`, `Else`,
@@ -148,7 +149,7 @@ _12 April 2022_
 
 
 ## 0.2.0
-_2 April 2022_
+_2022-04-02_
 
 **Additions**
 - add extension icon
@@ -166,7 +167,7 @@ _2 April 2022_
 
 
 ## 0.1.3
-_6 November 2021_
+_2021-11-06_
 
 **Fixes**
 - Syntax highlighting for `Optional`, `Dim`, `Const`, `New`, `Nothing` and `Set` keywords
@@ -179,7 +180,7 @@ _6 November 2021_
 
 
 ## 0.1.2
-_14 October 2021_
+_2021-10-14_
 
 **Fixes**
 - Syntax highlighting for `Sub`, `Function`, `End` and `As` keywords
@@ -188,7 +189,7 @@ _14 October 2021_
 
 
 ## 0.1.1
-_14 October 2021_
+_2021-10-14_
 
 **Fixes**
 - Syntax highlighting of `Public` and `Private`
@@ -197,6 +198,6 @@ _14 October 2021_
 
 
 ## 0.1.0
-_5 October 2021_
+_2021-10-05_
 
 - Initial release
