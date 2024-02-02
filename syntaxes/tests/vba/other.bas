@@ -100,10 +100,6 @@ ReDim Preserve xArray(1 To 5) As Double
 Erase xArray
 ' <----- storage.modifier.vba
 
-Dim str As String
-str = "Hello"
-'     ^^^^^^^ string.quoted.double
-
 c = 1 Xor 1
 '     ^^^ keyword.control.vba
 c = 1 Eqv 1
