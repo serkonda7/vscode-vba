@@ -7,7 +7,7 @@ import 'vscode' as #JS.vscode
 
 // TODO lot's of JS interop improvements
 
-@export: 'activate'
+@export('activate')
 fun activate(context #JS.Any) {
 	#JS.'JS.vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm"])'
 
