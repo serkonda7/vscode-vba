@@ -16,7 +16,7 @@
 - VBA syntax highlighting
 - 🚧 Export and Import of Macros for Office Documents
 - Comprehensive snippets
-- Syntax highlighting for some dialects _(community provided)_
+- Syntax highlighting for some dialects _(community maintained)_
    - WinWrap Basic (WWB)
 
 
@@ -33,13 +33,13 @@ Or download from [Open VSX][open-vsx].
 Your contributions are always welcome and highly appreciated!
 
 - **Discuss and Ask Questions:** [GitHub Discussions][discussions] with community support
-- **Report Issues or Contribute Code:** Please check the [Contribution guidelines](CONTRIBUTING.md)
+- **Report Issues or Submit Changes:** Please check the [Contribution guidelines](CONTRIBUTING.md)
 - **Support the Development** Consider making a donation to help us develop new features:
    [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 
 ## Snippets
-The following snippets are currently provided:
+The following snippets are available:
 - `If`
 - `ElseIf`
 - `Else`
@@ -48,9 +48,9 @@ The following snippets are currently provided:
 
 
 ## License
-Source code and grammars are provided under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+Source code, grammars and snippets are provided under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
 
-The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors .
+The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors.
 
 
 <!-- links -->

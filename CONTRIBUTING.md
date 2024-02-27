@@ -79,5 +79,6 @@ Follow these steps to set up your development environment:
 [regexr]: https://regexr.com/
 [textmate-manual]: https://macromates.com/manual/en/language_grammars#naming_conventions
 [docs-snippets]: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
+
 [nvm]: https://github.com/nvm-sh/nvm
 [bait]: https://github.com/bait-lang/bait#installation
