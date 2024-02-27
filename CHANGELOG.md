@@ -3,6 +3,8 @@
 _unreleased_
 
 - Change icon to match GitHub Explore
+- Improve documentation
+- Code refactorings
 
 
 ## 0.9.6
