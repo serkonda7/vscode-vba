@@ -12,11 +12,11 @@
 ## Key Features
 > Used for [GitHub syntax highlighting][gh-linguist]
 
-- Syntax highlighting:
-   - Visual Basic for Applications (VBA)
-   - WinWrap Basic (WWB)
+- VBA syntax highlighting
 - 🚧 Export and Import of Macros for Office Documents
 - 🚧 Comprehensive snippets
+- Syntax highlighting for some dialects _(community provided)_
+   - WinWrap Basic (WWB)
 
 
 ## Installation
