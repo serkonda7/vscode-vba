@@ -1,7 +1,7 @@
 {
 	"name": "vscode-vba",
 	"displayName": "VBA",
-	"description": "VBA tooling, syntax highlighting and snippets for VS Code.",
+	"description": "VBA tooling, syntax highlighting and snippets.",
 	"icon": "images/icon_256x256.png",
 	"version": "0.9.6",
 	"license": "MIT",
@@ -17,6 +17,7 @@
 	},
 	"categories": [
 		"Programming Languages",
+		"Snippets",
 		"Language Packs"
 	],
 	"keywords": [
@@ -72,6 +73,12 @@
 				"path": "./out/wwb.json"
 			}
 		],
+		"snippets": [
+			{
+				"language": "vba",
+				"path": "./out/vba_snippets.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "vba.extract_from_doc",
@@ -114,7 +121,7 @@
 		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/other/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
-		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\"",
+		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
 		"vscode:prepublish": "pnpm run compile && pnpm run convert-yaml"
 	},
 	"devDependencies": {

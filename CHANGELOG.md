@@ -72,7 +72,7 @@ _2022-11-02_
 **Additions**
 - Syntax highlighting for the WinWrap Basic language
 - Highlight vba keywords `Eqv`, `Imp`, `TypeOf`, `AddressOf`, `WithEvents`, `Event`, `RaiseEvent`,
-  `Erase` and `Any`
+   `Erase` and `Any`
 
 **Fixes**
 - Highlight `Exit` at line start and after tabs
@@ -125,10 +125,10 @@ _2022-04-12_
 
 **Additions**
 - Highlighting keywords: `And`, `Case`, `Case Else`, `Currency`, `Date`, `If`, `Is`, `Else`,
-  `ElseIf`, `Empty`, `End If`, `End Select`, `End With`, `False`, `Let`, `Mod`, `Not`, `Null`,
-  `Select Case`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`,
-  `Class`, `Exit`, `Get`, `Static`, `Property`, `Like`, `Xor`, `On Error`, `GoTo`
-  > Note: not all are covered by syntax tests
+   `ElseIf`, `Empty`, `End If`, `End Select`, `End With`, `False`, `Let`, `Mod`, `Not`, `Null`,
+   `Select Case`, `Then`, `Or`, `ReDim`, `Preserve`, `To`, `True`, `Step`, `ByRef`, `ByVal`,
+   `Class`, `Exit`, `Get`, `Static`, `Property`, `Like`, `Xor`, `On Error`, `GoTo`
+   > Note: not all are covered by syntax tests
 - Highlight names of function declarations
 - Highlight date literals
 

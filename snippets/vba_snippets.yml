@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2024-present Lukas Neubert <lukas.neubert@proton.me>
+# SPDX-License-Identifier: MPL-2.0
+
+If:
+  prefix: If
+  body:
+    - If ${1:condition} Then
+    - "\t${2}"
+    - End If
+
+ElseIf:
+  prefix: ElseIf
+  body:
+    - ElseIf ${1:condition} Then
+    - "\t${2}"
+
+Else:
+  prefix: Else
+  body:
+    - Else
+    - "\t${0}"
+
+Sub:
+  prefix: Sub
+  body:
+    - Sub ${1:Name}()
+    - "\t${2}"
+    - End Sub
+
+Function:
+  prefix: Function
+  body:
+    - Function ${1:Name}()
+    - "\t${2}"
+    - End Function

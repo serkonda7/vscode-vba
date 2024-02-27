@@ -1,0 +1,9 @@
+root = true
+
+[*.md]
+indent_style = space
+indent_size = 3
+
+[*.{yml,yaml-tmlanguage}]
+indent_style = space
+indent_size = 2
