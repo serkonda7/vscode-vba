@@ -1,4 +1,10 @@
 # Changelog
+## 0.9.7
+_unreleased_
+
+- Change icon to match GitHub Explore
+
+
 ## 0.9.6
 _2024-02-02_
 

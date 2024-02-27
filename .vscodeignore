@@ -8,7 +8,7 @@
 !out/*.js
 !out/*.json
 
-!images/icon_256x256.png
+!images/icon.png
 
 !README.md
 !LICENSE.txt

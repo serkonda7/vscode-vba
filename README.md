@@ -1,14 +1,17 @@
-<img align="left" width=110 src="images/icon_256x256.png">
+<div align="center">
 
-# VBA Support for VS Code
+<img width="120" src="images/icon.png">
+<h1>VBA Support for VS Code</h1>
+
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
----
 
-> Also used by [GitHub Linguist][gh-linguist]!
+</div>
 
 ## Key Features
+> Used for [GitHub syntax highlighting][gh-linguist]
+
 - Syntax highlighting:
    - Visual Basic for Applications (VBA)
    - WinWrap Basic (WWB)
@@ -17,25 +20,24 @@
 
 
 ## Installation
-Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run
-`ext install serkonda7.vscode-vba`.
+Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and execute `ext install serkonda7.vscode-vba`.
 
-The extension is also available on [Open VSX][open-vsx].
+Or download from [Open VSX][open-vsx].
 
 
 ## Contributing
-Thank you in advance, any contributions are highly appreciated!
+Your contributions are always welcome and highly appreciated!
 
-- Questions can be asked in [Discussions][discussions]
-- For creating issues or pull requests, please see [CONTRIBUTING.md](CONTRIBUTING.md)
-- Or make a donation to support the development of new features:
+- **Discuss and Ask Questions:** [GitHub Discussions][discussions] with community support
+- **Report Issues or Contribute Code:** Please check the [Contribution guidelines](CONTRIBUTING.md)
+- **Support the Development** Consider making a donation to help us develop new features:
    [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 
 ## License
-Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+Source code and grammars are provided under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
 
-The icon is licensed under the [Creative Commons ShareAlike](images/LICENSE) license.
+The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors .
 
 
 <!-- links -->
