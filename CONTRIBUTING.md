@@ -38,7 +38,13 @@ pnpm run test
 ```
 
 
-### Install a development version
+## Snippets
+Adding snippets is straightforward by editing `snippets/vba_snippets.yml`.
+
+Refer to the [official documentation][docs-snippets] for guidance.
+
+
+## Install a development version
 To install a development version of the extension, follow these steps:
 1. ```sh
    pnpm run install-dev-ext
@@ -72,5 +78,6 @@ Follow these steps to set up your development environment:
 [oniguruma-overview]: https://rbuckton.github.io/regexp-features/engines/oniguruma.html
 [regexr]: https://regexr.com/
 [textmate-manual]: https://macromates.com/manual/en/language_grammars#naming_conventions
+[docs-snippets]: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
 [nvm]: https://github.com/nvm-sh/nvm
 [bait]: https://github.com/bait-lang/bait#installation

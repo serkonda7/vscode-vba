@@ -6,6 +6,7 @@
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
+[![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 </div>
 
@@ -14,13 +15,16 @@
 
 - VBA syntax highlighting
 - 🚧 Export and Import of Macros for Office Documents
-- 🚧 Comprehensive snippets
+- Comprehensive snippets
 - Syntax highlighting for some dialects _(community provided)_
    - WinWrap Basic (WWB)
 
 
 ## Installation
-Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and execute `ext install serkonda7.vscode-vba`.
+Launch Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and execute this command:
+```
+ext install serkonda7.vscode-vba
+```
 
 Or download from [Open VSX][open-vsx].
 
@@ -32,6 +36,15 @@ Your contributions are always welcome and highly appreciated!
 - **Report Issues or Contribute Code:** Please check the [Contribution guidelines](CONTRIBUTING.md)
 - **Support the Development** Consider making a donation to help us develop new features:
    [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
+
+
+## Snippets
+The following snippets are currently provided:
+- `If`
+- `ElseIf`
+- `Else`
+- `Sub`
+- `Function`
 
 
 ## License

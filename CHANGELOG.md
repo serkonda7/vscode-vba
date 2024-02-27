@@ -2,6 +2,7 @@
 ## 0.9.7
 _unreleased_
 
+- Add snippets related to `If-Else`, `Sub` and `Function`
 - Change icon to match GitHub Explore
 - Improve documentation
 - Code refactorings
