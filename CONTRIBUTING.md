@@ -10,9 +10,9 @@ Before opening an issue, please check that your issue or a similar one has not a
 In case it already is, add a reaction and any additional information.
 
 
-## Pull Requests Best Practices
-- **Discuss bigger change:** For significant changes, please discuss them first , so no effort is wasted.
-- **Small and Focused PRs:**  Aim for one feature or bug fix per pull request. This simplifies reviews and accelerates merging
+## Pull Request Best Practices
+- **Discuss bigger changes:** For significant changes, please discuss them first , so no effort is wasted.
+- **Small and focused PRs:**  Aim for one feature or bug fix per pull request. This simplifies reviews and accelerates merging
 
 
 ## Syntax Highlighting Grammar (Regexes and Scopes)
@@ -39,7 +39,7 @@ pnpm run test
 
 
 ## Snippets
-Adding snippets is straightforward by editing `snippets/vba_snippets.yml`.
+Adding snippets is as simple as editing [`snippets/vba_snippets.yml`](snippets/vba_snippets.yml).
 
 Refer to the [official documentation][docs-snippets] for guidance.
 
