@@ -6,6 +6,11 @@ on:
     branches: [main]
     tags: ['*']
 
+
+env:
+  VSIX_FILE: "vscode-vba-${{ github.ref_name }}.vsix"
+
+
 jobs:
   test:
     strategy:
@@ -51,8 +56,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: actions/upload-artifact@v4
         with:
-          name: vba.vsix
-          path: vba.vsix
+          name: ${{ env.VSIX_FILE }}
+          path: ${{ env.VSIX_FILE }}
           if-no-files-found: error
 
 
@@ -66,13 +71,13 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: vba.vsix
+          name: ${{ env.VSIX_FILE }}
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           fail_on_unmatched_files: true
-          files: vba.vsix
+          files: ${{ env.VSIX_FILE }}
 
       - id: publish_to_marketplace
         name: Publish to VS Code Marketplace
@@ -81,11 +86,11 @@ jobs:
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
-          extensionFile: vba.vsix
+          extensionFile: ${{ env.VSIX_FILE }}
 
       - name: Publish to Open VSX Registry
         if: always()
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.OPEN_VSX_PAT }}
-          extensionFile: vba.vsix
+          extensionFile: ${{ env.VSIX_FILE }}
