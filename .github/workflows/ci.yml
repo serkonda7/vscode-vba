@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
-    tags: ['0.[0-9]+.[0-9]+']
+    tags: ['*']
 
 jobs:
   test:
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
           version: 8
       - name: Install dependencies
@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
           version: 8
       - uses: bait-lang/setup-bait@main
@@ -52,7 +52,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: vba.vsix
-          path: vscode-vba-0.*.*.vsix
+          path: vba.vsix
+          if-no-files-found: error
 
 
   publish:
@@ -64,10 +65,13 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
+        with:
+          name: vba.vsix
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
+          fail_on_unmatched_files: true
           files: vba.vsix
 
       - id: publish_to_marketplace
