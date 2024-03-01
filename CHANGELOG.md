@@ -1,5 +1,5 @@
 # Changelog
-## 0.10.0
+## 0.10.2
 _2024-03-01_
 
 - Add snippets related to `If-Else`, `Sub` and `Function`
