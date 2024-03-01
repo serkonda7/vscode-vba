@@ -1,41 +1,56 @@
-<img align="left" width=110 src="images/icon_256x256.png">
+<div align="center">
 
-# VBA Support for VS Code
+<img width="120" src="images/icon.png">
+<h1>VBA Support for VS Code</h1>
+
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
----
+[![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
-> Also used by [GitHub Linguist][gh-linguist]!
+</div>
 
 ## Key Features
-- Syntax highlighting:
-   - Visual Basic for Applications (VBA)
-   - WinWrap Basic (WWB)
+> Used for [GitHub syntax highlighting][gh-linguist]
+
+- VBA syntax highlighting
 - 🚧 Export and Import of Macros for Office Documents
-- 🚧 Comprehensive snippets
+- Comprehensive snippets
+- Syntax highlighting for some dialects _(community maintained)_
+   - WinWrap Basic (WWB)
 
 
 ## Installation
-Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run
-`ext install serkonda7.vscode-vba`.
+Launch Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and execute this command:
+```
+ext install serkonda7.vscode-vba
+```
 
-The extension is also available on [Open VSX][open-vsx].
+Or download from [Open VSX][open-vsx].
 
 
 ## Contributing
-Thank you in advance, any contributions are highly appreciated!
+Your contributions are always welcome and highly appreciated!
 
-- Questions can be asked in [Discussions][discussions]
-- For creating issues or pull requests, please see [CONTRIBUTING.md](CONTRIBUTING.md)
-- Or make a donation to support the development of new features:
+- **Discuss and Ask Questions:** [GitHub Discussions][discussions] with community support
+- **Report Issues or Submit Changes:** Please check the [Contribution guidelines](CONTRIBUTING.md)
+- **Support the Development** Consider making a donation to help us develop new features:
    [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 
-## License
-Source code and grammars are licensed under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+## Snippets
+The following snippets are available:
+- `If`
+- `ElseIf`
+- `Else`
+- `Sub`
+- `Function`
 
-The icon is licensed under the [Creative Commons ShareAlike](images/LICENSE) license.
+
+## License
+Source code, grammars and snippets are provided under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+
+The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors.
 
 
 <!-- links -->

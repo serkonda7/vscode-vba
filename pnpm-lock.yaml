@@ -9,11 +9,11 @@ devDependencies:
     specifier: ^0.9.0
     version: 0.9.0
   '@vscode/vsce':
-    specifier: ~2.22.0
-    version: 2.22.0
+    specifier: ~2.24.0
+    version: 2.24.0
   vscode-tmgrammar-test:
-    specifier: ~0.1.2
-    version: 0.1.2
+    specifier: ~0.1.3
+    version: 0.1.3
 
 packages:
 
@@ -26,8 +26,8 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@vscode/vsce@2.22.0:
-    resolution: {integrity: sha512-8df4uJiM3C6GZ2Sx/KilSKVxsetrTBBIUb3c0W4B1EWHcddioVs5mkyDKtMNP0khP/xBILVSzlXxhV+nm2rC9A==}
+  /@vscode/vsce@2.24.0:
+    resolution: {integrity: sha512-p6CIXpH5HXDqmUkgFXvIKTjZpZxy/uDx4d/UsfhS9vQUun43KDNUbYeZocyAHgqcJlPEurgArHz9te1PPiqPyA==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:
@@ -95,6 +95,10 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    dev: true
+
+  /bottleneck@2.19.5:
+    resolution: {integrity: sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw==}
     dev: true
 
   /brace-expansion@1.1.11:
@@ -823,10 +827,11 @@ packages:
     resolution: {integrity: sha512-9hJp0xL7HW1Q5OgGe03NACo7yiCTMEk3WU/rtKXUbncLtdg6rVVNJnHwD88UhbIYU2KoxY0Dih0x+kIsmUKn2A==}
     dev: true
 
-  /vscode-tmgrammar-test@0.1.2:
-    resolution: {integrity: sha512-tLJZMAP/NWeRwlpHzjSXx+HvjJzFltndoyR6AK9fJRGjALJX6Pg7EOiYyznpJ4TNC2eMmF3IRbcZBWzJwN+n5g==}
+  /vscode-tmgrammar-test@0.1.3:
+    resolution: {integrity: sha512-Wg6Pz+ePAT1O+F/A1Fc4wS5vY2X+HNtgN4qMdL+65NLQYd1/zdDWH4fhwsLjX8wTzeXkMy49Cr4ZqWTJ7VnVxg==}
     hasBin: true
     dependencies:
+      bottleneck: 2.19.5
       chalk: 2.4.2
       commander: 9.5.0
       diff: 4.0.2

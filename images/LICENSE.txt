@@ -1,0 +1,9 @@
+Creative Commons Attribution 4.0 International
+
+Copyright (c) GitHub Explore content authors
+
+For details and to obtain the full license text, please visit
+https://creativecommons.org/licenses/by/4.0/deed.en
+
+
+icon.png is based on https://github.com/github/explore

@@ -1,59 +1,84 @@
 # Contributing Guide
-Thanks for your interest in improving vscode-vba!
+Thank you for your interest in contributing to vscode-vba!
 
 
 ## Creating Issues
 Report bugs or suggest new features.
 
-Before opening a issue, please first search in [open issues][issues] to check it is not already reported.
+Before opening an issue, please check that your issue or a similar one has not already been reported in the [open issues][issues].
 
-In case your issue already exists, add a reaction and if possible, comment with further information.
-
-
-## Creating Pull Requests
-> Before making bigger changes, please discuss them in an issue.
-
-In general PRs should be kept as small as possible (e.g. one feature/fix per PR).
-It allows merging them faster with less conflicts and will reduce review time.
+In case it already is, add a reaction and any additional information.
 
 
-### Repository Setup
-- Install the Bait programming language: https://github.com/bait-lang/bait#building-from-source
-- Create and clone a fork of https://github.com/serkonda7/vscode-vba
-- Run `pnpm install` inside the cloned directory
-- Create a new working branch for your changes
+## Pull Request Best Practices
+- **Discuss bigger changes:** For significant changes, please discuss them first , so no effort is wasted.
+- **Small and focused PRs:**  Aim for one feature or bug fix per pull request. This simplifies reviews and accelerates merging
 
 
-## Regexes and TextMate Scopes (Syntax Highlighting)
-TextMate uses Oniguruma regexes which are mostly compatible with PCRE ([Compariosn][oniguruma-overview]).
-A good tool to test these regexes is https://regexr.com/ in PCRE mode.
+## Syntax Highlighting Grammar (Regexes and Scopes)
+VS Code uses TextMate Grammars and Oniguruma regexes.
 
-For a list of predefined scopes see https://macromates.com/manual/en/language_grammars#naming_conventions.
+Oniguruma is mostly compatible with PCRE _([Comparison][oniguruma-overview])_,
+so [regexr][regexr] in PCRE mode is a good choice for development.
+
+For a list of predefined grammar scopes see the [TextMate Manual][textmate-manual].
+
+To manually inspect the scopes in the editor,
+execute `Developer: Inspect Tokens and Scopes` from the command palette (<kbd>F1</kbd>).
 
 
 ### Unit Tests
-Every PR should contain a test case that covers the added feature or bug fix.
+Ensure your PR contains tests to cover the feature or bug fix.
 This prevents regressions and makes reviewing the changes easier by providing a proof of correct functionality.
 
-Tests for the language grammar (syntax highlighting) are in [`syntaxes/tests`](syntaxes/tests/).
-They can be run with the following command:
+Tests for the language grammar are in [`syntaxes/tests/`](syntaxes/tests/).
+Run them using:
 ```
 pnpm run test
 ```
 
 
-### Install a dev version
-If you'd like to install a development version of the extension, follow these steps:
+## Snippets
+Adding snippets is as simple as editing [`snippets/vba_snippets.yml`](snippets/vba_snippets.yml).
+
+Refer to the [official documentation][docs-snippets] for guidance.
+
+
+## Install a development version
+To install a development version of the extension, follow these steps:
 1. ```sh
    pnpm run install-dev-ext
    ```
 2. Reload the VS Code window:
-   - Open command palette (<kbd>F1</kbd>)
-   - Run `>reload window`
+   - Execute `Reload Window` from the command palette (<kbd>F1</kbd>)
 
-> Note: It is not required to uninstall any previous versions.
+> Note: Uninstalling previous versions is not necessary.
+
+
+## Development Environment Setup
+Follow these steps to set up your development environment:
+
+1. Install development tools
+   - [Node.js](https://nodejs.org/) >= 18
+      - The latest version should work fine
+      - Otherwise use [NVM][nvm] for management: `nvm install 18 && nvm use 18`
+   - [pnpm](https://pnpm.io/): `pnpm -v || npm install -g pnpm`
+   - Bait programming language: [Installation guide][bait]
+2. Fork and clone the repository https://github.com/serkonda7/vscode-vba
+3. Install dependencies
+   ```sh
+   cd vscode-vba
+   pnpm install
+   ```
+4. Create a new branch and make your changes
 
 
 <!-- links -->
 [issues]: https://github.com/serkonda7/vscode-vba/issues
 [oniguruma-overview]: https://rbuckton.github.io/regexp-features/engines/oniguruma.html
+[regexr]: https://regexr.com/
+[textmate-manual]: https://macromates.com/manual/en/language_grammars#naming_conventions
+[docs-snippets]: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
+
+[nvm]: https://github.com/nvm-sh/nvm
+[bait]: https://github.com/bait-lang/bait#installation
