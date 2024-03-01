@@ -64,10 +64,13 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
+        with:
+          name: vba.vsix
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
+          fail_on_unmatched_files: true
           files: vba.vsix
 
       - id: publish_to_marketplace
