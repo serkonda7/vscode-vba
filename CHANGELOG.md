@@ -1,6 +1,6 @@
 # Changelog
-## 0.9.7
-_unreleased_
+## 0.10.0
+_2024-03-01_
 
 - Add snippets related to `If-Else`, `Sub` and `Function`
 - Change icon to match GitHub Explore
