@@ -48,11 +48,11 @@ jobs:
         run: pnpm run package
 
       - name: Upload artifact
-        # if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/')
         uses: actions/upload-artifact@v4
         with:
           name: vba.vsix
-          path: vscode-vba-${{ github.event.release.tag_name }}.vsix
+          path: vscode-vba-${{ GITHUB_REF_NAME }}.vsix
           if-no-files-found: error
 
 
