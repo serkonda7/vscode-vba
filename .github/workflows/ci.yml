@@ -53,6 +53,7 @@ jobs:
         with:
           name: vba.vsix
           path: vscode-vba-0.*.*.vsix
+          if-no-files-found: error
 
 
   pub2:
@@ -78,6 +79,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: vba.vsix
+          path: vba.vsix
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
