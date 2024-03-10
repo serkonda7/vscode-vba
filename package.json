@@ -27,7 +27,7 @@
 	"activationEvents": [
 		"onLanguage:vba",
 		"onLanguage:wwb",
-		"workspaceContains:**/*.{docm,xlsm,pptm}"
+		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
 	],
 	"main": "./out/extension.js",
 	"capabilities": {

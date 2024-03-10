@@ -9,7 +9,7 @@ import 'vscode' as #JS.vscode
 
 @export('activate')
 fun activate(context #JS.Any) {
-	#JS.'JS.vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm"])'
+	#JS.'JS.vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm", ".xlam", ".ppam"])'
 
 	#JS.'context.subscriptions.push(JS.vscode.commands.registerCommand("vba.extract_from_doc", extension__extract_from_doc))'
 	#JS.'context.subscriptions.push(JS.vscode.commands.registerCommand("vba.write_to_doc", extension__write_to_doc))'
