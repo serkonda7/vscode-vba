@@ -1,6 +1,6 @@
 # Changelog
 ## 0.11.0
-_unreleased_
+_2024-07-12_
 - Enable _vscode.dev_ support
 - Replace Bait with JS
 - Update dependencies
