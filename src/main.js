@@ -6,8 +6,8 @@ import * as vscode from 'vscode'
 export function activate(context) {
 	vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm", ".xlam", ".ppam"])
 
-	context.subscriptions.push(JS.vscode.commands.registerCommand("vba.extract_from_doc", extract_from_doc))
-	context.subscriptions.push(JS.vscode.commands.registerCommand("vba.write_to_doc", write_to_doc))
+	context.subscriptions.push(vscode.commands.registerCommand("vba.extract_from_doc", extract_from_doc))
+	context.subscriptions.push(vscode.commands.registerCommand("vba.write_to_doc", write_to_doc))
 
 	console.log('vscode-vba activated')
 }
