@@ -1,9 +1,9 @@
 // SPDX-FileCopyrightText: 2023-present Lukas Neubert <lukas.neubert@proton.me>
 // SPDX-License-Identifier: MPL-2.0
 
-import * as vscode from 'vscode'
+const vscode = require('vscode')
 
-export function activate(context) {
+function activate(context) {
 	vscode.commands.executeCommand("setContext", "vba.ctx.docExts", [".docm", ".xlsm", ".pptm", ".xlam", ".ppam"])
 
 	context.subscriptions.push(vscode.commands.registerCommand("vba.extract_from_doc", extract_from_doc))
@@ -23,3 +23,5 @@ function write_to_doc() {
 function show_notif_funding() {
 	vscode.window.showInformationMessage("This feature is not yet complete.\nPlease consider a donation to support it\'s development.")
 }
+
+module.exports = { activate }

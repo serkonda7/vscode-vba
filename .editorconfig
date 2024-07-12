@@ -8,6 +8,6 @@ indent_size = 4
 indent_style = space
 indent_size = 3
 
-[*.{yml,yaml-tmlanguage}]
+[*.{json,yml,yaml-tmlanguage}]
 indent_style = space
 indent_size = 2

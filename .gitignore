@@ -4,7 +4,6 @@ dist/
 *.vsix
 
 # editor files
-.vscode/
 *.code-workspace
 
 # other

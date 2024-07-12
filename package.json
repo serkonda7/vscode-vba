@@ -30,6 +30,7 @@
 		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
 	],
 	"main": "./src/main.js",
+	"browser": "./src/main.js",
 	"capabilities": {
 		"untrustedWorkspaces": {
 			"supported": true
