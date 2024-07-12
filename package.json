@@ -12,9 +12,9 @@
 	"publisher": "serkonda7",
 	"engines": {
 		"node": ">=18",
-		"vscode": "^1.82.0",
-		"pnpm": ">=8"
+		"vscode": "^1.82.0"
 	},
+	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
 	"categories": [
 		"Programming Languages",
 		"Snippets",
@@ -29,7 +29,7 @@
 		"onLanguage:wwb",
 		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
 	],
-	"main": "./out/extension.js",
+	"main": "./src/main.js",
 	"capabilities": {
 		"untrustedWorkspaces": {
 			"supported": true
@@ -115,18 +115,17 @@
 		}
 	},
 	"scripts": {
-		"compile": "bait --library -o out/extension.js src",
 		"test": "pnpm run convert-yaml && pnpm run test-vba && pnpm run test-wwb",
 		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
 		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/other/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
-		"vscode:prepublish": "pnpm run compile && pnpm run convert-yaml"
+		"vscode:prepublish": "pnpm run convert-yaml"
 	},
 	"devDependencies": {
 		"@serkonda7/yaml2json": "^0.9.0",
-		"@vscode/vsce": "~2.24.0",
+		"@vscode/vsce": "~2.30.0",
 		"vscode-tmgrammar-test": "~0.1.3"
 	}
 }

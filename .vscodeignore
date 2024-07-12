@@ -5,7 +5,7 @@
 # whitelist needed files
 !package.json
 
-!out/*.js
+!src/*.js
 !out/*.json
 
 !images/icon.png

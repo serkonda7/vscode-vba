@@ -63,7 +63,6 @@ Follow these steps to set up your development environment:
       - The latest version should work fine
       - Otherwise use [NVM][nvm] for management: `nvm install 18 && nvm use 18`
    - [pnpm](https://pnpm.io/): `pnpm -v || npm install -g pnpm`
-   - Bait programming language: [Installation guide][bait]
 2. Fork and clone the repository https://github.com/serkonda7/vscode-vba
 3. Install dependencies
    ```sh
@@ -81,4 +80,3 @@ Follow these steps to set up your development environment:
 [docs-snippets]: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
 
 [nvm]: https://github.com/nvm-sh/nvm
-[bait]: https://github.com/bait-lang/bait#installation
