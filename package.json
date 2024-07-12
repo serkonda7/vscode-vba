@@ -29,7 +29,7 @@
 		"onLanguage:wwb",
 		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
 	],
-	"main": "./out/extension.js",
+	"main": "./src/main.js",
 	"capabilities": {
 		"untrustedWorkspaces": {
 			"supported": true
@@ -115,14 +115,13 @@
 		}
 	},
 	"scripts": {
-		"compile": "bait --library -o out/extension.js src",
 		"test": "pnpm run convert-yaml && pnpm run test-vba && pnpm run test-wwb",
 		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
 		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/other/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
-		"vscode:prepublish": "pnpm run compile && pnpm run convert-yaml"
+		"vscode:prepublish": "pnpm run convert-yaml"
 	},
 	"devDependencies": {
 		"@serkonda7/yaml2json": "^0.9.0",

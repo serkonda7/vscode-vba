@@ -2,7 +2,6 @@
 out/
 dist/
 *.vsix
-*.js
 
 # editor files
 .vscode/
