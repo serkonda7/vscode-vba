@@ -1,7 +1,14 @@
 # Changelog
+## 0.11.0
+_unreleased_
+- Replace Bait with JS
+- Update dependencies
+
+
 ## 0.10.2
 _2024-03-01_
 
+- Require VS Code >= `1.82`
 - Add snippets related to `If-Else`, `Sub` and `Function`
 - Change icon to match GitHub Explore
 - Improve documentation
