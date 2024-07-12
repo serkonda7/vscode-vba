@@ -125,7 +125,7 @@
 	},
 	"devDependencies": {
 		"@serkonda7/yaml2json": "^0.9.0",
-		"@vscode/vsce": "~2.24.0",
+		"@vscode/vsce": "~2.30.0",
 		"vscode-tmgrammar-test": "~0.1.3"
 	}
 }
