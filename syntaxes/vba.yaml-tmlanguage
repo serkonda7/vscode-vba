@@ -59,7 +59,7 @@ repository:
       - name: keyword.other.option.vba
         match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit|Private Module)\b
       - name: keyword.other.visibility.vba
-        match: (?i:\b(Private|Public|Friend)\b)
+        match: (?i:\b(Private|Public|Global|Friend)\b)
       - name: constant.language.vba
         match: (?i)\b(Empty|False|Nothing|Null|True)\b
 
