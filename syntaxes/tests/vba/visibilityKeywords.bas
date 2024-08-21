@@ -3,6 +3,9 @@
 Public strName As String
 ' <------ keyword.other.visibility.vba
 
+Global strName As String
+' <------ keyword.other.visibility.vba
+
 Private strMsg As String
 ' <------- keyword.other.visibility.vba
 
