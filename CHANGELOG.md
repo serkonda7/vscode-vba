@@ -1,4 +1,10 @@
 # Changelog
+## 0.11.1
+_2024-08-21_
+- Highlight `Global` visibility modifier
+- Dependencies: update vsce to 3.0.0
+
+
 ## 0.11.0
 _2024-07-12_
 - Enable _vscode.dev_ support
