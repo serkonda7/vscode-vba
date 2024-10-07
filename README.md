@@ -10,11 +10,17 @@
 
 </div>
 
+
+## Project Status
+This project is in **maintenance** mode. Pull request are welcome and will be merged. Issues will be addressed and minor bug fixes may happen. However I am unable to further develop new features.
+
+Please feel free to [contribute](#contributing).
+
+
 ## Key Features
 > Used for [GitHub syntax highlighting][gh-linguist]
 
 - VBA syntax highlighting
-- 🚧 Export and Import of Macros for Office Documents
 - Comprehensive snippets
 - Syntax highlighting for some dialects _(community maintained)_
    - WinWrap Basic (WWB)
