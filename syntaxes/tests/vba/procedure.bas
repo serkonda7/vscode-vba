@@ -50,3 +50,7 @@ End Function
 Call mSub()
 ' <---- keyword.other.vba
 '    ^^^^ entity.name.function.vba
+
+Call SubWithNoArgs
+' <---- keyword.other.vba
+'    ^^^^^^^^^^^^^ entity.name.function.vba

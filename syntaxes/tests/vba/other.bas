@@ -136,7 +136,7 @@ Private WithEvents app As Outlook.Application
 Event LogonCompleted(UserName as String)
 ' <----- keyword.other.vba
 
-Sub Logon
+Sub Logon()
     RaiseEvent LogonCompleted ("AntoineJan")
 '   ^^^^^^^^^^ keyword.other.vba
 End Sub
