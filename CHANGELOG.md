@@ -1,4 +1,9 @@
 # Changelog
+## 0.11.2
+_2024-11-26_
+- Fix grammar issue due to lookbehind ([GH-119](https://github.com/serkonda7/vscode-vba/pull/119))
+
+
 ## 0.11.1
 _2024-08-21_
 - Highlight `Global` visibility modifier
