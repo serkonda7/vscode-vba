@@ -39,10 +39,9 @@ repository:
       match: ^.*
 
   functions:
-    name: testing.vba
     begin: (?i:\b(Call|Function|Sub) )
     beginCaptures:
-        1:
+        '1':
           name: keyword.other.vba
     patterns:
       - name: entity.name.function.vba
