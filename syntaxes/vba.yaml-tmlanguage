@@ -39,7 +39,6 @@ repository:
       match: ^.*
 
   functions:
-    name: testing.vba
     begin: (?i:\b(Call|Function|Sub) )
     beginCaptures:
         1:
