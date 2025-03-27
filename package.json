@@ -50,7 +50,11 @@
 					".frm",
 					".vba"
 				],
-				"configuration": "./out/language-configuration.json"
+				"configuration": "./out/language-configuration.json",
+				"icon": {
+					"light": "./images/vba-logo-light.svg",
+					"dark": "./images/vba-logo-dark.svg"
+				}
 			},
 			{
 				"id": "wwb",
