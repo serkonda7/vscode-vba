@@ -9,6 +9,7 @@
 !out/*.json
 
 !images/icon.png
+!images/*.svg
 
 !README.md
 !LICENSE.txt
