@@ -6,15 +6,21 @@
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
-[![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 </div>
 
 
 ## Project Status
-This project is in **maintenance** mode. Pull request are welcome and will be merged. Issues will be addressed and minor bug fixes may happen. However I am unable to further develop new features.
+This project is in **maintenance** mode. Pull request are welcome and will be merged.
+Issues will be addressed and minor bug fixes may happen.
+However I am unable to further develop new features.
 
 Please feel free to [contribute](#contributing).
+
+---
+
+For advanced features like a language server,
+I recommend checking out [VBA-LanguageServer][sslinky-vba-ls] by @SSlinky.
 
 
 ## Key Features
@@ -40,8 +46,6 @@ Your contributions are always welcome and highly appreciated!
 
 - **Discuss and Ask Questions:** [GitHub Discussions][discussions] with community support
 - **Report Issues or Submit Changes:** Please check the [Contribution guidelines](CONTRIBUTING.md)
-- **Support the Development** Consider making a donation to help us develop new features:
-   [![Sponsor on GitHub][sponsors-badge]][sponsors-profile]
 
 
 ## Snippets
@@ -72,5 +76,4 @@ The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitH
 
 [gh-linguist]: https://github.com/github-linguist/linguist/tree/master/vendor
 
-[sponsors-badge]: https://img.shields.io/badge/Sponsor-GitHub-blue.svg
-[sponsors-profile]: https://github.com/sponsors/serkonda7
+[sslinky-vba-ls]: https://github.com/SSlinky/VBA-LanguageServer
