@@ -1,5 +1,5 @@
 # Changelog
-## 1.0.0
+## 1.0.1
 _2025-04-09_
 - Add icons if not provided by theme ([GH-122](https://github.com/serkonda7/vscode-vba/pull/122))
 - Update readme

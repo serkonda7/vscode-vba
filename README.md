@@ -20,7 +20,7 @@ Please feel free to [contribute](#contributing).
 ---
 
 For advanced features like a language server,
-I recommend checking out [VBA-LanguageServer][sslinky-vba-ls] by @SSlinky.
+I recommend checking out [SSlinky/VBA-LanguageServer][sslinky-vba-ls].
 
 
 ## Key Features
