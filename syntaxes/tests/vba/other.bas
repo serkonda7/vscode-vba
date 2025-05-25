@@ -1,5 +1,8 @@
 ' SYNTAX TEST "source.vba" "main syntax test"
 
+DefInt A-Z
+' <------ keyword.other.deftype.vba
+
 Attribute VB_Name = "SyntaxTest"
 ' <--------- keyword.other.vba
 
