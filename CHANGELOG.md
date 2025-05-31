@@ -1,4 +1,9 @@
 # Changelog
+## 1.0.2
+_2025-05-31_
+- Highlight `DefType` ([GH-123](https://github.com/serkonda7/vscode-vba/pull/123))
+
+
 ## 1.0.1
 _2025-04-09_
 - Add icons if not provided by theme ([GH-122](https://github.com/serkonda7/vscode-vba/pull/122))
