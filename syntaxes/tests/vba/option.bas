@@ -9,6 +9,8 @@
 ' ^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vba
   Option Compare Text
 ' ^^^^^^^^^^^^^^^^^^^ keyword.other.option.vba
+  Option Compare Database
+' ^^^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vba
 
   Option Explicit
 ' ^^^^^^^^^^^^^^^ keyword.other.option.vba
