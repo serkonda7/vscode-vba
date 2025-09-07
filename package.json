@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "VBA tooling, syntax highlighting and snippets.",
 	"icon": "images/icon.png",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

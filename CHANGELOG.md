@@ -1,4 +1,9 @@
 # Changelog
+## 1.0.3
+_2025-09-07_
+- Highlight `Option Compare Database` ([GH-124](https://github.com/serkonda7/vscode-vba/pull/124))
+
+
 ## 1.0.2
 _2025-05-31_
 - Highlight `DefType` ([GH-123](https://github.com/serkonda7/vscode-vba/pull/123))
