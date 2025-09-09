@@ -53,7 +53,7 @@ jobs:
           if-no-files-found: error
 
 
-  publish:
+  create-release:
     needs:
       - test
       - package
@@ -71,17 +71,39 @@ jobs:
           fail_on_unmatched_files: true
           files: ${{ env.VSIX_FILE }}
 
+
+  publish-vsce:
+    needs:
+      - create-release
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.VSIX_FILE }}
+
       - id: publish_to_marketplace
         name: Publish to VS Code Marketplace
-        if: always()
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
           extensionFile: ${{ env.VSIX_FILE }}
 
+
+  publish-open-vsx:
+    needs:
+      - create-release
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.VSIX_FILE }}
+
       - name: Publish to Open VSX Registry
-        if: always()
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.OPEN_VSX_PAT }}
