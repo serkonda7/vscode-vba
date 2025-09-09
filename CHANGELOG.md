@@ -1,6 +1,7 @@
 # Changelog
-## 1.0.3
-_2025-09-07_
+## 1.0.4
+_2025-09-09_
+- _Rerelease of 1.0.3_
 - Highlight `Option Compare Database` ([GH-124](https://github.com/serkonda7/vscode-vba/pull/124))
 
 
