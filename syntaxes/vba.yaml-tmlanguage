@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name: Visual Basic for Applications
-scopeName: source.vb6
+scopeName: source.vba
 fileTypes:
   - .vba
 
