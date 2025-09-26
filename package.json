@@ -69,7 +69,7 @@
 					"WinWrap Basic"
 				],
 				"extensions": [
-					".wwb"
+					".wwd"
 				]
 			}
 		],
@@ -132,10 +132,10 @@
 		}
 	},
 	"scripts": {
-		"test": "pnpm run convert-yaml && pnpm run test-vba && pnpm run test-wwb",
+		"test": "pnpm run convert-yaml && pnpm run test-vb6 && pnpm run test-vba && pnpm run test-wwb",
 		"test-vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
 		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwb\"",
+		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",

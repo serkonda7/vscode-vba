@@ -10,26 +10,30 @@
 </div>
 
 
-## Project Status
-This project is in **maintenance** mode. Pull request are welcome and will be merged.
-Issues will be addressed and minor bug fixes may happen.
-However I am unable to further develop new features.
+## Key Features
+> We provide the [syntax highlighting on GitHub][gh-linguist]!
 
-Please feel free to [contribute](#contributing).
+- Syntax highlighting for
+  - VBA
+  - VB6
+- Comprehensive snippets
+- Community maintained syntax highlighting for some dialects
+   - WinWrap Basic (WWB)
+
+Details about the grammars can be found in the [docs](docs/grammar_structure.md).
+
+
+## Project Status
+This project is **maintained**. Pull request are welcome and will be merged.
+Issues will be addressed and minor bugs fixed.
+However please don't expect new features for now.
+
+If you want to [contribute](#contributing), I am happy to assist.
 
 ---
 
-For advanced features like a language server,
+For advanced VBA features like a language server,
 I recommend checking out [SSlinky/VBA-LanguageServer][sslinky-vba-ls].
-
-
-## Key Features
-> Used for [GitHub syntax highlighting][gh-linguist]
-
-- VBA syntax highlighting
-- Comprehensive snippets
-- Syntax highlighting for some dialects _(community maintained)_
-   - WinWrap Basic (WWB)
 
 
 ## Installation

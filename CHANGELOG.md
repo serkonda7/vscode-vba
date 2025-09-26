@@ -1,4 +1,11 @@
 # Changelog
+## 1.1.0
+_unreleased_
+
+- Add VB6 syntax highlighting
+- Documentation improvements
+
+
 ## 1.0.4
 _2025-09-09_
 - _Rerelease of 1.0.3_

@@ -4,7 +4,7 @@
 name: WinWrap Basic
 scopeName: source.wwb
 fileTypes:
-  - .wwb
+  - .wwd # Not `.wwb`, see https://github.com/serkonda7/vscode-vba/pull/58#issuecomment-1302430106
 
 patterns:
   - include: "#keywords"
