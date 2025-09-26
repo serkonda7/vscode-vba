@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vba" "test comment variations"
+' SYNTAX TEST "source.vb6" "test comment variations"
 
   ' Some comment
 ' ^^^^^^^^^^^^^^ comment.line.quote
@@ -39,4 +39,3 @@ Dim x As Long: Rem Test comment with colon
 Rem multi line _
   comment
 ' ^^^^^^^ comment.line.continuation
-  

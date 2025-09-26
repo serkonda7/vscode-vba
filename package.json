@@ -3,7 +3,7 @@
 	"displayName": "VBA",
 	"description": "VBA tooling, syntax highlighting and snippets.",
 	"icon": "images/icon.png",
-	"version": "1.0.4",
+	"version": "1.1.0-dev",
 	"license": "MPL-2.0",
 	"repository": {
 		"type": "git",
@@ -21,10 +21,12 @@
 		"Language Packs"
 	],
 	"keywords": [
+		"VB6",
 		"VBA",
 		"WWB"
 	],
 	"activationEvents": [
+		"onLanguage:vb6",
 		"onLanguage:vba",
 		"onLanguage:wwb",
 		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
@@ -38,16 +40,21 @@
 	},
 	"contributes": {
 		"languages": [
+      {
+				"id": "vb6",
+				"extensions": [
+					".bas",
+					".cls",
+					".doccls",
+					".frm"
+				]
+			},
 			{
 				"id": "vba",
 				"aliases": [
 					"VBA"
 				],
 				"extensions": [
-					".bas",
-					".cls",
-					".doccls",
-					".frm",
 					".vba"
 				],
 				"configuration": "./out/language-configuration.json",
@@ -62,12 +69,17 @@
 					"WinWrap Basic"
 				],
 				"extensions": [
-					".wwd"
+					".wwb"
 				]
 			}
 		],
 		"grammars": [
 			{
+				"language": "vb6",
+				"scopeName": "source.vb6",
+				"path": "./out/vb6.json"
+			},
+      {
 				"language": "vba",
 				"scopeName": "source.vba",
 				"path": "./out/vba.json"
@@ -121,8 +133,9 @@
 	},
 	"scripts": {
 		"test": "pnpm run convert-yaml && pnpm run test-vba && pnpm run test-wwb",
+		"test-vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
 		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/other/*.wwd\"",
+		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwb\"",
 		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",

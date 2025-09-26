@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vba" "numeric constants and date literals"
+' SYNTAX TEST "source.vb6" "numeric constants and date literals"
 
 Dim num As Integer
 num = 123

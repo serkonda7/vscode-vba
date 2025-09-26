@@ -1,9 +1,10 @@
 # SPDX-FileCopyrightText: 2023-present Lukas Neubert <lukas.neubert@proton.me>
 # SPDX-License-Identifier: MPL-2.0
 
+name: WinWrap Basic
 scopeName: source.wwb
 fileTypes:
-  - .wwd
+  - .wwb
 
 patterns:
   - include: "#keywords"

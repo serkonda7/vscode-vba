@@ -1,7 +1,7 @@
 ' SYNTAX TEST "source.wwb" "WinWrap Basic syntax"
 
 If FOO = True Or FOO > 0 Then
-' <-- keyword.conditional.vba
+' <-- keyword.conditional.vb6
 ElseIf FOO = False AndAlso FOO > 0 OrElse MyVar IsNot Val then
 '                  ^^^^^^^ keyword.control.wwb
 '                                  ^^^^^^ keyword.control.wwb
@@ -12,7 +12,7 @@ End If
 
 
 Dim v1 As Decimal
-' <--- storage.modifier.vba
+' <--- storage.modifier.vb6
 '         ^^^^^^^ support.type.builtin.wwb
 Dim v2 As Huge_
 '         ^^^^^ support.type.builtin.wwb
