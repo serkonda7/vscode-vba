@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "Option statement"
+' SYNTAX TEST "source.vba" "Option statement"
 
   Option Base 0
 ' ^^^^^^^^^^^^^ keyword.other.option.vb6

@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "I/O related keywords"
+' SYNTAX TEST "source.vba" "I/O related keywords"
 
 Open "file" For Input As #f
 ' <--- keyword.io.vb6

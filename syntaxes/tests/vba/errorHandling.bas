@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "error handling"
+' SYNTAX TEST "source.vba" "error handling"
 
 Sub ShowErrors()
     Dim x As Long

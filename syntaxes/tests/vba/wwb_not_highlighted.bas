@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "main syntax test"
+' SYNTAX TEST "source.vba" "main syntax test"
 
 ' Note: this file contains invalid VBA code.
 

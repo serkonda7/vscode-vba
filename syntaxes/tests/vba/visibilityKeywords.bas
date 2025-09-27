@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "module scope visibility modifiers"
+' SYNTAX TEST "source.vba" "module scope visibility modifiers"
 
 Public strName As String
 ' <------ keyword.other.visibility.vb6

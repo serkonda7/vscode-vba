@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "main syntax test"
+' SYNTAX TEST "source.vba" "main syntax test"
 
 DefInt A-Z
 ' <------ keyword.other.deftype.vb6

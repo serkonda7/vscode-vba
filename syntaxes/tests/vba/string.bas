@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "Strings"
+' SYNTAX TEST "source.vba" "Strings"
 
 Dim str As String
 str = "Hello"

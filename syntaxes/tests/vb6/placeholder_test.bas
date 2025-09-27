@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vba" "VBA syntax"
+' SYNTAX TEST "source.vb6" "Placeholder test"
 
 Set obj = Nothing
 ' <--- storage.modifier.vb6

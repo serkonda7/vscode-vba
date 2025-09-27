@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "test comment variations"
+' SYNTAX TEST "source.vba" "test comment variations"
 
   ' Some comment
 ' ^^^^^^^^^^^^^^ comment.line.quote

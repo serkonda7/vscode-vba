@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "array syntax"
+' SYNTAX TEST "source.vba" "array syntax"
 
 Dim curExpense(364) As Currency
 '   ^^^^^^^^^^ - entity.name.function.vb6

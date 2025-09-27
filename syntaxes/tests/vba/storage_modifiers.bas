@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "storage modifiers test"
+' SYNTAX TEST "source.vba" "storage modifiers test"
 
 Static x As Integer
 ' <------ storage.modifier.vb6

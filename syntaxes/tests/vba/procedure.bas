@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "Sub, Function and anything related"
+' SYNTAX TEST "source.vba" "Sub, Function and anything related"
 
 Type CustomType
 ' <---- keyword.other.vb6

@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vb6" "types"
+' SYNTAX TEST "source.vba" "types"
 
 Dim bool As Boolean
 '           ^^^^^^^ support.type.builtin.vb6
