@@ -10,50 +10,36 @@
 </div>
 
 
-## Key Features
-> We provide the [syntax highlighting on GitHub][gh-linguist] for VBA and VB6!
+## ✨ Features
+> We power the [syntax highlighting on GitHub][gh-linguist] for VBA and VB6!
 
 - Syntax highlighting for
-  - VBA
-  - VB6
-- Comprehensive snippets
-- Community maintained syntax highlighting for some dialects
+  - **VBA**
+  - **VB6**
+- Comprehensive [snippets](#snippets)
+- Support for some niche BASIC dialects _(community maintained)_:
    - WinWrap Basic (WWB)
 
-Technical details about the languages and grammars can be found in the [docs](docs/grammar_structure.md).
+For technical details about the languages and grammars, see the [docs](docs/grammar_structure.md).
 
 
-## Project Status
-This project is **maintained**. Pull request are welcome and will be merged.
-Issues will be addressed and minor bugs fixed.
-However please don't expect new features for now.
+## 📖 Select correct grammar for VB6
+By default, `.bas`, `.cls` and `.frm` files open as **VBA**.
 
-If you want to [contribute](#contributing), I am happy to assist.
-
----
-
-For advanced VBA features like a language server,
-I recommend checking out [SSlinky/VBA-LanguageServer][sslinky-vba-ls].
-
-
-## Installation
-Launch Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and execute this command:
-```
-ext install serkonda7.vscode-vba
+To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
+```json
+{
+  "files.associations": {
+    "*.bas": "vb6",
+    "*.cls": "vb6",
+    "*.frm": "vb6"
+  }
+}
 ```
 
-Or download from [Open VSX][open-vsx].
 
-
-## Contributing
-Your contributions are always welcome and highly appreciated!
-
-- **Discuss and Ask Questions:** [GitHub Discussions][discussions] with community support
-- **Report Issues or Submit Changes:** Please check the [Contribution guidelines](CONTRIBUTING.md)
-
-
-## Snippets
-The following snippets are available:
+## 💡 Snippets
+Available snippets include:
 - `If`
 - `ElseIf`
 - `Else`
@@ -61,10 +47,41 @@ The following snippets are available:
 - `Function`
 
 
-## License
-Source code, grammars and snippets are provided under the [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+## 📌 Project Status
+This project is **actively maintained**:
+- ✅ Pull request are welcome and will be reviewed within a few days
+- ✅ Issues and bugs are adressed
+- ⚠️ For now, no major new features are planned
 
-The icon is provided under [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors.
+Please feel free to [contribute](#contributing).
+
+---
+
+For advanced features like a VBA language server, try [SSlinky/VBA-LanguageServer][sslinky-vba-ls].
+
+
+## 🤝 Contributing
+Your help is highly appreciated!
+
+- **Join the conversation:** [GitHub Discussions][discussions]
+- **Report Issues or Submit Changes:** see the [Contribution Guidelines](CONTRIBUTING.md)
+
+
+## 📦 Installation
+From VS Code:
+1. Launch Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>)
+2. Run
+   ```
+   ext install serkonda7.vscode-vba
+   ```
+
+Or install from [Open VSX][open-vsx].
+
+
+## 📜 License
+Source code, grammars and snippets: [Mozilla Public License (MPL-2.0)](LICENSE.txt).
+
+Extension icon: [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore authors.
 
 
 <!-- links -->
