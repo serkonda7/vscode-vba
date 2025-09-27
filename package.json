@@ -42,25 +42,25 @@
     "languages": [
       {
         "id": "vb6",
+        "aliases": [
+          "Visual Basic 6"
+        ],
         "extensions": [
-          ".bas",
-          ".cls",
           ".ctl",
-          ".dsr",
-          ".frm"
+          ".dsr"
         ]
       },
       {
         "id": "vba",
         "aliases": [
-          "VBA"
+          "Visual Basic for Applications"
         ],
         "extensions": [
-          ".vba",
-          ".doccls",
           ".bas",
           ".cls",
-          ".frm"
+          ".frm",
+          ".vba",
+          ".doccls"
         ],
         "configuration": "./out/language-configuration.json",
         "icon": {
