@@ -2,8 +2,8 @@
 ## 1.1.0
 _unreleased_
 
-- Add VB6 syntax highlighting
-- Documentation improvements
+- Add VB6 syntax highlighting for `.ctl` and `.dsr`
+- Improve readme and documentation
 
 
 ## 1.0.4
