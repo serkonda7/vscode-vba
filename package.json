@@ -1,149 +1,154 @@
 {
-	"name": "vscode-vba",
-	"displayName": "VBA",
-	"description": "VBA tooling, syntax highlighting and snippets.",
-	"icon": "images/icon.png",
-	"version": "1.1.0-dev",
-	"license": "MPL-2.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/serkonda7/vscode-vba"
-	},
-	"publisher": "serkonda7",
-	"engines": {
-		"node": ">=18",
-		"vscode": "^1.82.0"
-	},
-	"packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
-	"categories": [
-		"Programming Languages",
-		"Snippets",
-		"Language Packs"
-	],
-	"keywords": [
-		"VB6",
-		"VBA",
-		"WWB"
-	],
-	"activationEvents": [
-		"onLanguage:vb6",
-		"onLanguage:vba",
-		"onLanguage:wwb",
-		"workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
-	],
-	"main": "./src/main.js",
-	"browser": "./src/main.js",
-	"capabilities": {
-		"untrustedWorkspaces": {
-			"supported": true
-		}
-	},
-	"contributes": {
-		"languages": [
+  "name": "vscode-vba",
+  "displayName": "VBA",
+  "description": "VBA tooling, syntax highlighting and snippets.",
+  "icon": "images/icon.png",
+  "version": "1.1.0-dev",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serkonda7/vscode-vba"
+  },
+  "publisher": "serkonda7",
+  "engines": {
+    "node": ">=18",
+    "vscode": "^1.82.0"
+  },
+  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Language Packs"
+  ],
+  "keywords": [
+    "VB6",
+    "VBA",
+    "WWB"
+  ],
+  "activationEvents": [
+    "onLanguage:vb6",
+    "onLanguage:vba",
+    "onLanguage:wwb",
+    "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
+  ],
+  "main": "./src/main.js",
+  "browser": "./src/main.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "contributes": {
+    "languages": [
       {
-				"id": "vb6",
-				"extensions": [
-					".bas",
-					".cls",
-					".doccls",
-					".frm"
-				]
-			},
-			{
-				"id": "vba",
-				"aliases": [
-					"VBA"
-				],
-				"extensions": [
-					".vba"
-				],
-				"configuration": "./out/language-configuration.json",
-				"icon": {
-					"light": "./images/vba-logo-light.svg",
-					"dark": "./images/vba-logo-dark.svg"
-				}
-			},
-			{
-				"id": "wwb",
-				"aliases": [
-					"WinWrap Basic"
-				],
-				"extensions": [
-					".wwd"
-				]
-			}
-		],
-		"grammars": [
-			{
-				"language": "vb6",
-				"scopeName": "source.vb6",
-				"path": "./out/vb6.json"
-			},
+        "id": "vb6",
+        "extensions": [
+          ".bas",
+          ".cls",
+          ".ctl",
+          ".dsr",
+          ".frm"
+        ]
+      },
       {
-				"language": "vba",
-				"scopeName": "source.vba",
-				"path": "./out/vba.json"
-			},
-			{
-				"language": "wwb",
-				"scopeName": "source.wwb",
-				"path": "./out/wwb.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "vba",
-				"path": "./out/vba_snippets.json"
-			}
-		],
-		"commands": [
-			{
-				"command": "vba.extract_from_doc",
-				"title": "VBA: Extract code from office document."
-			},
-			{
-				"command": "vba.write_to_doc",
-				"title": "VBA: Write code to office document."
-			}
-		],
-		"menus": {
-			"commandPalette": [
-				{
-					"command": "vba.extract_from_doc",
-					"when": "false"
-				},
-				{
-					"command": "vba.write_to_doc",
-					"when": "false"
-				}
-			],
-			"explorer/context": [
-				{
-					"command": "vba.extract_from_doc",
-					"when": "resourceExtname in vba.ctx.docExts",
-					"group": "2_workspace"
-				},
-				{
-					"command": "vba.write_to_doc",
-					"when": "resourceExtname in vba.ctx.docExts",
-					"group": "2_workspace"
-				}
-			]
-		}
-	},
-	"scripts": {
-		"test": "pnpm run convert-yaml && pnpm run test-vb6 && pnpm run test-vba && pnpm run test-wwb",
-		"test-vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
-		"test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-		"test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
-		"install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
-		"package": "vsce package",
-		"convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
-		"vscode:prepublish": "pnpm run convert-yaml"
-	},
-	"devDependencies": {
-		"@serkonda7/yaml2json": "^0.9.0",
-		"@vscode/vsce": "~3.6.0",
-		"vscode-tmgrammar-test": "~0.1.3"
-	}
+        "id": "vba",
+        "aliases": [
+          "VBA"
+        ],
+        "extensions": [
+          ".vba",
+          ".doccls",
+          ".bas",
+          ".cls",
+          ".frm"
+        ],
+        "configuration": "./out/language-configuration.json",
+        "icon": {
+          "light": "./images/vba-logo-light.svg",
+          "dark": "./images/vba-logo-dark.svg"
+        }
+      },
+      {
+        "id": "wwb",
+        "aliases": [
+          "WinWrap Basic"
+        ],
+        "extensions": [
+          ".wwd"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vb6",
+        "scopeName": "source.vb6",
+        "path": "./out/vb6.json"
+      },
+      {
+        "language": "vba",
+        "scopeName": "source.vba",
+        "path": "./out/vba.json"
+      },
+      {
+        "language": "wwb",
+        "scopeName": "source.wwb",
+        "path": "./out/wwb.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "vba",
+        "path": "./out/vba_snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "vba.extract_from_doc",
+        "title": "VBA: Extract code from office document."
+      },
+      {
+        "command": "vba.write_to_doc",
+        "title": "VBA: Write code to office document."
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "vba.extract_from_doc",
+          "when": "false"
+        },
+        {
+          "command": "vba.write_to_doc",
+          "when": "false"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "vba.extract_from_doc",
+          "when": "resourceExtname in vba.ctx.docExts",
+          "group": "2_workspace"
+        },
+        {
+          "command": "vba.write_to_doc",
+          "when": "resourceExtname in vba.ctx.docExts",
+          "group": "2_workspace"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "pnpm run convert-yaml && pnpm run test-vb6 && pnpm run test-vba && pnpm run test-wwb",
+    "test-vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
+    "test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
+    "test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+    "install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
+    "package": "vsce package",
+    "convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
+    "vscode:prepublish": "pnpm run convert-yaml"
+  },
+  "devDependencies": {
+    "@serkonda7/yaml2json": "^0.9.0",
+    "@vscode/vsce": "~3.6.0",
+    "vscode-tmgrammar-test": "~0.1.3"
+  }
 }

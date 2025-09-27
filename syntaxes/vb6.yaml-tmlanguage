@@ -6,7 +6,8 @@ scopeName: source.vb6
 fileTypes:
   - .bas
   - .cls
-  - .doccls
+  - .ctl
+  - .dsr
   - .frm
 
 patterns:

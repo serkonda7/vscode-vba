@@ -4,7 +4,11 @@
 name: Visual Basic for Applications
 scopeName: source.vba
 fileTypes:
-  - .vba
+  - .bas
+  - .cls
+  - .frm
+  - .vba # Unofficial
+  - .doccls # Unofficial
 
 patterns:
   - include: source.vb6

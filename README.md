@@ -11,7 +11,7 @@
 
 
 ## Key Features
-> We provide the [syntax highlighting on GitHub][gh-linguist]!
+> We provide the [syntax highlighting on GitHub][gh-linguist] for VBA and VB6!
 
 - Syntax highlighting for
   - VBA
@@ -20,7 +20,7 @@
 - Community maintained syntax highlighting for some dialects
    - WinWrap Basic (WWB)
 
-Details about the grammars can be found in the [docs](docs/grammar_structure.md).
+Technical details about the languages and grammars can be found in the [docs](docs/grammar_structure.md).
 
 
 ## Project Status

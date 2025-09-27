@@ -14,6 +14,13 @@ graph TB
 ```
 
 
+## File extensions
+Beside official ones, the following inofficial file extensions are associated as well:
+- VBA
+  - `.doccls` (see [#103][103])
+  - `.vba` (see [#87][87])
+
+
 ## Differences between languages
 > Without warranty of completeness or correctness
 
@@ -24,3 +31,5 @@ graph TB
 <!-- links -->
 [74-comment]: https://github.com/serkonda7/vscode-vba/issues/74#issuecomment-1577752559
 [58-comment]: https://github.com/serkonda7/vscode-vba/pull/58#issuecomment-1299659990
+[103]: https://github.com/serkonda7/vscode-vba/issues/103
+[87]: https://github.com/serkonda7/vscode-vba/pull/87
