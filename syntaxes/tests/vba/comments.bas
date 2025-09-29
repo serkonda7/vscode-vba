@@ -39,4 +39,3 @@ Dim x As Long: Rem Test comment with colon
 Rem multi line _
   comment
 ' ^^^^^^^ comment.line.continuation
-  
