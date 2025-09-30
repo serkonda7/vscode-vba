@@ -11,4 +11,17 @@ fileTypes:
   - .doccls # Unofficial
 
 patterns:
+  - include: '#keywords'
+  - include: '#types'
   - include: source.vb6
+
+repository:
+  keywords:
+    patterns:
+      - name: keyword.other.option.vba
+        match: (?i)\bOption (Compare Database|Private Module)\b
+
+  types:
+    patterns:
+      - name: support.type.builtin.vba
+        match: (?i)(?<= As )(LongLong|LongPtr)\b

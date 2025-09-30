@@ -17,9 +17,9 @@ Dim i As Integer
 Dim l As Long
 '        ^^^^ support.type.builtin.vb6
 Dim ll As LongLong
-'         ^^^^^^^^ support.type.builtin.vb6
+'         ^^^^^^^^ support.type.builtin.vba
 Dim lptr As LongPtr
-'           ^^^^^^^ support.type.builtin.vb6
+'           ^^^^^^^ support.type.builtin.vba
 Dim obj As Object
 '          ^^^^^^ support.type.builtin.vb6
 Dim sing As Single
