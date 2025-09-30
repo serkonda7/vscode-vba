@@ -145,9 +145,9 @@
   "scripts": {
     "test": "pnpm run convert-yaml && pnpm run test:all",
     "test:all": "pnpm run test:vba && pnpm run test:vb6 && pnpm run test:wwb",
-    "test:vba": "vscode-tmgrammar-test -g ./out/vba.json 'syntaxes/tests/vba/*.bas'",
-    "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json 'syntaxes/tests/vb6/*.bas'",
-    "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json 'syntaxes/tests/wwb/*.wwd'",
+    "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
+    "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
+    "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
 
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",

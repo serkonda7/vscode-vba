@@ -9,6 +9,8 @@ const in_files = [
 	["syntaxes/wwb.yaml-tmlanguage", "out/wwb.json"],
 ]
 
+fs.mkdirSync("out", { recursive: true });
+
 for (const [input, output] of in_files) {
 	const data = fs.readFileSync(input, "utf8")
 	const json = yaml.load(data)
