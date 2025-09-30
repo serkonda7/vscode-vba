@@ -108,7 +108,7 @@ repository:
   types:
     patterns:
       - name: support.type.builtin.vb6
-        match: (?i)\b(Any|Byte|Boolean|Currency|Collection|Date|Double|Integer|Long(Long|Ptr)?|Object|Single|String|Variant)\b
+        match: (?i)\b(Any|Byte|Boolean|Currency|Collection|Date|Double|Integer|Long|Object|Single|String|Variant)\b
       - match: (?i)(?<= As )([a-zA-Z][a-zA-Z0-9_]*)
         captures:
           '1':
