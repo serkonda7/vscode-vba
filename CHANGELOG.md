@@ -3,6 +3,7 @@
 _unreleased_
 
 - Add VB6 syntax highlighting for `.ctl` and `.dsr`
+- Move VBA specific keywords into correct grammar ([GH-128](https://github.com/serkonda7/vscode-vba/pull/128))
 - Improve readme and documentation
 
 
