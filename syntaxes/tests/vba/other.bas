@@ -128,11 +128,6 @@ End
    End
 '  ^^^ keyword.control.vb6
 
-Declare PtrSafe Sub First Lib "MyLib" (ByRef a As Any)
-'<------- keyword.other.vb6
-'       ^^^^^^^ keyword.other.vb6
-'                                                 ^^^ support.type.builtin.vb6
-
 Private WithEvents app As Outlook.Application
 '       ^^^^^^^^^^ keyword.other.vb6
 

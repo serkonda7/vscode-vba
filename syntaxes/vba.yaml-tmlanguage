@@ -18,6 +18,8 @@ patterns:
 repository:
   keywords:
     patterns:
+      - name: keyword.other.vba
+        match: (?i)\bPtrSafe\b
       - name: keyword.other.option.vba
         match: (?i)\bOption (Compare Database|Private Module)\b
 

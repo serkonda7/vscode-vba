@@ -61,7 +61,7 @@ repository:
       - name: keyword.io.vb6
         match: (?i:\b(Input)(?= \#))
       - name: keyword.other.vb6
-        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent|Implements)\b)
+        match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|WithEvents|Event|RaiseEvent|Implements)\b)
       - name: keyword.other.option.vb6
         match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit)\b
       - name: keyword.other.deftype.vb6

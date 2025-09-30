@@ -1,4 +1,4 @@
-' SYNTAX TEST "source.vba" "main syntax test"
+' SYNTAX TEST "source.vba" "Ensure that WWB-specific keywords are not highlighted"
 
 ' Note: this file contains invalid VBA code.
 
