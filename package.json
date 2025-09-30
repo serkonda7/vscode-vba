@@ -152,17 +152,15 @@
     "test:vba": "vscode-tmgrammar-test -g ./out/vba.json 'syntaxes/tests/vba/*.bas'",
     "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json 'syntaxes/tests/vb6/*.bas'",
     "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json 'syntaxes/tests/wwb/*.wwd'",
-
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
     "install:dev": "pnpm run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
-
-    "convert-yaml": "yaml2json language-configuration.yml 'syntaxes/*.yaml-tmlanguage' 'snippets/*.yml'",
+    "convert-yaml": "node ./scripts/convert_yaml.js",
     "vscode:prepublish": "pnpm run convert-yaml"
   },
   "devDependencies": {
-    "@serkonda7/yaml2json": "^0.9.0",
     "@vscode/vsce": "~3.6.0",
+    "js-yaml": "^4.1.0",
     "vscode-tmgrammar-test": "~0.1.3"
   }
 }
