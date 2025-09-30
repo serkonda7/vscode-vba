@@ -10,10 +10,10 @@
   Option Compare Text
 ' ^^^^^^^^^^^^^^^^^^^ keyword.other.option.vb6
   Option Compare Database
-' ^^^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vb6
+' ^^^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vba
 
   Option Explicit
 ' ^^^^^^^^^^^^^^^ keyword.other.option.vb6
 
   Option Private Module
-' ^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vb6
+' ^^^^^^^^^^^^^^^^^^^^^ keyword.other.option.vba

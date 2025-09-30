@@ -63,7 +63,7 @@ repository:
       - name: keyword.other.vb6
         match: (?i:\b(Attribute|Call|End (Function|Property|Sub|Type|Enum)|(Const|Function|Property|Sub|Type|Enum)|Declare|PtrSafe|WithEvents|Event|RaiseEvent|Implements)\b)
       - name: keyword.other.option.vb6
-        match: (?i)\bOption (Base [01]|Compare (Binary|Text|Database)|Explicit|Private Module)\b
+        match: (?i)\bOption (Base [01]|Compare (Binary|Text)|Explicit)\b
       - name: keyword.other.deftype.vb6
         match: (?i)\b(DefBool|DefByte|DefInt|DefLng|DefLngLng|DefLngPtr|DefCur|DefSng|DefDbl|DefDec|DefDate|DefStr|DefObj|DefVar)\b
       - name: keyword.other.visibility.vb6
