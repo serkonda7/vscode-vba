@@ -1,7 +1,7 @@
 {
   "name": "vscode-vba",
   "displayName": "VBA",
-  "description": "VBA tooling, syntax highlighting and snippets.",
+  "description": "VBA and VB6 tooling, syntax highlighting and snippets.",
   "icon": "images/icon.png",
   "version": "1.1.0-dev",
   "license": "MPL-2.0",
@@ -48,7 +48,8 @@
         "extensions": [
           ".ctl",
           ".dsr"
-        ]
+        ],
+        "configuration": "./out/language-configuration.json"
       },
       {
         "id": "vba",
@@ -75,7 +76,8 @@
         ],
         "extensions": [
           ".wwd"
-        ]
+        ],
+        "configuration": "./out/language-configuration.json"
       }
     ],
     "grammars": [
@@ -98,7 +100,15 @@
     "snippets": [
       {
         "language": "vba",
-        "path": "./out/vba_snippets.json"
+        "path": "./out/snippets.json"
+      },
+      {
+        "language": "vb6",
+        "path": "./out/snippets.json"
+      },
+      {
+        "language": "wwb",
+        "path": "./out/snippets.json"
       }
     ],
     "commands": [

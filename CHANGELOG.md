@@ -4,6 +4,7 @@ _unreleased_
 
 - Add VB6 syntax highlighting for `.ctl` and `.dsr`
 - Move VBA specific keywords into correct grammar ([GH-128][gh-128], [GH-129][gh-129])
+- Support snippets and language config for VB6 and WWB too ([GH-130][gh-130])
 - Improve readme and documentation
 
 
@@ -257,5 +258,6 @@ _2021-10-05_
 
 
 <!-- links -->
+[gh-130]: https://github.com/serkonda7/vscode-vba/pull/130
 [gh-129]: https://github.com/serkonda7/vscode-vba/pull/129
 [gh-128]: https://github.com/serkonda7/vscode-vba/pull/128
