@@ -6,6 +6,7 @@ _unreleased_
 - Move VBA specific keywords into correct grammar ([GH-128][gh-128], [GH-129][gh-129])
 - Support snippets and language config for VB6 and WWB too ([GH-130][gh-130])
 - Improve readme and documentation
+- build: Restructure pnpm commands
 
 
 ## 1.0.4
@@ -33,14 +34,14 @@ _2024-11-26_
 ## 0.11.1
 _2024-08-21_
 - Highlight `Global` visibility modifier
-- Dependencies: update vsce to 3.0.0
+- build: update vsce to 3.0.0
 
 
 ## 0.11.0
 _2024-07-12_
 - Enable _vscode.dev_ support
-- Replace Bait with JS
-- Update dependencies
+- build: Replace Bait with JS
+- build: Update dependencies
 
 
 ## 0.10.2
@@ -58,7 +59,7 @@ _2024-02-02_
 
 - Limit string highlighting to a single line
 - Associate `.doccls` file extension
-- Engineering: Switch from npm to pnpm
+- build: Switch from npm to pnpm
 
 
 ## 0.9.5

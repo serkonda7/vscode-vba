@@ -47,7 +47,7 @@ Refer to the [official documentation][docs-snippets] for guidance.
 ## Install a development version
 To install a development version of the extension, follow these steps:
 1. ```sh
-   pnpm run install-dev-ext
+   pnpm run install:dev
    ```
 2. Reload the VS Code window:
    - Execute `Reload Window` from the command palette (<kbd>F1</kbd>)
