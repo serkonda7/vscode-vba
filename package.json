@@ -10,11 +10,6 @@
     "url": "https://github.com/serkonda7/vscode-vba"
   },
   "publisher": "serkonda7",
-  "engines": {
-    "node": ">=18",
-    "vscode": "^1.82.0"
-  },
-  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
   "categories": [
     "Programming Languages",
     "Snippets",
@@ -25,19 +20,19 @@
     "VBA",
     "WWB"
   ],
-  "activationEvents": [
-    "onLanguage:vb6",
-    "onLanguage:vba",
-    "onLanguage:wwb",
-    "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
-  ],
+
   "main": "./src/main.js",
   "browser": "./src/main.js",
+
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     }
   },
+
+  "activationEvents": [
+    "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
+  ],
   "contributes": {
     "languages": [
       {
@@ -146,19 +141,30 @@
       ]
     }
   },
+
   "scripts": {
-    "test": "pnpm run convert-yaml && pnpm run test-vb6 && pnpm run test-vba && pnpm run test-wwb",
-    "test-vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
-    "test-vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-    "test-wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
-    "install-dev-ext": "vsce package -o ./out/vscode-vba-dev.vsix && code --install-extension ./out/vscode-vba-dev.vsix --force",
+    "test": "pnpm run convert-yaml && pnpm run test:all",
+    "test:all": "pnpm run test:vba && pnpm run test:vb6 && pnpm run test:wwb",
+    "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
+    "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
+    "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+
     "package": "vsce package",
-    "convert-yaml": "yaml2json language-configuration.yml \"syntaxes/*.yaml-tmlanguage\" \"snippets/*.yml\"",
+    "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
+    "install:dev": "pnpm run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
+
+    "convert-yaml": "node ./scripts/convert_yaml.js",
     "vscode:prepublish": "pnpm run convert-yaml"
   },
+
+  "engines": {
+    "node": ">=18",
+    "vscode": "^1.82.0"
+  },
+  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
   "devDependencies": {
-    "@serkonda7/yaml2json": "^0.9.0",
-    "@vscode/vsce": "~3.6.0",
+    "@vscode/vsce": "~3.6.2",
+    "js-yaml": "~4.1.0",
     "vscode-tmgrammar-test": "~0.1.3"
   }
 }
