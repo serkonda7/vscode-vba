@@ -49,11 +49,9 @@ Available snippets include:
 
 ## 📌 Project Status
 This project is **actively maintained**:
-- ✅ Pull request are welcome and will be reviewed within a few days
+- ✅ All pull requests are welcome and will be reviewed
 - ✅ Issues and bugs are adressed
 - ⚠️ For now, no major new features are planned
-
-Please feel free to [contribute](#contributing).
 
 ---
 
