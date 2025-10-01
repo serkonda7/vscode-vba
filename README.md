@@ -39,7 +39,7 @@ To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
 
 
 ## 💡 Snippets
-Available snippets include:
+Available snippets _(all languages)_:
 - `If`
 - `ElseIf`
 - `Else`
