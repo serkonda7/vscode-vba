@@ -16,7 +16,7 @@
 - Syntax highlighting for
   - **VBA**
   - **VB6**
-- Comprehensive [snippets](#snippets)
+- Comprehensive [snippets](#-snippets)
 - Support for some niche BASIC dialects _(community maintained)_:
    - WinWrap Basic (WWB)
 
@@ -93,6 +93,6 @@ Extension icon: [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore 
 
 [discussions]: https://github.com/serkonda7/vscode-vba/discussions
 
-[gh-linguist]: https://github.com/github-linguist/linguist/tree/master/vendor
+[gh-linguist]: https://github.com/github-linguist/linguist/tree/main/vendor
 
 [sslinky-vba-ls]: https://github.com/SSlinky/VBA-LanguageServer
