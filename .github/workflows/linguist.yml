@@ -1,0 +1,34 @@
+# This github action checks if the grammar(s) in this repo will compile with the latest version of linguist.
+
+name: Linguist Compilation Check
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  compile-check:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: linguist
+
+    steps:
+      - name: Clone linguist
+        working-directory: ${{ github.workspace }}
+        run: |
+          git clone --depth 1 https://github.com/github-linguist/linguist.git
+          cd linguist
+          git submodule init
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          working-directory: linguist
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Compile linguist grammar
+        run: ./script/add-grammar --replace ${{ github.event.repository.name }} https://github.com/${{ github.repository }}
