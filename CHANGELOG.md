@@ -7,6 +7,7 @@ _unreleased_
 - Support snippets and language config for VB6 and WWB too ([GH-130][gh-130])
 - docs: improve readme structure and add icons
 - docs: add grammar structure overview
+- ci: ensure GitHub linguist can compile the grammars ([GH-134][gh-134])
 - build: restructure pnpm commands
 - build: reduce and update dependencies
 
@@ -31,7 +32,9 @@ _2025-04-09_
 ## Changes before 1.0.0
 _To [0.x changelog](docs/changelog_v0.md)_
 
+
 <!-- links -->
+[gh-134]: https://github.com/serkonda7/vscode-vba/pull/134
 [gh-130]: https://github.com/serkonda7/vscode-vba/pull/130
 [gh-129]: https://github.com/serkonda7/vscode-vba/pull/129
 [gh-128]: https://github.com/serkonda7/vscode-vba/pull/128

@@ -21,7 +21,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/github-linguist/linguist.git
           cd linguist
-          git submodule init         
+          git submodule init
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -32,4 +32,3 @@ jobs:
 
       - name: Compile linguist grammar
         run: ./script/add-grammar --replace ${{ github.event.repository.name }} https://github.com/${{ github.repository }}
-        
