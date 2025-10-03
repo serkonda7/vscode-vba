@@ -1,6 +1,6 @@
 # Changelog
 ## 1.1.0
-_unreleased_
+_2025-10-03_
 
 - Add VB6 syntax highlighting for `.ctl` and `.dsr`
 - Move VBA specific keywords into correct grammar ([GH-128][gh-128], [GH-129][gh-129])
