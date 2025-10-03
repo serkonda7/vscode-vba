@@ -23,7 +23,16 @@
 For technical details about the languages and grammars, see the [docs](docs/grammar_structure.md).
 
 
-## 📖 Select correct grammar for VB6
+## 💡 Snippets
+Available snippets _(all languages)_:
+- `If`
+- `ElseIf`
+- `Else`
+- `Sub`
+- `Function`
+
+
+## 📖 Configuration for VB6 projects
 By default, `.bas`, `.cls` and `.frm` files open as **VBA**.
 
 To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
@@ -36,15 +45,6 @@ To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
   }
 }
 ```
-
-
-## 💡 Snippets
-Available snippets _(all languages)_:
-- `If`
-- `ElseIf`
-- `Else`
-- `Sub`
-- `Function`
 
 
 ## 📌 Project Status
