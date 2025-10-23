@@ -20,16 +20,13 @@
     "VBA",
     "WWB"
   ],
-
   "main": "./src/main.js",
   "browser": "./src/main.js",
-
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     }
   },
-
   "activationEvents": [
     "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
   ],
@@ -141,27 +138,23 @@
       ]
     }
   },
-
   "scripts": {
     "test": "pnpm run convert-yaml && pnpm run test:all",
     "test:all": "pnpm run test:vba && pnpm run test:vb6 && pnpm run test:wwb",
     "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
     "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
     "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
-
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
     "install:dev": "pnpm run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
-
     "convert-yaml": "node ./scripts/convert_yaml.js",
     "vscode:prepublish": "pnpm run convert-yaml"
   },
-
   "engines": {
     "node": ">=18",
     "vscode": "^1.82.0"
   },
-  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
+  "packageManager": "pnpm@10.19.1-oidc-test.0+sha512.a1b2c1c19f998f27ae8bb0cabef18261c79b887685ffe2c025d92d6469c3d3ef529031515a161186524379984188a19820d082240b29690fc575934a612caf4c",
   "devDependencies": {
     "@vscode/vsce": "~3.6.2",
     "js-yaml": "~4.1.0",
