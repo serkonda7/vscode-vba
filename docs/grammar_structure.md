@@ -2,16 +2,7 @@
 This repo provides grammars for multiple languages in the BASIC family.
 
 The grammars, like the languages themselves, build upon each other:
-```mermaid
-%%{init: {'theme':'neutral'}}%%
-graph TB
-    A[source.vb6]
-    B[source.vba]
-    C[source.wwb]
-
-    A -- included by --> B
-    B -- included by --> C
-```
+![vb6 -> vba -> wwb](./img/vb_grammar_structure.svg)
 
 
 ## File extensions
