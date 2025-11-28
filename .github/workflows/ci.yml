@@ -85,7 +85,7 @@ jobs:
 
       - id: publish_to_marketplace
         name: Publish to VS Code Marketplace
-        uses: HaaLeo/publish-vscode-extension@v1
+        uses: HaaLeo/publish-vscode-extension@v2
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
@@ -104,7 +104,7 @@ jobs:
           name: ${{ env.VSIX_FILE }}
 
       - name: Publish to Open VSX Registry
-        uses: HaaLeo/publish-vscode-extension@v1
+        uses: HaaLeo/publish-vscode-extension@v2
         with:
           pat: ${{ secrets.OPEN_VSX_PAT }}
           extensionFile: ${{ env.VSIX_FILE }}
