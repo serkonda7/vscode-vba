@@ -1,4 +1,12 @@
 # Changelog
+## 1.2.0
+_2025-11-28_
+
+- Bump minimum supported VS Code to 1.90 and NodeJS to 20
+- docs: add grammar structure graphic
+- Update dependencies
+
+
 ## 1.1.0
 _2025-10-03_
 
