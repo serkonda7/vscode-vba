@@ -59,14 +59,15 @@ To install a development version of the extension, follow these steps:
 Follow these steps to set up your development environment:
 
 1. Install development tools
-   - [Node.js](https://nodejs.org/) >= 18
+   - [Node.js](https://nodejs.org/) >= 20
       - The latest version should work fine
-      - Otherwise use [NVM][nvm] for management: `nvm install 18 && nvm use 18`
-   - [pnpm](https://pnpm.io/): `pnpm -v || npm install -g pnpm`
+      - Otherwise use [NVM][nvm] for management: `nvm install 20 && nvm use 20`
+   - [corepack](https://github.com/nodejs/corepack): `npm install -g corepack`
 2. Fork and clone the repository https://github.com/serkonda7/vscode-vba
 3. Install dependencies
    ```sh
    cd vscode-vba
+   corepack install
    pnpm install
    ```
 4. Create a new branch and make your changes

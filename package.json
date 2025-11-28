@@ -151,13 +151,13 @@
     "vscode:prepublish": "pnpm run convert-yaml"
   },
   "engines": {
-    "node": ">=18",
-    "vscode": "^1.82.0"
+    "node": ">=20",
+    "vscode": "^1.90.0"
   },
-  "packageManager": "pnpm@10.19.1-oidc-test.0+sha512.a1b2c1c19f998f27ae8bb0cabef18261c79b887685ffe2c025d92d6469c3d3ef529031515a161186524379984188a19820d082240b29690fc575934a612caf4c",
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
   "devDependencies": {
-    "@vscode/vsce": "~3.6.2",
-    "js-yaml": "~4.1.0",
+    "@vscode/vsce": "~3.7.1",
+    "js-yaml": "~4.1.1",
     "vscode-tmgrammar-test": "~0.1.3"
   }
 }

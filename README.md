@@ -51,7 +51,7 @@ To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
 This project is **actively maintained**:
 - ✅ All pull requests are welcome and will be reviewed
 - ✅ Issues and bugs are adressed
-- ⚠️ For now, no major new features are planned
+- ⚠️ For now, I won't develop new features by myself
 
 ---
 
