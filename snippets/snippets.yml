@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: 2024-present Lukas Neubert <lukas.neubert@proton.me>
 # SPDX-License-Identifier: MPL-2.0
 
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Yash-Singh1/vscode-snippets-json-schema/main/schema.json
+
 If:
   prefix: If
   body:
