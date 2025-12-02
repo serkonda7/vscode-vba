@@ -20,6 +20,7 @@
     "VBA",
     "WWB"
   ],
+  "type": "module",
   "main": "./src/main.js",
   "browser": "./src/main.js",
   "capabilities": {
@@ -157,6 +158,8 @@
   "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
   "devDependencies": {
     "@vscode/vsce": "~3.7.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "js-yaml": "~4.1.1",
     "vscode-tmgrammar-test": "~0.1.3"
   }
