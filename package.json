@@ -145,6 +145,7 @@
     "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
     "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
     "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+    "validate-yaml": "node ./scripts/validate_yaml.js",
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
     "install:dev": "pnpm run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
