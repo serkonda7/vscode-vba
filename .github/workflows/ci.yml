@@ -27,7 +27,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Test
+      - name: Validate YAML syntax
+        run: pnpm run validate-yaml
+
+      - name: Test Grammars
         run: pnpm run test
 
 

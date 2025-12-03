@@ -3,7 +3,7 @@
   "displayName": "VBA",
   "description": "VBA and VB6 tooling, syntax highlighting and snippets.",
   "icon": "images/icon.png",
-  "version": "1.2.0",
+  "version": "1.2.1-dev",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "VBA",
     "WWB"
   ],
+  "type": "module",
   "main": "./src/main.js",
   "browser": "./src/main.js",
   "capabilities": {
@@ -144,6 +145,7 @@
     "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
     "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
     "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+    "validate-yaml": "node ./scripts/validate_yaml.js",
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
     "install:dev": "pnpm run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
@@ -157,6 +159,8 @@
   "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
   "devDependencies": {
     "@vscode/vsce": "~3.7.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "js-yaml": "~4.1.1",
     "vscode-tmgrammar-test": "~0.1.3"
   }

@@ -1,4 +1,11 @@
 # Changelog
+## 1.2.1
+_unreleased_
+
+- build: Add schema definitions in YAML files
+- ci: Validate yaml files against their schema
+
+
 ## 1.2.0
 _2025-11-28_
 

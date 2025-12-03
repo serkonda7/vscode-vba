@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: 2023-present Lukas Neubert <lukas.neubert@proton.me>
 # SPDX-License-Identifier: MPL-2.0
 
+# yaml-language-server: $schema=https://www.schemastore.org/tmlanguage.json
+
 name: Visual Basic 6
 scopeName: source.vb6
 fileTypes:
