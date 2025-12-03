@@ -2,7 +2,8 @@
 ## 1.2.1
 _unreleased_
 
-- build: add schema definitions in YAML files
+- build: Add schema definitions in YAML files
+- ci: Validate yaml files against their schema
 
 
 ## 1.2.0
