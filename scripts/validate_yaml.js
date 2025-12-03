@@ -5,7 +5,7 @@ import addFormats from "ajv-formats"
 
 const in_files = [
 	"language-configuration.yml",
-	// "snippets/snippets.yml",
+	"snippets/snippets.yml",
 	"syntaxes/vba.yaml-tmlanguage",
 	"syntaxes/vb6.yaml-tmlanguage",
 	"syntaxes/wwb.yaml-tmlanguage",
