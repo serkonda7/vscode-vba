@@ -2,6 +2,7 @@ import fs from "fs"
 import yaml from "js-yaml"
 import Ajv from "ajv"
 import addFormats from "ajv-formats"
+import strict from "assert/strict"
 
 const in_files = [
 	"language-configuration.yml",
@@ -11,7 +12,12 @@ const in_files = [
 	"syntaxes/wwb.yaml-tmlanguage",
 ]
 
-const ajv = new Ajv()
+const ajv = new Ajv({
+		strictSchema: true,
+		strictRequired: false,
+		allErrors: true,
+	}
+)
 addFormats(ajv)
 
 const schema_cache = new Map()
