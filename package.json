@@ -5,11 +5,14 @@
   "icon": "images/icon.png",
   "version": "1.2.1-dev",
   "license": "MPL-2.0",
+  "publisher": "serkonda7",
   "repository": {
     "type": "git",
     "url": "https://github.com/serkonda7/vscode-vba"
   },
-  "publisher": "serkonda7",
+  "bugs": {
+    "url": "https://github.com/serkonda7/vscode-vba/issues"
+  },
   "categories": [
     "Programming Languages",
     "Snippets",
@@ -142,9 +145,9 @@
   "scripts": {
     "test": "pnpm run convert-yaml && pnpm run test:all",
     "test:all": "pnpm run test:vba && pnpm run test:vb6 && pnpm run test:wwb",
-    "test:vba": "vscode-tmgrammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-    "test:vb6": "vscode-tmgrammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
-    "test:wwb": "vscode-tmgrammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+    "test:vba": "textmate-grammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
+    "test:vb6": "textmate-grammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
+    "test:wwb": "textmate-grammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
     "validate-yaml": "node ./scripts/validate_yaml.js",
     "package": "vsce package",
     "package:dev": "vsce package -o ./out/vscode-vba-dev.vsix",
