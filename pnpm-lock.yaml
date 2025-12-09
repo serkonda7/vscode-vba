@@ -12,17 +12,17 @@ importers:
         specifier: ~3.7.1
         version: 3.7.1
       ajv:
-        specifier: ^8.17.1
+        specifier: ~8.17.1
         version: 8.17.1
       ajv-formats:
-        specifier: ^3.0.1
+        specifier: ~3.0.1
         version: 3.0.1(ajv@8.17.1)
       js-yaml:
         specifier: ~4.1.1
         version: 4.1.1
-      vscode-tmgrammar-test:
-        specifier: ~0.1.3
-        version: 0.1.3
+      textmate-grammar-test:
+        specifier: ~0.2.1
+        version: 0.2.1
 
 packages:
 
@@ -157,20 +157,20 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@textlint/ast-node-types@15.4.1':
-    resolution: {integrity: sha512-XifMpBMdo0E1Fuh85YdcYAgy+okNg9WKBzIPIO4JUDnSWUVFihnogrM4cjDapeHkgzSgulwR8oJVJ17eyxI1bA==}
+  '@textlint/ast-node-types@15.5.0':
+    resolution: {integrity: sha512-K0LEuuTo4rza8yDrlYkRdXLao8Iz/QBMsQdIxRrOOrLYb4HAtZaypZ78c+J6rDA1UlGxadZVLmkkiv4KV5fMKQ==}
 
-  '@textlint/linter-formatter@15.4.1':
-    resolution: {integrity: sha512-kAV7Sup3vwvqxKvBbf9lx/JaPHkRybQp/LLvA73U1AorPZE6XyfBAFG24BbMiCs4OX1ax4g7kXRuFPgMLWRf+g==}
+  '@textlint/linter-formatter@15.5.0':
+    resolution: {integrity: sha512-DPTm2+VXKID41qKQWagg/4JynM6hEEpvbq0PlGsEoC4Xm7IqXIxFym3mSf5+ued0cuiIV1hR9kgXjqGdP035tw==}
 
-  '@textlint/module-interop@15.4.1':
-    resolution: {integrity: sha512-jHtM2E5CR68P3z/+FGrEU5pml2fQVzEo2sez9FEjrVHSPCrHtqHcPaKfsYbQJjc9C48ObwaWrCzRNaL3KedNCQ==}
+  '@textlint/module-interop@15.5.0':
+    resolution: {integrity: sha512-rqfouEhBEgZlR9umswWXXRBcmmSM28Trpr9b0duzgehKYVc7wSQCuQMagr6YBJa2NRMfRNinupusbJXMg0ij2A==}
 
-  '@textlint/resolver@15.4.1':
-    resolution: {integrity: sha512-uVssyG3XXXKNY+O7NOajGvQZTyOuhPviwlq7Xek6ZT9K1eDQtA8074cPkAQoLMYhi/TUyOE5P5kpz42UF8Lmdw==}
+  '@textlint/resolver@15.5.0':
+    resolution: {integrity: sha512-kK5nFbg5N3kVoZExQI/dnYjCInmTltvXDnuCRrBxHI01i6kO/o8R7Lc2aFkAZ6/NUZuRPalkyDdwZJke4/R2wg==}
 
-  '@textlint/types@15.4.1':
-    resolution: {integrity: sha512-WByVZ3zblbvuI+voWQplUP7seSTKXI9z6TMVXEB3dY3JFrZCIXWKNfLbETX5lZV7fYkCMaDtILO1l6s11wdbQA==}
+  '@textlint/types@15.5.0':
+    resolution: {integrity: sha512-EjAPbuA+3NyQ9WyFP7iUlddi35F3mGrf4tb4cZM0nWywbtEJ3+XAYqL+5RsF0qFeSguxGir09NdZOWrG9wVOUQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -553,9 +553,6 @@ packages:
     resolution: {integrity: sha512-Xr9F6z6up6Ws+NjzMCZc6WXg2YFRlrLP9NQDO3VQrWrfiojdhS56TzueT88ze0uBdCTwEIhQ3ptnmKeWGFAe0A==}
     engines: {node: '>=14.14'}
 
-  fs.realpath@1.0.0:
-    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
-
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -579,9 +576,9 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
 
-  glob@7.2.3:
-    resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+  glob@13.0.0:
+    resolution: {integrity: sha512-tvZgpqk6fz4BaNZ66ZsRaZnbHvP/jG3uKJvAZOwEVUL4RTA5nJeeLYfyN9/VA8NX/V3IBG+hkeuGpKjvELkVhA==}
+    engines: {node: 20 || >=22}
 
   globby@14.1.0:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
@@ -647,10 +644,6 @@ packages:
   index-to-position@1.2.0:
     resolution: {integrity: sha512-Yg7+ztRkqslMAS2iFaU+Oa4KTSidr63OsFGlOrJoW981kIYO3CGCS3wA95P1mUi/IVSJkn0D479KTJpVpvFNuw==}
     engines: {node: '>=18'}
-
-  inflight@1.0.6:
-    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
-    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -892,10 +885,6 @@ packages:
   parse5@7.3.0:
     resolution: {integrity: sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw==}
 
-  path-is-absolute@1.0.1:
-    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
-    engines: {node: '>=0.10.0'}
-
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
@@ -1115,6 +1104,11 @@ packages:
     resolution: {integrity: sha512-tXJwSr9355kFJI3lbCkPpUH5cP8/M0GGy2xLO34aZCjMXBaK3SoPnZwr/oWmo1FdCnELcs4npdCIOFtq9W3ruQ==}
     engines: {node: '>=4'}
 
+  textmate-grammar-test@0.2.1:
+    resolution: {integrity: sha512-fMm8fG5BXOxqlW0BloplTXGcMpiveLJlGImPe2ZJQrCFzTR+t43StpA0ZEf47kB48oqU8aJejDiCQ4aXLQmlNA==}
+    engines: {node: '>=20'}
+    hasBin: true
+
   tmp@0.2.5:
     resolution: {integrity: sha512-voyz6MApa1rQGUxT3E+BK7/ROe8itEx7vD8/HEvt4xwXucvQ5G5oeEiHkmHZJuBO21RpOf+YYm9MOivj709jow==}
     engines: {node: '>=14.14'}
@@ -1179,15 +1173,11 @@ packages:
     resolution: {integrity: sha512-Ck0EJbAGxHwprkzFO966t4/5QkRuzh+/I1RxhLgUKKwEn+Cd8NwM60mE3AqBZg5gYODoXW0EFsQvbZjRlvdqbg==}
     engines: {node: '>=4'}
 
-  vscode-oniguruma@1.7.0:
-    resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
+  vscode-oniguruma@2.0.1:
+    resolution: {integrity: sha512-poJU8iHIWnC3vgphJnrLZyI3YdqRlR27xzqDmpPXYzA93R4Gk8z7T6oqDzDoHjoikA2aS82crdXFkjELCdJsjQ==}
 
-  vscode-textmate@7.0.4:
-    resolution: {integrity: sha512-9hJp0xL7HW1Q5OgGe03NACo7yiCTMEk3WU/rtKXUbncLtdg6rVVNJnHwD88UhbIYU2KoxY0Dih0x+kIsmUKn2A==}
-
-  vscode-tmgrammar-test@0.1.3:
-    resolution: {integrity: sha512-Wg6Pz+ePAT1O+F/A1Fc4wS5vY2X+HNtgN4qMdL+65NLQYd1/zdDWH4fhwsLjX8wTzeXkMy49Cr4ZqWTJ7VnVxg==}
-    hasBin: true
+  vscode-textmate@9.3.0:
+    resolution: {integrity: sha512-zHiZZOdb9xqj5/X1C4a29sbgT2HngdWxPLSl3PyHRQF+5visI4uNM020OHiLJjsMxUssyk/pGVAg/9LCIobrVg==}
 
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
@@ -1388,9 +1378,9 @@ snapshots:
     dependencies:
       '@secretlint/resolver': 10.2.2
       '@secretlint/types': 10.2.2
-      '@textlint/linter-formatter': 15.4.1
-      '@textlint/module-interop': 15.4.1
-      '@textlint/types': 15.4.1
+      '@textlint/linter-formatter': 15.5.0
+      '@textlint/module-interop': 15.5.0
+      '@textlint/types': 15.5.0
       chalk: 5.6.2
       debug: 4.4.3
       pluralize: 8.0.0
@@ -1436,15 +1426,15 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@textlint/ast-node-types@15.4.1': {}
+  '@textlint/ast-node-types@15.5.0': {}
 
-  '@textlint/linter-formatter@15.4.1':
+  '@textlint/linter-formatter@15.5.0':
     dependencies:
       '@azu/format-text': 1.0.2
       '@azu/style-format': 1.0.1
-      '@textlint/module-interop': 15.4.1
-      '@textlint/resolver': 15.4.1
-      '@textlint/types': 15.4.1
+      '@textlint/module-interop': 15.5.0
+      '@textlint/resolver': 15.5.0
+      '@textlint/types': 15.5.0
       chalk: 4.1.2
       debug: 4.4.3
       js-yaml: 4.1.1
@@ -1457,13 +1447,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@textlint/module-interop@15.4.1': {}
+  '@textlint/module-interop@15.5.0': {}
 
-  '@textlint/resolver@15.4.1': {}
+  '@textlint/resolver@15.5.0': {}
 
-  '@textlint/types@15.4.1':
+  '@textlint/types@15.5.0':
     dependencies:
-      '@textlint/ast-node-types': 15.4.1
+      '@textlint/ast-node-types': 15.5.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -1876,8 +1866,6 @@ snapshots:
       jsonfile: 6.2.0
       universalify: 2.0.1
 
-  fs.realpath@1.0.0: {}
-
   function-bind@1.1.2: {}
 
   get-intrinsic@1.3.0:
@@ -1914,14 +1902,11 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 2.0.1
 
-  glob@7.2.3:
+  glob@13.0.0:
     dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.1.2
-      once: 1.4.0
-      path-is-absolute: 1.0.1
+      minimatch: 10.1.1
+      minipass: 7.1.2
+      path-scurry: 2.0.1
 
   globby@14.1.0:
     dependencies:
@@ -1990,12 +1975,8 @@ snapshots:
 
   index-to-position@1.2.0: {}
 
-  inflight@1.0.6:
-    dependencies:
-      once: 1.4.0
-      wrappy: 1.0.2
-
-  inherits@2.0.4: {}
+  inherits@2.0.4:
+    optional: true
 
   ini@1.3.8:
     optional: true
@@ -2194,6 +2175,7 @@ snapshots:
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
+    optional: true
 
   open@10.2.0:
     dependencies:
@@ -2228,8 +2210,6 @@ snapshots:
   parse5@7.3.0:
     dependencies:
       entities: 6.0.1
-
-  path-is-absolute@1.0.1: {}
 
   path-key@3.1.1: {}
 
@@ -2497,6 +2477,16 @@ snapshots:
     dependencies:
       editions: 6.22.0
 
+  textmate-grammar-test@0.2.1:
+    dependencies:
+      bottleneck: 2.19.5
+      chalk: 2.4.2
+      commander: 9.5.0
+      diff: 4.0.2
+      glob: 13.0.0
+      vscode-oniguruma: 2.0.1
+      vscode-textmate: 9.3.0
+
   tmp@0.2.5: {}
 
   to-regex-range@5.0.1:
@@ -2546,19 +2536,9 @@ snapshots:
 
   version-range@4.15.0: {}
 
-  vscode-oniguruma@1.7.0: {}
+  vscode-oniguruma@2.0.1: {}
 
-  vscode-textmate@7.0.4: {}
-
-  vscode-tmgrammar-test@0.1.3:
-    dependencies:
-      bottleneck: 2.19.5
-      chalk: 2.4.2
-      commander: 9.5.0
-      diff: 4.0.2
-      glob: 7.2.3
-      vscode-oniguruma: 1.7.0
-      vscode-textmate: 7.0.4
+  vscode-textmate@9.3.0: {}
 
   whatwg-encoding@3.1.1:
     dependencies:
@@ -2582,7 +2562,8 @@ snapshots:
       string-width: 5.1.2
       strip-ansi: 7.1.2
 
-  wrappy@1.0.2: {}
+  wrappy@1.0.2:
+    optional: true
 
   wsl-utils@0.1.0:
     dependencies:
