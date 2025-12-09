@@ -4,6 +4,7 @@ _unreleased_
 
 - build: Add schema definitions in YAML files
 - ci: Validate yaml files against their schema
+- build(deps): Replace vscode-tmgrammar-test with textmate-grammar-test
 
 
 ## 1.2.0
