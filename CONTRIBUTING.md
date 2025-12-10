@@ -34,7 +34,7 @@ This prevents regressions and makes reviewing the changes easier by providing a 
 Tests for the language grammar are in [`syntaxes/tests/`](syntaxes/tests/).
 Run them using:
 ```
-pnpm run test
+bun run test
 ```
 
 
@@ -47,7 +47,7 @@ Refer to the [official documentation][docs-snippets] for guidance.
 ## Install a development version
 To install a development version of the extension, follow these steps:
 1. ```sh
-   pnpm run install:dev
+   bun run install:dev
    ```
 2. Reload the VS Code window:
    - Execute `Reload Window` from the command palette (<kbd>F1</kbd>)
@@ -62,13 +62,12 @@ Follow these steps to set up your development environment:
    - [Node.js](https://nodejs.org/) >= 20
       - The latest version should work fine
       - Otherwise use [NVM][nvm] for management: `nvm install 20 && nvm use 20`
-   - [corepack](https://github.com/nodejs/corepack): `npm install -g corepack`
+   - [bun](https://github.com/oven-sh/bun): `npm install -g bun`
 2. Fork and clone the repository https://github.com/serkonda7/vscode-vba
 3. Install dependencies
    ```sh
    cd vscode-vba
-   corepack install
-   pnpm install
+   bun install
    ```
 4. Create a new branch and make your changes
 
