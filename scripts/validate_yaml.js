@@ -2,7 +2,6 @@ import fs from "fs"
 import yaml from "js-yaml"
 import Ajv from "ajv"
 import addFormats from "ajv-formats"
-import strict from "assert/strict"
 
 const in_files = [
 	"language-configuration.yml",
