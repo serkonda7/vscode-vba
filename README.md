@@ -47,6 +47,13 @@ To treat them as VB6 instead, add a `.vscode/settings.json` to your project:
 ```
 
 
+## 🤝 Contributing
+Your help is highly appreciated!
+
+- **Join the conversation:** [GitHub Discussions][discussions]
+- **Report Issues or Submit Changes:** see the [Contribution Guidelines](CONTRIBUTING.md)
+
+
 ## 📌 Project Status
 This project is **actively maintained**:
 - ✅ All pull requests are welcome and will be reviewed
@@ -56,24 +63,6 @@ This project is **actively maintained**:
 ---
 
 For advanced features like a VBA language server, try [SSlinky/VBA-LanguageServer][sslinky-vba-ls].
-
-
-## 🤝 Contributing
-Your help is highly appreciated!
-
-- **Join the conversation:** [GitHub Discussions][discussions]
-- **Report Issues or Submit Changes:** see the [Contribution Guidelines](CONTRIBUTING.md)
-
-
-## 📦 Installation
-From VS Code:
-1. Launch Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>)
-2. Run
-   ```
-   ext install serkonda7.vscode-vba
-   ```
-
-Or install from [Open VSX][open-vsx].
 
 
 ## 📜 License
