@@ -1,8 +1,7 @@
+import { YAML } from "bun"
 import fs from "fs"
-import yaml from "js-yaml"
 import Ajv from "ajv"
 import addFormats from "ajv-formats"
-import strict from "assert/strict"
 
 const in_files = [
 	"language-configuration.yml",
@@ -22,7 +21,7 @@ addFormats(ajv)
 
 const schema_cache = new Map()
 
-async function get_schema(url) {
+async function get_schema(url: string): Promise<any> {
 	if (schema_cache.has(url)) {
 		return schema_cache.get(url)
 	}
@@ -37,7 +36,7 @@ async function get_schema(url) {
 	return schema
 }
 
-function extract_schema_url(content) {
+function extract_schema_url(content: string): string | null {
 	const match = content.match(/# yaml-language-server: \$schema=(.+)/)
 	if (match) {
 		return match[1].trim()
@@ -46,11 +45,15 @@ function extract_schema_url(content) {
 	return null
 }
 
-async function validate_file(path) {
+async function validate_file(path: string): Promise<boolean> {
 	const content = fs.readFileSync(path, "utf8")
-	const data = yaml.load(content)
+	const data = YAML.parse(content)
 
 	const schema_url = extract_schema_url(content)
+	if (!schema_url) {
+		return false
+	}
+
 	const schema = await get_schema(schema_url)
 
 	const validate = ajv.compile(schema)
@@ -61,14 +64,14 @@ async function validate_file(path) {
 		return true
 	} else {
 		console.error(`${path}: ERROR`)
-		validate.errors.forEach((error) => {
+		validate.errors?.forEach((error) => {
 			console.error(`  ${error.instancePath} ${error.message}`)
 		})
 		return false
 	}
 }
 
-async function main() {
+async function main(): Promise<void> {
 	for (const path of in_files) {
 		const valid = await validate_file(path)
 		if (!valid) {
