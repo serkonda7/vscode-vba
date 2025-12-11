@@ -45,7 +45,7 @@
           ".ctl",
           ".dsr"
         ],
-        "configuration": "./out/language-configuration.json"
+        "configuration": "./dist/language-configuration.json"
       },
       {
         "id": "vba",
@@ -59,7 +59,7 @@
           ".vba",
           ".doccls"
         ],
-        "configuration": "./out/language-configuration.json",
+        "configuration": "./dist/language-configuration.json",
         "icon": {
           "light": "./images/vba-logo-light.svg",
           "dark": "./images/vba-logo-dark.svg"
@@ -73,38 +73,38 @@
         "extensions": [
           ".wwd"
         ],
-        "configuration": "./out/language-configuration.json"
+        "configuration": "./dist/language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "vb6",
         "scopeName": "source.vb6",
-        "path": "./out/vb6.json"
+        "path": "./dist/vb6.json"
       },
       {
         "language": "vba",
         "scopeName": "source.vba",
-        "path": "./out/vba.json"
+        "path": "./dist/vba.json"
       },
       {
         "language": "wwb",
         "scopeName": "source.wwb",
-        "path": "./out/wwb.json"
+        "path": "./dist/wwb.json"
       }
     ],
     "snippets": [
       {
         "language": "vba",
-        "path": "./out/snippets.json"
+        "path": "./dist/snippets.json"
       },
       {
         "language": "vb6",
-        "path": "./out/snippets.json"
+        "path": "./dist/snippets.json"
       },
       {
         "language": "wwb",
-        "path": "./out/snippets.json"
+        "path": "./dist/snippets.json"
       }
     ],
     "commands": [
@@ -143,17 +143,17 @@
     }
   },
   "scripts": {
-    "test": "bun run convert-yaml && bun run test:all",
+    "test": "bun run convert && bun run test:all",
     "test:all": "bun run test:vba && bun run test:vb6 && bun run test:wwb",
-    "test:vba": "bunx textmate-grammar-test -g ./out/vba.json \"syntaxes/tests/vba/*.bas\"",
-    "test:vb6": "bunx textmate-grammar-test -g ./out/vb6.json \"syntaxes/tests/vb6/*.bas\"",
-    "test:wwb": "bunx textmate-grammar-test -g ./out/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
-    "validate-yaml": "bun run ./scripts/validate_yaml.js",
+    "test:vba": "bunx textmate-grammar-test -g ./dist/vba.json \"syntaxes/tests/vba/*.bas\"",
+    "test:vb6": "bunx textmate-grammar-test -g ./dist/vb6.json \"syntaxes/tests/vb6/*.bas\"",
+    "test:wwb": "bunx textmate-grammar-test -g ./dist/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
+    "validate": "bun run ./scripts/validate_yaml.js",
     "package": "bunx vsce package",
-    "package:dev": "bunx vsce package -o ./out/vscode-vba-dev.vsix",
-    "install:dev": "bun run package:dev && code --install-extension ./out/vscode-vba-dev.vsix --force",
-    "convert-yaml": "bun run ./scripts/convert_yaml.js",
-    "vscode:prepublish": "bun run convert-yaml"
+    "package:dev": "bunx vsce package -o ./vscode-vba-dev.vsix",
+    "install:dev": "bun run package:dev && code --install-extension ./vscode-vba-dev.vsix --force",
+    "convert": "bun run ./scripts/convert_yaml.js",
+    "vscode:prepublish": "bun run convert"
   },
   "engines": {
     "node": ">=20",
@@ -161,10 +161,11 @@
   },
   "packageManager": "bun@1.3.4",
   "devDependencies": {
+    "@types/bun": "~1.3.4",
+    "@types/node": "~20.19.26",
     "@vscode/vsce": "~3.7.1",
     "ajv": "~8.17.1",
     "ajv-formats": "~3.0.1",
-    "js-yaml": "~4.1.1",
     "textmate-grammar-test": "~0.2.1"
   }
 }

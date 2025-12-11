@@ -39,7 +39,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Validate YAML syntax
-        run: bun run validate-yaml
+        run: bun run validate
 
       - name: Test Grammars
         run: bun run test

@@ -1,6 +1,7 @@
 # build files
 out/
 dist/
+build/
 *.vsix
 
 # editor files

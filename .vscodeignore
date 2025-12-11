@@ -6,7 +6,7 @@
 !package.json
 
 !src/*.js
-!out/*.json
+!dist/*.json
 
 !images/icon.png
 !images/*.svg
