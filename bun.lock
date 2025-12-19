@@ -10,7 +10,7 @@
         "@vscode/vsce": "~3.7.1",
         "ajv": "~8.17.1",
         "ajv-formats": "~3.0.1",
-        "textmate-grammar-test": "~0.2.7",
+        "textmate-grammar-test": "~0.2.8",
       },
     },
   },
@@ -561,7 +561,7 @@
 
     "textextensions": ["textextensions@6.11.0", "", { "dependencies": { "editions": "6.22.0" } }, "sha512-tXJwSr9355kFJI3lbCkPpUH5cP8/M0GGy2xLO34aZCjMXBaK3SoPnZwr/oWmo1FdCnELcs4npdCIOFtq9W3ruQ=="],
 
-    "textmate-grammar-test": ["textmate-grammar-test@0.2.7", "", { "dependencies": { "chalk": "~5.6.2", "commander": "^9.2.0", "diff": "~8.0.2", "glob": "~13.0.0", "p-limit": "~7.2.0", "vscode-oniguruma": "~2.0.1", "vscode-textmate": "~9.3.0" }, "bin": { "textmate-grammar-test": "dist/unit.js", "textmate-grammar-snap": "dist/snapshot.js" } }, "sha512-XxKZAbYknpcWM4NhwPPo7cb6nIEr+lI89R9gnZMyYZBEUzqVfqbfi4EvC74QWii93xCD4d3FY8g2DHAfMjUziA=="],
+    "textmate-grammar-test": ["textmate-grammar-test@0.2.8", "", { "dependencies": { "chalk": "~5.6.2", "commander": "^9.2.0", "diff": "~8.0.2", "glob": "~13.0.0", "p-limit": "~7.2.0", "vscode-oniguruma": "~2.0.1", "vscode-textmate": "~9.3.0" }, "bin": { "textmate-grammar-test": "dist/unit.js", "textmate-grammar-snap": "dist/snapshot.js" } }, "sha512-trd49xwXjDyyAxvfG8yzbOBUmShS0OOu6m2iIk3GvbRjJ8yoyP7cLVepLNnezBUNsohrgJ4hozVaor602l8GSA=="],
 
     "tmp": ["tmp@0.2.5", "", {}, "sha512-voyz6MApa1rQGUxT3E+BK7/ROe8itEx7vD8/HEvt4xwXucvQ5G5oeEiHkmHZJuBO21RpOf+YYm9MOivj709jow=="],
 
