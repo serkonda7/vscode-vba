@@ -166,6 +166,6 @@
     "@vscode/vsce": "~3.7.1",
     "ajv": "~8.17.1",
     "ajv-formats": "~3.0.1",
-    "textmate-grammar-test": "~0.2.8"
+    "textmate-grammar-test": "~0.2.9"
   }
 }
