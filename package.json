@@ -148,11 +148,11 @@
     "test:vba": "bunx textmate-grammar-test -g ./dist/vba.json \"syntaxes/tests/vba/*.bas\"",
     "test:vb6": "bunx textmate-grammar-test -g ./dist/vb6.json \"syntaxes/tests/vb6/*.bas\"",
     "test:wwb": "bunx textmate-grammar-test -g ./dist/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
-    "validate": "bun run ./scripts/validate_yaml.js",
+    "validate": "bun run ./scripts/validate_yaml.ts",
     "package": "bunx vsce package",
     "package:dev": "bunx vsce package -o ./vscode-vba-dev.vsix",
     "install:dev": "bun run package:dev && code --install-extension ./vscode-vba-dev.vsix --force",
-    "convert": "bun run ./scripts/convert_yaml.js",
+    "convert": "bun run ./scripts/convert_yaml.ts",
     "vscode:prepublish": "bun run convert"
   },
   "engines": {
