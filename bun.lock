@@ -6,11 +6,11 @@
       "name": "vscode-vba",
       "devDependencies": {
         "@types/bun": "~1.3.5",
-        "@types/node": "~20.19.27",
+        "@types/node": "~22.19.3",
         "@vscode/vsce": "~3.7.1",
         "ajv": "~8.17.1",
         "ajv-formats": "~3.0.1",
-        "textmate-grammar-test": "~0.2.9",
+        "textmate-grammar-test": "~0.3.1",
       },
     },
   },
@@ -95,7 +95,7 @@
 
     "@types/bun": ["@types/bun@1.3.5", "", { "dependencies": { "bun-types": "1.3.5" } }, "sha512-RnygCqNrd3srIPEWBd5LFeUYG7plCoH2Yw9WaZGyNmdTEei+gWaHqydbaIRkIkcbXwhBT94q78QljxN0Sk838w=="],
 
-    "@types/node": ["@types/node@20.19.27", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug=="],
+    "@types/node": ["@types/node@22.19.3", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA=="],
 
     "@types/normalize-package-data": ["@types/normalize-package-data@2.4.4", "", {}, "sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA=="],
 
@@ -561,7 +561,7 @@
 
     "textextensions": ["textextensions@6.11.0", "", { "dependencies": { "editions": "6.22.0" } }, "sha512-tXJwSr9355kFJI3lbCkPpUH5cP8/M0GGy2xLO34aZCjMXBaK3SoPnZwr/oWmo1FdCnELcs4npdCIOFtq9W3ruQ=="],
 
-    "textmate-grammar-test": ["textmate-grammar-test@0.2.9", "", { "dependencies": { "chalk": "~5.6.2", "commander": "^9.2.0", "diff": "~8.0.2", "glob": "~13.0.0", "p-limit": "~7.2.0", "vscode-oniguruma": "~2.0.1", "vscode-textmate": "~9.3.0" }, "bin": { "textmate-grammar-test": "dist/unit.js", "textmate-grammar-snap": "dist/snapshot.js" } }, "sha512-8yxCOM05rSG/dreF4I2lVIJxXbJuFF8/p3FUiyoeCwlMyWBWspJRMpVXtGNa3TIASFbpFX5B88arCL9ACdocBw=="],
+    "textmate-grammar-test": ["textmate-grammar-test@0.3.1", "", { "dependencies": { "chalk": "~5.6.2", "commander": "^9.5.0", "diff": "~8.0.2", "glob": "~13.0.0", "p-limit": "~7.2.0", "vscode-oniguruma": "~2.0.1", "vscode-textmate": "~9.3.0" }, "bin": { "textmate-grammar-test": "dist/unit.js", "textmate-grammar-snap": "dist/snapshot.js" } }, "sha512-K9vZvroQnHcbjKOPIPb9UKY0YOfmYMFBbCcB/ztlgeeqvdM3voXFvxlO26MagxLcVsGP6Ry1mjEFCj4HjV/DDQ=="],
 
     "tmp": ["tmp@0.2.5", "", {}, "sha512-voyz6MApa1rQGUxT3E+BK7/ROe8itEx7vD8/HEvt4xwXucvQ5G5oeEiHkmHZJuBO21RpOf+YYm9MOivj709jow=="],
 

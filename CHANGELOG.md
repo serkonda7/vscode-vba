@@ -2,6 +2,7 @@
 ## 1.2.1
 _unreleased_
 
+- Bump minimum supported VS Code to 1.101 and NodeJS to 22
 - build: Add schema definitions in YAML files
 - ci: Validate yaml files against their schema
 - build(deps): Replace vscode-tmgrammar-test with textmate-grammar-test
