@@ -2,7 +2,11 @@
 ## 1.2.1
 _unreleased_
 
+### Grammar and user-facing Changes
 - Bump minimum supported VS Code to 1.101 and NodeJS to 22
+- Improve module metadata grammar
+
+### Technical Changes
 - build: Add schema definitions in YAML files
 - ci: Validate yaml files against their schema
 - build(deps): Replace vscode-tmgrammar-test with textmate-grammar-test

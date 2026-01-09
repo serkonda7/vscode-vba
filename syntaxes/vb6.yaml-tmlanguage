@@ -13,10 +13,10 @@ fileTypes:
   - .frm
 
 patterns:
+  - include: '#module_metadata'
   - include: '#comments'
   - include: '#functions'
   - include: '#keywords'
-  - include: '#metadata'
   - include: '#numbers'
   - include: '#storage'
   - include: '#strings'
@@ -73,18 +73,31 @@ repository:
       - name: constant.language.vb6
         match: (?i)\b(Empty|False|Nothing|Null|True)\b
 
-  metadata:
-    name: metadata.vb6
-    begin: (?i)^\s*(BEGIN)\b
-    beginCaptures:
-      '1':
-        name: keyword.metadata.vb6
-    end: (?i)^\s*(END)\b
-    endCaptures:
-      '0':
-        name: keyword.metadata.vb6
+  module_metadata:
     patterns:
-      - include: 'source.vb6'
+      - include: '#comments'
+      - include: '#module_version'
+      - include: '#attribute_block'
+    repository:
+      module_version:
+        name: meta.module.header.vb6
+        match: (?i)^VERSION\s+([.\d]+)\s+CLASS
+        captures:
+          1:
+            patterns:
+              - include: "#numbers"
+      attribute_block:
+        name: meta.module.block.vb6
+        begin: (?i)^\s*(BEGIN)\b
+        end: (?i)^\s*(END)\b
+        beginCaptures:
+          '0':
+            name: keyword.other.vb6
+        endCaptures:
+          '0':
+            name: keyword.other.vb6
+        patterns:
+          - include: 'source.vb6'
 
   numbers:
     patterns:
