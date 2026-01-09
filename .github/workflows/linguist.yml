@@ -20,8 +20,8 @@ jobs:
 
       - name: Remove existing submodules
         run: |
-          rm -rf vendor/grammars/vscode-vba
           git submodule deinit -f vendor/grammars/vscode-vba
+          rm -rf vendor/grammars/vscode-vba
           rm -rf .git/modules/vendor/grammars/vscode-vba
           script/grammar-compiler update -f >/dev/null 2>&1
 
@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           path: vendor/grammars/vscode-vba
+          clean: false
 
       - name: Compile linguist grammar
         run: script/grammar-compiler add vendor/grammars/vscode-vba
