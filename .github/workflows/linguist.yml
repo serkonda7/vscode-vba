@@ -9,19 +9,6 @@ on:
 
 jobs:
   compile-check:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout linguist
-        uses: actions/checkout@v6
-        with:
-          repository: github-linguist/linguist
-
-      - name: Checkout PR as submodule
-        uses: actions/checkout@v6
-        with:
-          path: vendor/grammars/vscode-vba
-          clean: false
-
-      - name: Compile linguist grammar
-        run: script/grammar-compiler add vendor/grammars/vscode-vba
+    uses: serkonda7/linguist-compilation-action/.github/workflows/linguist.yml@vca99f3cf288972062696dc2f3dbe71ed885c8647
+    with:
+      repo: ${{ github.repository }}
