@@ -10,7 +10,7 @@ This document should provide you with some guidance and tips.
 
 
 ## Language Grammars (Regexes and TextMate Scopes)
-### Resources
+### Resources and Notes
 - Oniguruma Regex
   - [Comparison to PCRE][oniguruma-overview] _(mostly compatible)_
   - Test regexes in [regexr][regexr] in PCRE mode
