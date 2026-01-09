@@ -83,7 +83,7 @@ repository:
         name: meta.module.header.vb6
         match: (?i)^VERSION\s+([.\d]+)\s+CLASS
         captures:
-          1:
+          '1':
             patterns:
               - include: "#numbers"
       attribute_block:

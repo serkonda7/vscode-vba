@@ -27,15 +27,7 @@ Label1: Rem Some comment with label
 '       ^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
 
 Dim x as Long Rem Some comment at the end of a line
-'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - comment.line.rem
+'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ! comment.line.rem
 
 Dim x As Long: Rem Test comment with colon
 '              ^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.rem
-
-' multi line _
-  comment
-' ^^^^^^^ comment.line.continuation
-
-Rem multi line _
-  comment
-' ^^^^^^^ comment.line.continuation

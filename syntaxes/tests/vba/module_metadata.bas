@@ -2,7 +2,7 @@
 
 VERSION 1.0 CLASS
 '       ^^^ constant.numeric.decimal
-'           ^^^^^ - storage.modifier.vb6
+'           ^^^^^ ! storage.modifier.vb6
 BEGIN
 ' <----- keyword.other.vb6
   MultiUse = -1  'True
@@ -13,7 +13,7 @@ END
 
 ' NOTE: Invalid syntax
 Sub Begin(ByVal MyString As String)
-'   ^^^^^ - keyword.other.vb6
+'   ^^^^^ ! keyword.other.vb6
 
     MsgBox "test"
     End

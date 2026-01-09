@@ -11,24 +11,17 @@ jobs:
   compile-check:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: linguist
-
     steps:
-      - name: Clone linguist
-        working-directory: ${{ github.workspace }}
-        run: |
-          git clone --depth 1 https://github.com/github-linguist/linguist.git
-          cd linguist
-          git submodule init
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Checkout linguist
+        uses: actions/checkout@v6
         with:
-          working-directory: linguist
-          ruby-version: '3.3'
-          bundler-cache: true
+          repository: github-linguist/linguist
+
+      - name: Checkout PR as submodule
+        uses: actions/checkout@v6
+        with:
+          path: vendor/grammars/vscode-vba
+          clean: false
 
       - name: Compile linguist grammar
-        run: ./script/add-grammar --replace ${{ github.event.repository.name }} https://github.com/${{ github.repository }}
+        run: script/grammar-compiler add vendor/grammars/vscode-vba

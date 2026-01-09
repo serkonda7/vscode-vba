@@ -18,7 +18,7 @@ Dim obj As Variant
 
 Let obj = Null
 ' <--- storage.modifier.vb6
-'         ^^^^^ constant.language.vb6
+'         ^^^^ constant.language.vb6
 
 Set obj = Nothing
 ' <--- storage.modifier.vb6
