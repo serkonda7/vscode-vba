@@ -2,10 +2,10 @@
 
 Open "file" For Input As #f
 ' <--- keyword.io.vb6
-'               ^^^^^ - keyword.io.vb6
+'               ^^^^^ ! keyword.io.vb6
     Input #f myVar
 '   ^^^^^ keyword.io.vb6
-'        ^^^ - keyword.io.vb6
+'        ^^^ ! keyword.io.vb6
 
     Line Input #f myLineVar
 '   ^^^^^^^^^^ keyword.io.vb6

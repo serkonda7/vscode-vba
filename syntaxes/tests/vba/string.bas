@@ -5,6 +5,6 @@ str = "Hello"
 '     ^^^^^^^ string.quoted.double
 
 str = "no
-'     ^^^ - string.quoted.double
+'     ^^^ ! string.quoted.double
 multiline"
-' <---------- - string.quoted.double
+' <---------- ! string.quoted.double

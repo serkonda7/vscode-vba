@@ -26,4 +26,4 @@ dt = #Feb/22#
 '    ^^^^^^^^ constant.numeric.date
 
 Dim var01 As Variant
-'   ^^^^^ - constant.numeric.decimal
+'   ^^^^^ ! constant.numeric.decimal

@@ -45,10 +45,10 @@ Sub InitRemoteMemory(ByRef rm As REMOTE_MEMORY2)
 End Sub
 
 Dim myConverter As DateConverter
-'                  ^^^^ - support.type.builtin.vb6
+'                  ^^^^ ! support.type.builtin.vb6
 
 Dim se As String_Extension2
-'         ^^^^^^ - support.type.builtin.vb6
+'         ^^^^^^ ! support.type.builtin.vb6
 
 ConvertAs myVar, myConverter
-'         ^^^^^ - support.type
+'         ^^^^^ ! support.type
