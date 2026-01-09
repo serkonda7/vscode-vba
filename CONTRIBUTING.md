@@ -1,30 +1,25 @@
 # Contributing Guide
 Thank you for your interest in contributing to vscode-vba!
 
-
-## Creating Issues
-Report bugs or suggest new features.
-
-Before opening an issue, please check that your issue or a similar one has not already been reported in the [open issues][issues].
-
-In case it already is, add a reaction and any additional information.
+This document should provide you with some guidance and tips.
 
 
 ## Pull Request Best Practices
-- **Discuss bigger changes:** For significant changes, please discuss them first , so no effort is wasted.
+- **Discuss bigger changes:** For significant changes, please discuss them first , so no effort is wasted
 - **Small and focused PRs:**  Aim for one feature or bug fix per pull request. This simplifies reviews and accelerates merging
 
 
-## Syntax Highlighting Grammar (Regexes and Scopes)
-VS Code uses TextMate Grammars and Oniguruma regexes.
+## Language Grammars (Regexes and TextMate Scopes)
+### Resources
+- Oniguruma Regex
+  - [Comparison to PCRE][oniguruma-overview] _(mostly compatible)_
+  - Test regexes in [regexr][regexr] in PCRE mode
+- TextMate Scopes
+  - [TextMate: Scope naming conventions][textmate-manual]
 
-Oniguruma is mostly compatible with PCRE _([Comparison][oniguruma-overview])_,
-so [regexr][regexr] in PCRE mode is a good choice for development.
-
-For a list of predefined grammar scopes see the [TextMate Manual][textmate-manual].
-
-To manually inspect the scopes in the editor,
-execute `Developer: Inspect Tokens and Scopes` from the command palette (<kbd>F1</kbd>).
+### Manual Testing / Debugging
+- Inspection in VS Code
+  - Run `Developer: Inspect Tokens and Scopes` from command palette (<kbd>F1</kbd>)
 
 
 ### Unit Tests
