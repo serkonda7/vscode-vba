@@ -16,14 +16,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: github-linguist/linguist
-          submodules: recursive
-
-      - name: Remove existing submodules
-        run: |
-          git submodule deinit -f vendor/grammars/vscode-vba
-          rm -rf vendor/grammars/vscode-vba
-          rm -rf .git/modules/vendor/grammars/vscode-vba
-          script/grammar-compiler update -f >/dev/null 2>&1
 
       - name: Checkout PR as submodule
         uses: actions/checkout@v6
