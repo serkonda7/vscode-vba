@@ -1,6 +1,6 @@
 # Changelog
 ## 1.2.1
-_unreleased_
+_2026-01-10_
 
 ### Grammar and user-facing Changes
 - Bump minimum supported VS Code to 1.101 and NodeJS to 22
