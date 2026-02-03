@@ -159,13 +159,13 @@
     "node": ">=22",
     "vscode": "^1.101.0"
   },
-  "packageManager": "bun@1.3.6",
+  "packageManager": "bun@1.3.8",
   "devDependencies": {
-    "@types/bun": "~1.3.6",
-    "@types/node": "~22.19.7",
+    "@types/bun": "~1.3.8",
+    "@types/node": "~22.19.8",
     "@vscode/vsce": "~3.7.1",
     "ajv": "~8.17.1",
     "ajv-formats": "~3.0.1",
-    "textmate-grammar-test": "~0.3.3"
+    "textmate-grammar-test": "~0.4.0"
   }
 }
