@@ -164,7 +164,7 @@
     "@types/bun": "~1.3.8",
     "@types/node": "~22.19.8",
     "@vscode/vsce": "~3.7.1",
-    "ajv": "~8.17.1",
+    "ajv": "~8.18.0",
     "ajv-formats": "~3.0.1",
     "textmate-grammar-test": "~0.4.2"
   }
