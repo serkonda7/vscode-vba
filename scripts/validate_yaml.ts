@@ -1,7 +1,7 @@
-import { YAML } from "bun"
-import fs from "fs"
+import fs from "node:fs"
 import Ajv from "ajv"
 import addFormats from "ajv-formats"
+import { YAML } from "bun"
 
 const in_files = [
 	"language-configuration.yml",
@@ -19,11 +19,12 @@ const ajv = new Ajv({
 )
 addFormats(ajv)
 
-const schema_cache = new Map()
+const schema_cache = new Map<string, object>()
 
-async function get_schema(url: string): Promise<any> {
-	if (schema_cache.has(url)) {
-		return schema_cache.get(url)
+async function get_schema(url: string): Promise<object> {
+	const cached = schema_cache.get(url)
+	if (cached) {
+		return cached
 	}
 
 	const response = await fetch(url)
