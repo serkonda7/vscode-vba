@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Checkout linguist
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: github-linguist/linguist
 
       - name: Checkout PR as submodule
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: vendor/grammars/vscode-vba
           clean: false
