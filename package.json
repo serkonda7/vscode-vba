@@ -3,7 +3,7 @@
   "displayName": "VBA",
   "description": "VBA and VB6 tooling, syntax highlighting and snippets.",
   "icon": "images/icon.png",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MPL-2.0",
   "publisher": "serkonda7",
   "repository": {
@@ -23,7 +23,6 @@
     "VBA",
     "WWB"
   ],
-  "type": "module",
   "main": "./src/main.js",
   "browser": "./src/main.js",
   "capabilities": {
@@ -143,14 +142,15 @@
     }
   },
   "scripts": {
-    "test": "bun run convert && bun run test:all",
+    "test": "bun run convert && bun run test:entry && bun run test:all",
+    "test:entry": "node ./scripts/test_entry.cjs",
     "test:all": "bun run test:vba && bun run test:vb6 && bun run test:wwb",
     "test:vba": "bunx textmate-grammar-test -g ./dist/vba.json \"syntaxes/tests/vba/*.bas\"",
     "test:vb6": "bunx textmate-grammar-test -g ./dist/vb6.json \"syntaxes/tests/vb6/*.bas\"",
     "test:wwb": "bunx textmate-grammar-test -g ./dist/wwb.json \"syntaxes/tests/wwb/*.wwd\"",
     "validate": "bun run ./scripts/validate_yaml.ts",
-    "package": "bunx vsce package",
-    "package:dev": "bunx vsce package -o ./vscode-vba-dev.vsix",
+    "package": "bunx vsce package --no-dependencies",
+    "package:dev": "bunx vsce package --no-dependencies -o ./vscode-vba-dev.vsix",
     "install:dev": "bun run package:dev && code --install-extension ./vscode-vba-dev.vsix --force",
     "convert": "bun run ./scripts/convert_yaml.ts",
     "vscode:prepublish": "bun run convert"

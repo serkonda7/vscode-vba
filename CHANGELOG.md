@@ -1,4 +1,11 @@
 # Changelog
+## 1.2.2
+_2026-10-12_
+
+- Treat package correctly as commonjs
+- Fix vsce with Bun
+
+
 ## 1.2.1
 _2026-01-10_
 
