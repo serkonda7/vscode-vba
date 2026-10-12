@@ -4,7 +4,6 @@
 <h1>VBA Support for VS Code</h1>
 
 [![CI][ci-badge]][ci-status]
-[![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
 
 </div>
@@ -75,9 +74,7 @@ Extension icon: [CC-BY-4.0](images/LICENSE.txt), courtesy of the GitHub Explore 
 [ci-badge]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml/badge.svg
 [ci-status]: https://github.com/serkonda7/vscode-vba/actions/workflows/ci.yml
 
-[badge-installs-market]: https://img.shields.io/visual-studio-marketplace/i/serkonda7.vscode-vba?label=Installs
 [badge-installs-vsx]: https://img.shields.io/open-vsx/dt/serkonda7/vscode-vba?label=VSX%20downloads
-[vs-marketplace]: https://marketplace.visualstudio.com/items?itemName=serkonda7.vscode-vba
 [open-vsx]: https://open-vsx.org/extension/serkonda7/vscode-vba
 
 [discussions]: https://github.com/serkonda7/vscode-vba/discussions
