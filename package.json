@@ -161,7 +161,7 @@
   },
   "packageManager": "bun@1.4.2",
   "devDependencies": {
-    "@types/bun": "1.4.2",
+    "@types/bun": "1.4.4",
     "@types/node": "~26.6.5",
     "@vscode/vsce": "~4.0.0",
     "ajv": "~8.20.0",
